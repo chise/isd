@@ -30,46 +30,49 @@
 
 (setq est-coded-charset-priority-list
   '(; =ucs
-    =>ucs@iso
-    =>ucs@unicode
-    =>ucs@component
     =>jis-x0208 =>jis-x0213-1
     =>jis-x0208@1997
     =>ucs@iwds-1
+    =>ucs@component
     =>iwds-1
-    =+>ucs@iso =+>ucs@unicode
-    =>ucs@jis =>ucs@cns =>ucs@ks
-    =>>ucs@iso =>>ucs@unicode
-    =>>ucs@jis =>>ucs@cns =>>ucs@ks
     =mj
-    ==mj
     =adobe-japan1
-    =big5-cdp
+    =ucs@iso
     =jis-x0208 =jis-x0208@1990
+    =jis-x0213-1@2000 =jis-x0213-1@2004
     =jis-x0213-2
     =jis-x0212
-    =jis-x0213-1@2000 =jis-x0213-1@2004
-    =>>jis-x0208 =>>jis-x0213-1 =>>jis-x0213-2
-    =+>jis-x0208 =+>jis-x0213-1 =+>jis-x0213-2
-    =+>jis-x0208@1978
-    =gt =gt-k
-    =>>gt
-    =+>adobe-japan1
-    =>>adobe-japan1
-    =cns11643-1 =cns11643-2 =cns11643-3
-    =cns11643-4 =cns11643-5 =cns11643-6 =cns11643-7
-    =gb2312 =gb12345
-    =jis-x0208@1983 =jis-x0208@1978
     =ucs-itaiji-001
     =ucs-itaiji-002
     =ucs-itaiji-003
     =ucs-itaiji-005
-    =>ucs-itaiji-005
     =ucs-var-001
+    =gt
+    =cns11643-1 =cns11643-2 =cns11643-3
+    =cns11643-4 =cns11643-5 =cns11643-6 =cns11643-7
+    =gb2312
+    =big5-cdp
+    =gt-k
     =ucs@unicode
+    =>ucs@iso
+    =>ucs@unicode
+    =+>ucs@iso =+>ucs@unicode
+    =>ucs@jis =>ucs@cns =>ucs@ks
+    =>>ucs@iso =>>ucs@unicode
+    =>>ucs@jis =>>ucs@cns =>>ucs@ks
+    ==mj
+    =>>jis-x0208 =>>jis-x0213-1 =>>jis-x0213-2
+    =+>jis-x0208 =+>jis-x0213-1 =+>jis-x0213-2
+    =+>jis-x0208@1978
+    =>>gt
+    =+>adobe-japan1
+    =>>adobe-japan1
+    =jis-x0208@1983 =jis-x0208@1978
+    =>ucs-itaiji-005
     ==ucs@unicode
     ==>ucs@bucs
     =ucs@JP/hanazono
+    =gb12345
     =zinbun-oracle =>zinbun-oracle
     =daikanwa
     =ruimoku-v6
@@ -114,7 +117,16 @@
       (cond (ret
 	     (unless (memq ccs isd-turtle-ccs-list)
 	       (setq isd-turtle-ccs-list (cons ccs isd-turtle-ccs-list)))
-	     (format "%s:0x%X"
+	     (format (cond ((memq ccs '(=gt
+					=gt-k =daikanwa =adobe-japan1-6
+					=cbeta =zinbun-oracle))
+			    "%s:%05d")
+			   ((memq ccs '(=hanyo-denshi/ks
+					=koseki
+					=mj))
+			    "%s:%06d")
+			   (t
+			    "%s:0x%X"))
 		     (isd-turtle-uri-encode-feature-name ccs)
 		     ret))
 	    ((and (setq ccs (car (split-char object)))
