@@ -188,7 +188,7 @@
 	     (setq ret (find-char c3)))
 	(setq c3 ret))
     (cond
-     ((eq idc ?⿰)
+     ((eq idc ?\u2FF0) ; ⿰
       (setq p1 'left
 	    p2 'right)
       )
@@ -304,6 +304,14 @@
   (isd-turtle-dump-range "ISD-UCS-Basic.ttl" filename
 			 #'isd-turtle-insert-ccs-ranges
 			 'ucs '(#x4E00 . #x9FA5)))
+
+;;;###autoload
+(defun isd-turtle-dump-ucs-ext-a (filename)
+  (interactive "Fdump ISD-UCS-Ext-A : ")
+  (isd-turtle-dump-range "ISD-UCS-Ext-A.txt" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 'ucs '(#x3400 . #x4DB5) #xFA1F #xFA23))
+
 
 
 ;;; @ End.
