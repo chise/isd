@@ -86,9 +86,9 @@
 (defun isd-turtle-uri-encode-feature-name (feature-name)
   (cond
    ((eq '=ucs feature-name)
-    'ucs)
+    "a.ucs")
    ((eq '==>ucs@bucs feature-name)
-    'bucs)
+    "bucs")
    (t
     (mapconcat (lambda (c)
 		 (if (eq c ?@)
@@ -108,7 +108,7 @@
 	ccs ret)
     (if (setq ret (encode-char object '=ucs))
 	(prog1
-	    (format "ucs:0x%04X" ret)
+	    (format "a.ucs:0x%04X" ret)
 	  (unless (memq '=ucs isd-turtle-ccs-list)
 	    (setq isd-turtle-ccs-list (cons '=ucs isd-turtle-ccs-list))))
       (while (and ccs-list
