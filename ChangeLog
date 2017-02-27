@@ -1,5 +1,16 @@
 2017-02-27  MORIOKA Tomohiko  <tomo.git@chise.org>
 
+	* ISD-UCS-Ext-A.txt: New file.
+
+	* ISD-UCS-Basic.ttl: Use `a.ucs:' instead of `ucs:' as the prefix
+	for <http://www.chise.org/est/view/character/rep.ucs=>.
+
+	* isd-turtle.el (isd-turtle-uri-encode-feature-name): Use "a.ucs"
+	instead of `ucs' for `=ucs'.
+	(isd-turtle-encode-char): Likewise.
+
+2017-02-27  MORIOKA Tomohiko  <tomo.git@chise.org>
+
 	* isd-turtle.el (isd-turtle-dump-ucs-ext-a): New function.
 
 2017-02-26  MORIOKA Tomohiko  <tomo.git@chise.org>
