@@ -1,3 +1,7 @@
+2017-02-27  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* isd-turtle.el (isd-turtle-dump-ucs-ext-a): New function.
+
 2017-02-26  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* ISD-UCS-Basic.ttl: Reformatted.
