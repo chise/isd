@@ -1,5 +1,7 @@
 2017-02-28  MORIOKA Tomohiko  <tomo.git@chise.org>
 
+	* ISD-UCS-Ext-A.ttl: Renamed from ISD-UCS-Ext-A.txt.
+
 	* isd-turtle.el (est-coded-charset-priority-list): Prefer base CCS
 	to derived CCS.
 	(isd-turtle-encode-char): Use `=adobe-japan1' instead of
