@@ -30,15 +30,11 @@
 
 (setq est-coded-charset-priority-list
   '(; =ucs
-    =>jis-x0208 =>jis-x0213-1
-    =>jis-x0208@1997
-    =>ucs@iwds-1
-    =>ucs@component
-    =>iwds-1
     =mj
     =adobe-japan1
     =ucs@iso
     =jis-x0208 =jis-x0208@1990
+    =jis-x0213-1
     =jis-x0213-1@2000 =jis-x0213-1@2004
     =jis-x0213-2
     =jis-x0212
@@ -54,6 +50,17 @@
     =big5-cdp
     =gt-k
     =ucs@unicode
+    =ucs@JP/hanazono
+    =gb12345
+    =zinbun-oracle =>zinbun-oracle
+    =daikanwa
+    =ruimoku-v6
+    =cbeta =jef-china3
+    =>jis-x0208 =>jis-x0213-1
+    =>jis-x0208@1997
+    =>ucs@iwds-1
+    =>ucs@component
+    =>iwds-1
     =>ucs@iso
     =>ucs@unicode
     =+>ucs@iso =+>ucs@unicode
@@ -71,14 +78,8 @@
     =>ucs-itaiji-005
     ==ucs@unicode
     ==>ucs@bucs
-    =ucs@JP/hanazono
-    =gb12345
-    =zinbun-oracle =>zinbun-oracle
-    =daikanwa
-    =ruimoku-v6
     =big5
     =>cbeta
-    =cbeta =jef-china3
     ))
 
 (defvar isd-turtle-ccs-list nil)
@@ -118,7 +119,7 @@
 	     (unless (memq ccs isd-turtle-ccs-list)
 	       (setq isd-turtle-ccs-list (cons ccs isd-turtle-ccs-list)))
 	     (format (cond ((memq ccs '(=gt
-					=gt-k =daikanwa =adobe-japan1-6
+					=gt-k =daikanwa =adobe-japan1
 					=cbeta =zinbun-oracle))
 			    "%s:%05d")
 			   ((memq ccs '(=hanyo-denshi/ks
