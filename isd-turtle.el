@@ -309,7 +309,7 @@
 ;;;###autoload
 (defun isd-turtle-dump-ucs-ext-a (filename)
   (interactive "Fdump ISD-UCS-Ext-A : ")
-  (isd-turtle-dump-range "ISD-UCS-Ext-A.txt" filename
+  (isd-turtle-dump-range "ISD-UCS-Ext-A.ttl" filename
 			 #'isd-turtle-insert-ccs-ranges
 			 'ucs '(#x3400 . #x4DB5) #xFA1F #xFA23))
 
