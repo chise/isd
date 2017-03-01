@@ -1,5 +1,40 @@
 2017-03-01  MORIOKA Tomohiko  <tomo.git@chise.org>
 
+	* ISD-UCS-Ext-A.ttl: Reformatted [fixed bugs caused by
+	isd-turtle.el].
+
+	* ISD-UCS-Basic.ttl: Sync up with the current environment.
+
+	* isd-turtle.el (est-coded-charset-priority-list): Add
+	`=hanyo-denshi/tk'.
+	(charset-code-point-format-spec): Add settings for
+	`=hanyo-denshi/tk' and `==hanyo-denshi/tk'.
+	(isd-turtle-format-ccs-code-point): Add argument `ccs' into
+	`isd-turtle-ccs-list' if it is not existed.
+	(isd-turtle-encode-char): Delete codes to update
+	`isd-turtle-ccs-list'.
+	(isd-turtle-format-component): Modify for interface change of
+	`isd-turtle-format-char'.
+	(isd-turtle-format-char): Abolish argument `char'; add arguments
+	`ccs' and `code-point'; use `isd-turtle-format-ccs-code-point' to
+	format characters as subjects.
+	(isd-turtle-insert-char): Abolish argument `char'; add arguments
+	`ccs' and `code-point'; modify for the interface change of
+	`isd-turtle-format-char'.
+	(isd-turtle-insert-ccs-ranges): Modify for the interface change of
+	`isd-turtle-insert-char'.
+	(isd-turtle-dump-ucs-basic): Use `=ucs' instead of `ucs'.
+	(isd-turtle-dump-ucs-ext-a): Likewise.
+	(isd-turtle-dump-mj-0): New function.
+	(isd-turtle-dump-mj-1): New function.
+	(isd-turtle-dump-mj-2): New function.
+	(isd-turtle-dump-mj-3): New function.
+	(isd-turtle-dump-mj-4): New function.
+	(isd-turtle-dump-mj-5): New function.
+	(isd-turtle-dump-mj-6): New function.
+
+2017-03-01  MORIOKA Tomohiko  <tomo.git@chise.org>
+
 	* ISD-UCS-Basic.ttl: Sync up with the current environment.
 
 	* isd-turtle.el (charset-code-point-format-spec): New function.
