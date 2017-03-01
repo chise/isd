@@ -38,12 +38,13 @@
     =jis-x0213-1@2000 =jis-x0213-1@2004
     =jis-x0213-2
     =jis-x0212
+    =gt
+    =hanyo-denshi/tk
     =ucs-itaiji-001
     =ucs-itaiji-002
     =ucs-itaiji-003
     =ucs-itaiji-005
     =ucs-var-001
-    =gt
     =cns11643-1 =cns11643-2 =cns11643-3
     =cns11643-4 =cns11643-5 =cns11643-6 =cns11643-7
     =gb2312
@@ -94,6 +95,8 @@
 	((memq ccs '(=hanyo-denshi/ks
 		     =koseki =mj))
 	 "%06d")
+	((memq ccs '(=hanyo-denshi/tk ==hanyo-denshi/tk))
+	 "%08d")
 	(t
 	 "0x%X")))
 
@@ -112,53 +115,26 @@
 	       ""))))
 
 (defun isd-turtle-format-ccs-code-point (ccs code-point)
+  (unless (memq ccs isd-turtle-ccs-list)
+    (setq isd-turtle-ccs-list (cons ccs isd-turtle-ccs-list)))
   (format "%s:%s"
 	  (isd-turtle-uri-encode-feature-name ccs)
 	  (format (charset-code-point-format-spec ccs)
 		  code-point)))
 
-;; (defun isd-turtle-encode-char (char)
-;;   (let ((ucs (encode-char char '=ucs)))
-;;     (if ucs
-;;         (format "ucs:0x%04X" ucs)
-;;       (www-uri-encode-object char))))
-
 (defun isd-turtle-encode-char (object)
   (let ((ccs-list est-coded-charset-priority-list)
 	ccs ret)
     (if (setq ret (encode-char object '=ucs))
-	(prog1
-            ;; (format "a.ucs:0x%04X" ret)
-	    (isd-turtle-format-ccs-code-point '=ucs ret)
-	  (unless (memq '=ucs isd-turtle-ccs-list)
-	    (setq isd-turtle-ccs-list (cons '=ucs isd-turtle-ccs-list))))
+	(isd-turtle-format-ccs-code-point '=ucs ret)
       (while (and ccs-list
 		  (setq ccs (pop ccs-list))
 		  (not (setq ret (encode-char object ccs 'defined-only)))))
       (cond (ret
-	     (unless (memq ccs isd-turtle-ccs-list)
-	       (setq isd-turtle-ccs-list (cons ccs isd-turtle-ccs-list)))
-             ;; (format (cond ((memq ccs '(=gt
-             ;;                            =gt-k =daikanwa =adobe-japan1
-             ;;                            =cbeta =zinbun-oracle))
-             ;;                "%s:%05d")
-             ;;               ((memq ccs '(=hanyo-denshi/ks
-             ;;                            =koseki
-             ;;                            =mj))
-             ;;                "%s:%06d")
-             ;;               (t
-             ;;                "%s:0x%X"))
-             ;;         (isd-turtle-uri-encode-feature-name ccs)
-             ;;         ret)
 	     (isd-turtle-format-ccs-code-point ccs ret)
 	     )
 	    ((and (setq ccs (car (split-char object)))
 		  (setq ret (encode-char object ccs)))
-	     (unless (memq ccs isd-turtle-ccs-list)
-	       (setq isd-turtle-ccs-list (cons ccs isd-turtle-ccs-list)))
-             ;; (format "%s:0x%X"
-             ;;         (isd-turtle-uri-encode-feature-name ccs)
-             ;;         ret)
 	     (isd-turtle-format-ccs-code-point ccs ret)
 	     )
 	    (t
@@ -183,21 +159,26 @@
 		 ((setq ret (assq 'ideographic-structure component))
 		  (if (eq separator ?\;)
 		      (format "%s ;"
-			      (isd-turtle-format-char nil (cdr ret) (1+ level)))
-		    (isd-turtle-format-char nil (cdr ret) (1+ level)))))))))
+			      (isd-turtle-format-char nil nil (cdr ret) (1+ level)))
+		    (isd-turtle-format-char nil nil (cdr ret) (1+ level)))))))))
 
-(defun isd-turtle-format-char (char &optional ids-list level)
-  (unless ids-list
-    (setq ids-list (get-char-attribute char 'ideographic-structure)))
+(defun isd-turtle-format-char (ccs code-point &optional ids-list level)
   (unless level
     (setq level 0))
   (let ((indent (make-string (* level 4) ?\ ))
-	(idc (car ids-list))
+	char
+	idc
 	p1 p2 p3
-	(c1 (nth 1 ids-list))
-	(c2 (nth 2 ids-list))
-	(c3 (nth 3 ids-list))
+	c1 c2 c3
 	ret)
+    (unless ids-list
+      (if (and ccs code-point
+	       (setq char (decode-char ccs code-point)))
+	  (setq ids-list (get-char-attribute char 'ideographic-structure))))
+    (setq idc (car ids-list))
+    (setq c1 (nth 1 ids-list)
+	  c2 (nth 2 ids-list)
+	  c3 (nth 3 ids-list))
     (if (char-ref-p idc)
 	(setq idc (plist-get idc :char)))
     (if (and (consp idc)
@@ -247,8 +228,10 @@
 %s        :%-8s %s
 %s        :%-8s %s
 %s    ]%s"
-	      (if char
-		  (isd-turtle-format-component char ?\  0)
+	      (if (and ccs code-point)
+		  (format "%s   # %c"
+			  (isd-turtle-format-ccs-code-point ccs code-point)
+			  char)
 		"[")
 	      indent idc
 	      indent p1 (isd-turtle-format-component c1 ?\; (1+ level))
@@ -266,8 +249,10 @@
 %s        :%-8s %s
 %s        :%-8s %s
 %s    ]%s"
-	      (if char
-		  (isd-turtle-format-component char ?\  0)
+	      (if (and ccs code-point)
+		  (format "%s   # %c"
+			  (isd-turtle-format-ccs-code-point ccs code-point)
+			  char)
 		"[")
 	      indent idc
 	      indent p1 (isd-turtle-format-component c1 ?\; (1+ level))
@@ -279,26 +264,26 @@
 		""))))
     ))
 
-(defun isd-turtle-insert-char (char)
-  (let ((ret (isd-turtle-format-char char)))
+(defun isd-turtle-insert-char (ccs code-point)
+  (let ((ret (isd-turtle-format-char ccs code-point)))
     (when ret
       (insert ret)
       (insert " .\n"))))
 
 (defun isd-turtle-insert-ccs-ranges (ccs &rest ranges)
-  (let (range code max-code char)
+  (let (range code max-code)
     (while ranges
       (setq range (car ranges))
       (cond ((consp range)
 	     (setq code (car range)
 		   max-code (cdr range))
 	     (while (<= code max-code)
-	       (if (setq char (decode-char ccs code))
-		   (isd-turtle-insert-char char))
-	       (setq code (1+ code))))
+	       (isd-turtle-insert-char ccs code)
+	       (setq code (1+ code)))
+	     )
 	    ((integerp range)
-	     (if (setq char (decode-char ccs code))
-		 (isd-turtle-insert-char char)))
+	     (isd-turtle-insert-char ccs range)
+	     )
 	    (t (error 'wrong-type-argument range)))
       (setq ranges (cdr ranges)))))
 
@@ -328,15 +313,63 @@
   (interactive "Fdump ISD-UCS-Basic : ")
   (isd-turtle-dump-range "ISD-UCS-Basic.ttl" filename
 			 #'isd-turtle-insert-ccs-ranges
-			 'ucs '(#x4E00 . #x9FA5)))
+			 '=ucs '(#x4E00 . #x9FA5)))
 
 ;;;###autoload
 (defun isd-turtle-dump-ucs-ext-a (filename)
   (interactive "Fdump ISD-UCS-Ext-A : ")
   (isd-turtle-dump-range "ISD-UCS-Ext-A.ttl" filename
 			 #'isd-turtle-insert-ccs-ranges
-			 'ucs '(#x3400 . #x4DB5) #xFA1F #xFA23))
+			 '=ucs '(#x3400 . #x4DB5) #xFA1F #xFA23))
 
+;;;###autoload
+(defun isd-turtle-dump-mj-0 (filename)
+  (interactive "Fdump ISD-MJ-0 : ")
+  (isd-turtle-dump-range "ISD-MJ-0.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 '=mj '(1 . 9999)))
+
+;;;###autoload
+(defun isd-turtle-dump-mj-1 (filename)
+  (interactive "Fdump ISD-MJ-1 : ")
+  (isd-turtle-dump-range "ISD-MJ-1.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 '=mj '(10000 . 19999)))
+
+;;;###autoload
+(defun isd-turtle-dump-mj-2 (filename)
+  (interactive "Fdump ISD-MJ-2 : ")
+  (isd-turtle-dump-range "ISD-MJ-2.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 '=mj '(20000 . 29999)))
+
+;;;###autoload
+(defun isd-turtle-dump-mj-3 (filename)
+  (interactive "Fdump ISD-MJ-3 : ")
+  (isd-turtle-dump-range "ISD-MJ-3.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 '=mj '(30000 . 39999)))
+
+;;;###autoload
+(defun isd-turtle-dump-mj-4 (filename)
+  (interactive "Fdump ISD-MJ-4 : ")
+  (isd-turtle-dump-range "ISD-MJ-4.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 '=mj '(40000 . 49999)))
+
+;;;###autoload
+(defun isd-turtle-dump-mj-5 (filename)
+  (interactive "Fdump ISD-MJ-5 : ")
+  (isd-turtle-dump-range "ISD-MJ-5.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 '=mj '(50000 . 59999)))
+
+;;;###autoload
+(defun isd-turtle-dump-mj-6 (filename)
+  (interactive "Fdump ISD-MJ-6 : ")
+  (isd-turtle-dump-range "ISD-MJ-6.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 '=mj '(60000 . 69999)))
 
 
 ;;; @ End.
