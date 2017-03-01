@@ -84,6 +84,19 @@
 
 (defvar isd-turtle-ccs-list nil)
 
+(defun charset-code-point-format-spec (ccs)
+  (cond ((memq ccs '(=ucs))
+	 "0x%04X")
+	((memq ccs '(=gt
+		     =gt-k =daikanwa =adobe-japan1
+		     =cbeta =zinbun-oracle))
+	 "%05d")
+	((memq ccs '(=hanyo-denshi/ks
+		     =koseki =mj))
+	 "%06d")
+	(t
+	 "0x%X")))
+
 (defun isd-turtle-uri-encode-feature-name (feature-name)
   (cond
    ((eq '=ucs feature-name)
@@ -97,7 +110,13 @@
 		   (char-to-string c)))
 	       (www-uri-encode-feature-name feature-name)
 	       ""))))
-		     
+
+(defun isd-turtle-format-ccs-code-point (ccs code-point)
+  (format "%s:%s"
+	  (isd-turtle-uri-encode-feature-name ccs)
+	  (format (charset-code-point-format-spec ccs)
+		  code-point)))
+
 ;; (defun isd-turtle-encode-char (char)
 ;;   (let ((ucs (encode-char char '=ucs)))
 ;;     (if ucs
@@ -109,7 +128,8 @@
 	ccs ret)
     (if (setq ret (encode-char object '=ucs))
 	(prog1
-	    (format "a.ucs:0x%04X" ret)
+            ;; (format "a.ucs:0x%04X" ret)
+	    (isd-turtle-format-ccs-code-point '=ucs ret)
 	  (unless (memq '=ucs isd-turtle-ccs-list)
 	    (setq isd-turtle-ccs-list (cons '=ucs isd-turtle-ccs-list))))
       (while (and ccs-list
@@ -118,25 +138,29 @@
       (cond (ret
 	     (unless (memq ccs isd-turtle-ccs-list)
 	       (setq isd-turtle-ccs-list (cons ccs isd-turtle-ccs-list)))
-	     (format (cond ((memq ccs '(=gt
-					=gt-k =daikanwa =adobe-japan1
-					=cbeta =zinbun-oracle))
-			    "%s:%05d")
-			   ((memq ccs '(=hanyo-denshi/ks
-					=koseki
-					=mj))
-			    "%s:%06d")
-			   (t
-			    "%s:0x%X"))
-		     (isd-turtle-uri-encode-feature-name ccs)
-		     ret))
+             ;; (format (cond ((memq ccs '(=gt
+             ;;                            =gt-k =daikanwa =adobe-japan1
+             ;;                            =cbeta =zinbun-oracle))
+             ;;                "%s:%05d")
+             ;;               ((memq ccs '(=hanyo-denshi/ks
+             ;;                            =koseki
+             ;;                            =mj))
+             ;;                "%s:%06d")
+             ;;               (t
+             ;;                "%s:0x%X"))
+             ;;         (isd-turtle-uri-encode-feature-name ccs)
+             ;;         ret)
+	     (isd-turtle-format-ccs-code-point ccs ret)
+	     )
 	    ((and (setq ccs (car (split-char object)))
 		  (setq ret (encode-char object ccs)))
 	     (unless (memq ccs isd-turtle-ccs-list)
 	       (setq isd-turtle-ccs-list (cons ccs isd-turtle-ccs-list)))
-	     (format "%s:0x%X"
-		     (isd-turtle-uri-encode-feature-name ccs)
-		     ret))
+             ;; (format "%s:0x%X"
+             ;;         (isd-turtle-uri-encode-feature-name ccs)
+             ;;         ret)
+	     (isd-turtle-format-ccs-code-point ccs ret)
+	     )
 	    (t
 	     (format (if est-hide-cgi-mode
 			 "system-char-id=0x%X"
