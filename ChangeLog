@@ -1,3 +1,11 @@
+2017-03-01  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* ISD-UCS-Basic.ttl: Sync up with the current environment.
+
+	* isd-turtle.el (charset-code-point-format-spec): New function.
+	(isd-turtle-format-ccs-code-point): New function.
+	(isd-turtle-encode-char): Use `isd-turtle-format-ccs-code-point'.
+
 2017-02-28  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* isd-turtle.el (isd-turtle-dump-ucs-ext-a): Use ISD-UCS-Ext-A.ttl
