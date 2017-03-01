@@ -1,0 +1,50 @@
+# -*- coding: utf-8-mcs-er -*-
+@prefix : <http://rdf.chise.org/rdf/property/character/isd/> .
+@prefix idc: <http://rdf.chise.org/rdf/type/character/idc/> .
+@prefix a.ucs: <http://www.chise.org/est/view/character/rep.ucs=> .
+@prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
+@prefix rep.adobe-japan1: <http://www.chise.org/est/view/character/rep.adobe-japan1=> .
+@prefix rep.cns11643-4: <http://www.chise.org/est/view/character/rep.cns11643-4=> .
+@prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
+
+rep.mj:040072   # 𤏐
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x706B ; # 火
+        :right    a.ucs:0x9593   # 間
+    ] .
+rep.mj:040193   # &MJ040193;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x706B ; # 火
+        :right    [
+            :structure [ a idc:⿱ ;
+                :above    rep.cns11643-4:0x5254 ; # &C4-5254;
+                :below    a.ucs:0x706C   # 灬
+            ]
+        ]
+    ] .
+rep.mj:042408   # &MJ042408;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x76EE ; # 目
+        :right    rep.adobe-japan1:06354   # &AJ1-06354;
+    ] .
+rep.mj:042992   # &MJ042992;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x7676 ; # 癶
+        :below    a.ucs:0x793A   # 示
+    ] .
+rep.mj:044341   # 𥼶
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x7C73 ; # 米
+        :right    a.ucs:0x776A   # 睪
+    ] .
+rep.mj:045110   # &MJ045110;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x65E5 ; # 日
+        :below    a.ucs:0xFA1E   # 羽
+    ] .
+rep.mj:049688   # 𧷇
+    :structure [ a idc:⿳ ;
+        :above    rep.big5-cdp:0x8CA6 ; # &CDP-8CA6;
+        :middle   a.ucs:0x706B ; # 火
+        :below    a.ucs:0x8C9D   # 貝
+    ] .

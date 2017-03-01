@@ -1,0 +1,23 @@
+# -*- coding: utf-8-mcs-er -*-
+@prefix : <http://rdf.chise.org/rdf/property/character/isd/> .
+@prefix idc: <http://rdf.chise.org/rdf/type/character/idc/> .
+@prefix a.ucs: <http://www.chise.org/est/view/character/rep.ucs=> .
+@prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
+@prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
+@prefix rep.ucs-bmp-itaiji-004: <http://www.chise.org/est/view/character/rep.ucs-bmp-itaiji-004=> .
+
+rep.mj:060177   # &MJ060177;
+    :structure [ a idc:⿱ ;
+        :above    [
+            :structure [ a idc:⿶ ;
+                :surround rep.big5-cdp:0x8B64 ; # &CDP-8B64;
+                :filling  rep.mj:006310   # &MJ006310;
+            ]
+        ] ;
+        :below    a.ucs:0x898B   # 見
+    ] .
+rep.mj:060240   # &MJ060240;
+    :structure [ a idc:⿺ ;
+        :surround a.ucs:0x2ECC ; # ⻌
+        :filling  rep.ucs-bmp-itaiji-004:0x81F1   # &U-i004+81F1;
+    ] .
