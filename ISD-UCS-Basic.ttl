@@ -8356,12 +8356,7 @@ a.ucs:0x54D4   # 哔
 a.ucs:0x54D5   # 哕
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x5C71 ; # 山
-                :below    a.ucs:0x5915   # 夕
-            ]
-        ]
+        :right    a.ucs:0x5C81   # 岁
     ] .
 a.ucs:0x54D6   # 哖
     :structure [ a idc:⿰ ;
@@ -9112,12 +9107,7 @@ a.ucs:0x5566   # 啦
 a.ucs:0x5567   # 啧
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x9FB6 ; # 龶
-                :below    a.ucs:0x8D1D   # 贝
-            ]
-        ]
+        :right    a.ucs:0x8D23   # 责
     ] .
 a.ucs:0x5568   # 啨
     :structure [ a idc:⿰ ;
@@ -9145,10 +9135,9 @@ a.ucs:0x556C   # 啬
         :below    a.ucs:0x56DE   # 回
     ] .
 a.ucs:0x556D   # 啭
-    :structure [ a idc:⿲ ;
+    :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
-        :middle   a.ucs:0x8F66 ; # 车
-        :right    a.ucs:0x4E13   # 专
+        :right    a.ucs:0x8F6C   # 转
     ] .
 a.ucs:0x556E   # 啮
     :structure [ a idc:⿰ ;
@@ -9163,12 +9152,7 @@ a.ucs:0x556F   # 啯
 a.ucs:0x5570   # 啰
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    rep.gt:36329 ; # &GT-36329;
-                :below    a.ucs:0x5915   # 夕
-            ]
-        ]
+        :right    a.ucs:0x7F57   # 罗
     ] .
 a.ucs:0x5571   # 啱
     :structure [ a idc:⿰ ;
@@ -9528,12 +9512,7 @@ a.ucs:0x55B6   # 営
 a.ucs:0x55B7   # 喷
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x5349 ; # 卉
-                :below    a.ucs:0x8D1D   # 贝
-            ]
-        ]
+        :right    a.ucs:0x8D32   # 贲
     ] .
 a.ucs:0x55B8   # 喸
     :structure [ a idc:⿱ ;
@@ -9563,12 +9542,7 @@ a.ucs:0x55BC   # 喼
 a.ucs:0x55BD   # 喽
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x7C73 ; # 米
-                :below    a.ucs:0x5973   # 女
-            ]
-        ]
+        :right    a.ucs:0x5A04   # 娄
     ] .
 a.ucs:0x55BE   # 喾
     :structure [ a idc:⿳ ;
@@ -37698,7 +37672,7 @@ a.ucs:0x6B3E   # 款
     ] .
 a.ucs:0x6B3F   # 欿
     :structure [ a idc:⿰ ;
-        :left     rep.adobe-japan1:18448 ; # &AJ1-18448;
+        :left     a.ucs:0x81FD ; # 臽
         :right    a.ucs:0x6B20   # 欠
     ] .
 a.ucs:0x6B40   # 歀
@@ -42020,7 +41994,7 @@ a.ucs:0x6E90   # 源
 a.ucs:0x6E91   # 溑
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x2EA1 ; # ⺡
-        :right    rep.big5-cdp:0x8ACC   # &CDP-8ACC;
+        :right    a.ucs:0x27D2A   # 𧴪
     ] .
 a.ucs:0x6E92   # 溒
     :structure [ a idc:⿰ ;
@@ -49598,7 +49572,7 @@ a.ucs:0x7462   # 瑢
 a.ucs:0x7463   # 瑣
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x2EA9 ; # ⺩
-        :right    rep.big5-cdp:0x8ACC   # &CDP-8ACC;
+        :right    a.ucs:0x27D2A   # 𧴪
     ] .
 a.ucs:0x7464   # 瑤
     :structure [ a idc:⿰ ;
@@ -90141,7 +90115,7 @@ a.ucs:0x9395   # 鎕
 a.ucs:0x9396   # 鎖
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x91D1 ; # 金
-        :right    rep.big5-cdp:0x8ACC   # &CDP-8ACC;
+        :right    a.ucs:0x27D2A   # 𧴪
     ] .
 a.ucs:0x9397   # 鎗
     :structure [ a idc:⿰ ;
