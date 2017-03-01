@@ -1,5 +1,8 @@
 2017-03-01  MORIOKA Tomohiko  <tomo.git@chise.org>
 
+	* ISD-MJ-0.ttl, ISD-MJ-1.ttl, ISD-MJ-2.ttl, ISD-MJ-3.ttl,
+	ISD-MJ-4.ttl, ISD-MJ-5.ttl, ISD-MJ-6.ttl: New files.
+
 	* ISD-UCS-Ext-A.ttl: Reformatted [fixed bugs caused by
 	isd-turtle.el].
 
