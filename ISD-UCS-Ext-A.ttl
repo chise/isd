@@ -17,6 +17,7 @@
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
 @prefix rep.gt: <http://www.chise.org/est/view/character/rep.gt=> .
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
+@prefix rep.daikanwa: <http://www.chise.org/est/view/character/rep.daikanwa=> .
 @prefix rep.daikanwa_rev1: <http://www.chise.org/est/view/character/rep.daikanwa@rev1=> .
 @prefix a.daikanwa: <http://www.chise.org/est/view/character/a.daikanwa=> .
 @prefix rep.cbeta: <http://www.chise.org/est/view/character/rep.cbeta=> .
@@ -34995,4 +34996,14 @@ a.ucs:0x4DB5   # 䶵
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x9FA0 ; # 龠
         :right    a.ucs:0x8652   # 虒
+    ] .
+a.ucs:0xFA1F   # 﨟
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x8279 ; # 艹
+        :below    rep.daikanwa:29726   # &M-29726;
+    ] .
+a.ucs:0xFA23   # 﨣
+    :structure [ a idc:⿺ ;
+        :surround a.ucs:0x8D70 ; # 走
+        :filling  a.ucs:0x6597   # 斗
     ] .
