@@ -9157,7 +9157,7 @@ a.ucs:0x3AB1   # 㪱
 a.ucs:0x3AB2   # 㪲
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6597 ; # 斗
-        :right    rep.gt-k:00020   # &GT-K00020;
+        :right    a.ucs:0x200CD   # 𠃍
     ] .
 a.ucs:0x3AB3   # 㪳
     :structure [ a idc:⿰ ;
@@ -21315,7 +21315,7 @@ a.ucs:0x439D   # 䎝
 a.ucs:0x439E   # 䎞
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x8005 ; # 者
-        :below    rep.gt-k:00020   # &GT-K00020;
+        :below    a.ucs:0x200CD   # 𠃍
     ] .
 a.ucs:0x439F   # 䎟
     :structure [ a idc:⿰ ;
