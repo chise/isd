@@ -23,7 +23,6 @@
 @prefix rep.cns11643-6: <http://www.chise.org/est/view/character/rep.cns11643-6=> .
 @prefix rep.jis-x0213-1: <http://www.chise.org/est/view/character/rep.jis-x0213-1=> .
 @prefix rep.jis-x0213-2: <http://www.chise.org/est/view/character/rep.jis-x0213-2=> .
-@prefix rep.jis-x0213-1_2004: <http://www.chise.org/est/view/character/rep.jis-x0213-1@2004=> .
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
 @prefix g2.big5-cdp: <http://www.chise.org/est/view/character/g2.big5-cdp=> .
 @prefix rep.hanyo-denshi...tk: <http://www.chise.org/est/view/character/rep.hanyo-denshi...tk=> .
@@ -1144,7 +1143,7 @@ rep.mj:007758   # 包
 rep.mj:007761   # &MJ007761;
     :structure [ a idc:⿹ ;
         :surround a.ucs:0x52F9 ; # 勹
-        :filling  a.ucs:0x5915   # 夕
+        :filling  a.ucs:0x5902   # 夂
     ] .
 rep.mj:007762   # &MJ007762;
     :structure [ a idc:⿹ ;
@@ -2175,12 +2174,12 @@ rep.mj:009513   # &MJ009513;
     ] .
 rep.mj:009514   # &MJ009514;
     :structure [ a idc:⿱ ;
-        :above    rep.jis-x0213-1_2004:0x3D36 ; # &HD-FT-3233;
+        :above    rep.mj:026434 ; # &MJ026434;
         :below    a.ucs:0x5927   # 大
     ] .
 rep.mj:009516   # &MJ009516;
     :structure [ a idc:⿱ ;
-        :above    rep.adobe-japan1:02368 ; # &AJ1-02368;
+        :above    rep.mj:026435 ; # &MJ026435;
         :below    a.ucs:0x5927   # 大
     ] .
 rep.mj:009599   # &MJ009599;
