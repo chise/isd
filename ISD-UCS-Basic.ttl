@@ -116,7 +116,7 @@ a.ucs:0x4E2A   # 个
 a.ucs:0x4E2E   # 丮
     :structure [ a idc:⿹ ;
         :surround a.ucs:0x2E84 ; # ⺄
-        :filling  rep.big5-cdp:0x8BF1   # &CDP-8BF1;
+        :filling  a.ucs:0x20006   # 𠀆
     ] .
 a.ucs:0x4E34   # 临
     :structure [ a idc:⿸ ;
@@ -701,8 +701,8 @@ a.ucs:0x4EC9   # 仉
     ] .
 a.ucs:0x4ECA   # 今
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x4EBD ; # 亽
-        :below    rep.big5-cdp:0x8BA2   # &CDP-8BA2;
+        :above    a.ucs:0x201A2 ; # 𠆢
+        :below    a.ucs:0x2A70A   # 𪜊
     ] .
 a.ucs:0x4ECB   # 介
     :structure [ a idc:⿱ ;
@@ -17850,9 +17850,9 @@ a.ucs:0x5BFE   # 対
         :right    a.ucs:0x5BF8   # 寸
     ] .
 a.ucs:0x5BFF   # 寿
-    :structure [ a idc:⿸ ;
-        :surround rep.big5-cdp:0x897D ; # &CDP-897D;
-        :filling  a.ucs:0x5BF8   # 寸
+    :structure [ a idc:⿻ ;
+        :underlying rep.big5-cdp:0x897D ; # &CDP-897D;
+        :overlaying a.ucs:0x5BF8   # 寸
     ] .
 a.ucs:0x5C00   # 尀
     :structure [ a idc:⿰ ;
@@ -17882,7 +17882,7 @@ a.ucs:0x5C04   # 射
 a.ucs:0x5C05   # 尅
     :structure [ a idc:⿺ ;
         :surround a.ucs:0x514B ; # 克
-        :filling  rep.adobe-japan1:02631   # &AJ1-02631;
+        :filling  a.ucs:0x5BF8   # 寸
     ] .
 a.ucs:0x5C06   # 将
     :structure [ a idc:⿰ ;
@@ -49336,8 +49336,8 @@ a.ucs:0x7433   # 琳
     ] .
 a.ucs:0x7434   # 琴
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x73A8 ; # 玨
-        :below    rep.adobe-japan1:02067   # &AJ1-02067;
+        :above    a.ucs:0x73E1 ; # 珡
+        :below    a.ucs:0x2A70A   # 𪜊
     ] .
 a.ucs:0x7435   # 琵
     :structure [ a idc:⿱ ;
@@ -49396,7 +49396,7 @@ a.ucs:0x743F   # 琿
     ] .
 a.ucs:0x7440   # 瑀
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2EA9 ; # ⺩
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x79B9   # 禹
     ] .
 a.ucs:0x7441   # 瑁
@@ -50902,7 +50902,7 @@ a.ucs:0x7573   # 畳
 a.ucs:0x7574   # 畴
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x7530 ; # 田
-        :right    rep.mj:010260   # &MJ010260;
+        :right    a.ucs:0x5BFF   # 寿
     ] .
 a.ucs:0x7575   # 畵
     :structure [ a idc:⿱ ;
@@ -58859,7 +58859,7 @@ a.ucs:0x7B8E   # 箎
     ] .
 a.ucs:0x7B8F   # 箏
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x2EAE ; # ⺮
+        :above    a.ucs:0x7AF9 ; # 竹
         :below    a.ucs:0x722D   # 爭
     ] .
 a.ucs:0x7B90   # 箐
@@ -58909,7 +58909,7 @@ a.ucs:0x7B98   # 箘
     ] .
 a.ucs:0x7B99   # 箙
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x2EAE ; # ⺮
+        :above    a.ucs:0x7AF9 ; # 竹
         :below    a.ucs:0x670D   # 服
     ] .
 a.ucs:0x7B9A   # 箚
@@ -59372,7 +59372,7 @@ a.ucs:0x7BF2   # 篲
     ] .
 a.ucs:0x7BF3   # 篳
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x2EAE ; # ⺮
+        :above    a.ucs:0x7AF9 ; # 竹
         :below    a.ucs:0x7562   # 畢
     ] .
 a.ucs:0x7BF4   # 篴
@@ -59761,7 +59761,7 @@ a.ucs:0x7C3D   # 簽
     ] .
 a.ucs:0x7C3E   # 簾
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x2EAE ; # ⺮
+        :above    a.ucs:0x7AF9 ; # 竹
         :below    a.ucs:0x5EC9   # 廉
     ] .
 a.ucs:0x7C3F   # 簿
@@ -59841,7 +59841,7 @@ a.ucs:0x7C4C   # 籌
     ] .
 a.ucs:0x7C4D   # 籍
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x2EAE ; # ⺮
+        :above    a.ucs:0x7AF9 ; # 竹
         :below    a.ucs:0x8024   # 耤
     ] .
 a.ucs:0x7C4E   # 籎
@@ -85766,7 +85766,7 @@ a.ucs:0x9042   # 遂
 a.ucs:0x9043   # 遃
     :structure [ a idc:⿺ ;
         :surround a.ucs:0x8FB6 ; # 辶
-        :filling  a.ucs:0x5F66   # 彦
+        :filling  a.jis-x0208:0x4927   # &J97-4927;
     ] .
 a.ucs:0x9044   # 遄
     :structure [ a idc:⿺ ;
