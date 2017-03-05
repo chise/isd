@@ -10217,7 +10217,7 @@ a.ucs:0x3B75   # 㭵
 a.ucs:0x3B76   # 㭶
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6728 ; # 木
-        :right    rep.adobe-japan1:03669   # &AJ1-03669;
+        :right    rep.mj:021598   # &MJ021598;
     ] .
 a.ucs:0x3B77   # 㭷
     :structure [ a idc:⿰ ;
