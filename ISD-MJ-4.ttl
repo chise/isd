@@ -25,7 +25,7 @@ rep.mj:040193   # &MJ040193;
 rep.mj:042408   # &MJ042408;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x76EE ; # 目
-        :right    rep.adobe-japan1:06354   # &AJ1-06354;
+        :right    rep.mj:021865   # &MJ021865;
     ] .
 rep.mj:042992   # &MJ042992;
     :structure [ a idc:⿱ ;
@@ -41,6 +41,16 @@ rep.mj:045110   # &MJ045110;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x65E5 ; # 日
         :below    a.ucs:0xFA1E   # 羽
+    ] .
+rep.mj:046585   # &MJ046585;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x2EBE ; # ⺾
+        :below    rep.adobe-japan1:05099   # &AJ1-05099;
+    ] .
+rep.mj:047264   # &MJ047264;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x2EBE ; # ⺾
+        :below    rep.mj:020736   # &MJ020736;
     ] .
 rep.mj:049688   # 𧷇
     :structure [ a idc:⿳ ;
