@@ -21,6 +21,7 @@
 @prefix rep.gt: <http://www.chise.org/est/view/character/rep.gt=> .
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
 @prefix rep.daikanwa: <http://www.chise.org/est/view/character/rep.daikanwa=> .
+@prefix rep.big5-cdp-itaiji-001: <http://www.chise.org/est/view/character/rep.big5-cdp-itaiji-001=> .
 @prefix rep.ucs-var-001: <http://www.chise.org/est/view/character/rep.ucs-var-001=> .
 @prefix rep.ucs-sip-var-003: <http://www.chise.org/est/view/character/rep.ucs-sip-var-003=> .
 
@@ -1157,7 +1158,7 @@ rep.mj:013994   # &MJ013994;
 rep.mj:013998   # &MJ013998;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6728 ; # 木
-        :right    rep.adobe-japan1:02491   # &AJ1-02491;
+        :right    rep.mj:020928   # &MJ020928;
     ] .
 rep.mj:014002   # 梥
     :structure [ a idc:⿳ ;
@@ -2312,6 +2313,11 @@ rep.mj:018051   # &MJ018051;
         :left     rep.adobe-japan1:14444 ; # &AJ1-14444;
         :right    a.ucs:0x76AE   # 皮
     ] .
+rep.mj:018104   # &MJ018104;
+    :structure [ a idc:⿱ ;
+        :above    rep.big5-cdp-itaiji-001:0x8CC9 ; # &CDP-i001-8CC9;
+        :below    a.ucs:0x76BF   # 皿
+    ] .
 rep.mj:018121   # &MJ018121;
     :structure [ a idc:⿱ ;
         :above    rep.mj:006463 ; # &MJ006463;
@@ -2455,8 +2461,13 @@ rep.mj:019532   # &MJ019532;
     ] .
 rep.mj:019539   # &MJ019539;
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x2EAE ; # ⺮
+        :above    a.ucs:0x7AF9 ; # 竹
         :below    rep.mj:007897   # &MJ007897;
+    ] .
+rep.mj:019540   # &MJ019540;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x7AF9 ; # 竹
+        :below    rep.mj:010798   # &MJ010798;
     ] .
 rep.mj:019556   # &MJ019556;
     :structure [ a idc:⿱ ;
