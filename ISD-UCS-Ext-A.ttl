@@ -18929,7 +18929,7 @@ a.ucs:0x41CB   # 䇋
 a.ucs:0x41CC   # 䇌
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x7ACB ; # 立
-        :right    rep.adobe-japan1:02491   # &AJ1-02491;
+        :right    rep.mj:020928   # &MJ020928;
     ] .
 a.ucs:0x41CD   # 䇍
     :structure [ a idc:⿰ ;
