@@ -258,6 +258,11 @@ rep.mj:058231   # &MJ058231;
         :above    rep.cbeta:08298 ; # &CB08298;
         :below    a.ucs:0x23140   # 𣅀
     ] .
+rep.mj:058233   # &MJ058233;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x79BE ; # 禾
+        :right    a.ucs:0x9B5A   # 魚
+    ] .
 rep.mj:058241   # 𫞹
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x7A74 ; # 穴
