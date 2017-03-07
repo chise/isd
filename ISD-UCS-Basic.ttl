@@ -14041,7 +14041,7 @@ a.ucs:0x591A   # 多
     ] .
 a.ucs:0x591B   # 夛
     :structure [ a idc:⿱ ;
-        :above    rep.adobe-japan1:14521 ; # &AJ1-14521;
+        :above    a.ucs:0x5F50 ; # 彐
         :below    a.ucs:0x5915   # 夕
     ] .
 a.ucs:0x591C   # 夜
@@ -14299,7 +14299,7 @@ a.ucs:0x5950   # 奐
     ] .
 a.ucs:0x5951   # 契
     :structure [ a idc:⿱ ;
-        :above    rep.big5-cdp:0x8CE9 ; # &CDP-8CE9;
+        :above    a.ucs:0x34DE ; # 㓞
         :below    a.ucs:0x5927   # 大
     ] .
 a.ucs:0x5952   # 奒
