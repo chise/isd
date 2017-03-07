@@ -932,7 +932,7 @@ rep.mj:007527   # &MJ007527;
     ] .
 rep.mj:007528   # &MJ007528;
     :structure [ a idc:⿰ ;
-        :left     rep.adobe-japan1:02491 ; # &AJ1-02491;
+        :left     rep.mj:020928 ; # &MJ020928;
         :right    a.ucs:0x5202   # 刂
     ] .
 rep.mj:007531   # &MJ007531;
@@ -1428,7 +1428,7 @@ rep.mj:008279   # &MJ008279;
 rep.mj:008280   # &MJ008280;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
-        :right    rep.adobe-japan1:02491   # &AJ1-02491;
+        :right    rep.mj:020928   # &MJ020928;
     ] .
 rep.mj:008313   # &MJ008313;
     :structure [ a idc:⿰ ;
