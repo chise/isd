@@ -44,7 +44,10 @@
     =ucs-itaiji-002
     =ucs-itaiji-003
     =ucs-itaiji-005
+    =ucs-itaiji-084
     =ucs-var-001
+    =ucs-var-002
+    =ucs-var-004
     =cns11643-1 =cns11643-2 =cns11643-3
     =cns11643-4 =cns11643-5 =cns11643-6 =cns11643-7
     =gb2312
@@ -76,6 +79,7 @@
     =+>adobe-japan1
     =>>adobe-japan1
     =jis-x0208@1983 =jis-x0208@1978
+    =>ucs-itaiji-001
     =>ucs-itaiji-005
     ==ucs@unicode
     ==>ucs@bucs
@@ -321,6 +325,69 @@
   (isd-turtle-dump-range "ISD-UCS-Ext-A.ttl" filename
 			 #'isd-turtle-insert-ccs-ranges
 			 '=ucs '(#x3400 . #x4DB5) #xFA1F #xFA23))
+
+;;;###autoload
+(defun isd-turtle-dump-ucs-ext-b-1 (filename)
+  (interactive "Fdump IDS-UCS-Ext-B-1 : ")
+  (isd-turtle-dump-range "ISD-UCS-Ext-B-1.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 'ucs '(#x20000 . #x21FFF)))
+
+;;;###autoload
+(defun isd-turtle-dump-ucs-ext-b-2 (filename)
+  (interactive "Fdump IDS-UCS-Ext-B-2 : ")
+  (isd-turtle-dump-range "ISD-UCS-Ext-B-2.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 'ucs '(#x22000 . #x23FFF)))
+
+;;;###autoload
+(defun isd-turtle-dump-ucs-ext-b-3 (filename)
+  (interactive "Fdump IDS-UCS-Ext-B-3 : ")
+  (isd-turtle-dump-range "ISD-UCS-Ext-B-3.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 'ucs '(#x24000 . #x25FFF)))
+
+;;;###autoload
+(defun isd-turtle-dump-ucs-ext-b-4 (filename)
+  (interactive "Fdump IDS-UCS-Ext-B-4 : ")
+  (isd-turtle-dump-range "ISD-UCS-Ext-B-4.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 'ucs '(#x26000 . #x27FFF)))
+
+;;;###autoload
+(defun isd-turtle-dump-ucs-ext-b-5 (filename)
+  (interactive "Fdump IDS-UCS-Ext-B-5 : ")
+  (isd-turtle-dump-range "ISD-UCS-Ext-B-5.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 'ucs '(#x28000 . #x29FFF)))
+
+;;;###autoload
+(defun isd-turtle-dump-ucs-ext-b-6 (filename)
+  (interactive "Fdump IDS-UCS-Ext-B-6 : ")
+  (isd-turtle-dump-range "ISD-UCS-Ext-B-6.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 'ucs '(#x2A000 . #x2A6D6)))
+
+;;;###autoload
+(defun isd-turtle-dump-ucs-ext-c (filename)
+  (interactive "Fdump IDS-UCS-Ext-C : ")
+  (isd-turtle-dump-range "ISD-UCS-Ext-C.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 'ucs '(#x2A700 . #x2B734)))
+
+;;;###autoload
+(defun isd-turtle-dump-ucs-ext-d (filename)
+  (interactive "Fdump IDS-UCS-Ext-D : ")
+  (isd-turtle-dump-range "ISD-UCS-Ext-D.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 'ucs '(#x2B740 . #x2B81D)))
+
+;;;###autoload
+(defun isd-turtle-dump-ucs-ext-e (filename)
+  (interactive "Fdump IDS-UCS-Ext-E : ")
+  (isd-turtle-dump-range "ISD-UCS-Ext-E.ttl" filename
+			 #'isd-turtle-insert-ccs-ranges
+			 'ucs '(#x2B820 . #x2CEA1)))
 
 ;;;###autoload
 (defun isd-turtle-dump-mj-0 (filename)
