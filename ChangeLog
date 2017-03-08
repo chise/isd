@@ -1,3 +1,32 @@
+2017-03-08  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* ISD-MJ-0.ttl: Reformatted.
+
+	* ISD-UCS-Ext-E.ttl: New file.
+
+	* ISD-UCS-Ext-D.ttl: New file.
+
+	* ISD-UCS-Ext-C.ttl: New file.
+
+	* ISD-UCS-Ext-B-1.ttl, ISD-UCS-Ext-B-2.ttl, ISD-UCS-Ext-B-3.ttl,
+	ISD-UCS-Ext-B-4.ttl, ISD-UCS-Ext-B-5.ttl, ISD-UCS-Ext-B-6.ttl: New
+	files.
+
+	* isd-turtle.el (est-coded-charset-priority-list): Add
+	`=ucs-itaiji-084', `=ucs-var-002', `=ucs-var-004' and
+	`=>ucs-itaiji-001'.
+	(isd-turtle-dump-ucs-ext-b-1): New function.
+	(isd-turtle-dump-ucs-ext-b-2): New function.
+	(isd-turtle-dump-ucs-ext-b-3): New function.
+	(isd-turtle-dump-ucs-ext-b-4): New function.
+	(isd-turtle-dump-ucs-ext-b-5): New function.
+	(isd-turtle-dump-ucs-ext-b-6): New function.
+	(isd-turtle-dump-ucs-ext-c): New function.
+	(isd-turtle-dump-ucs-ext-d): New function.
+	(isd-turtle-dump-ucs-ext-e): New function.
+
+	* ISD-UCS-Basic.ttl: Sync up with the current environment.
+
 2017-03-01  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* ISD-MJ-0.ttl, ISD-MJ-1.ttl, ISD-MJ-2.ttl, ISD-MJ-3.ttl,
