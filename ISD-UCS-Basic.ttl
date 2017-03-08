@@ -99522,7 +99522,7 @@ a.ucs:0x9AD5   # 髕
 a.ucs:0x9AD6   # 髖
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x9AA8 ; # 骨
-        :right    a.ucs:0x5BEC   # 寬
+        :right    a.ucs_component:0x5BEC   # &BUCS+5BEC;
     ] .
 a.ucs:0x9AD7   # 髗
     :structure [ a idc:⿰ ;
