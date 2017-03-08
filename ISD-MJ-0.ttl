@@ -32,7 +32,7 @@
 @prefix rep.jef-china3: <http://www.chise.org/est/view/character/rep.jef-china3=> .
 @prefix g2.jef-china3: <http://www.chise.org/est/view/character/g2.jef-china3=> .
 @prefix rep.ucs-var-001: <http://www.chise.org/est/view/character/rep.ucs-var-001=> .
-@prefix rep.ucs-bmp-var-002: <http://www.chise.org/est/view/character/rep.ucs-bmp-var-002=> .
+@prefix rep.ucs-var-002: <http://www.chise.org/est/view/character/rep.ucs-var-002=> .
 @prefix rep.ucs-bmp-itaiji-004: <http://www.chise.org/est/view/character/rep.ucs-bmp-itaiji-004=> .
 
 rep.mj:000302   # &MJ000302;
@@ -1773,7 +1773,7 @@ rep.mj:008783   # &MJ008783;
 rep.mj:008784   # &MJ008784;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
-        :right    rep.ucs-bmp-var-002:0x8F49   # &U-v002+8F49;
+        :right    rep.ucs-var-002:0x8F49   # &U-v002+8F49;
     ] .
 rep.mj:008793   # &MJ008793;
     :structure [ a idc:⿰ ;
