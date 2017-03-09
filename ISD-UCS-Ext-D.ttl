@@ -724,12 +724,7 @@ ucs:0x2B7A8   # 𫞨
 ucs:0x2B7A9   # 𫞩
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x738B ; # 王
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x2EBE ; # ⺾
-                :below    a.ucs:0x4E24   # 两
-            ]
-        ]
+        :right    a.ucs:0x2C72F   # 𬜯
     ] .
 ucs:0x2B7AA   # 𫞪
     :structure [ a idc:⿱ ;
