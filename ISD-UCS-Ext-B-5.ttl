@@ -24285,7 +24285,7 @@ ucs:0x28DC9   # 𨷉
         :surround a.ucs:0x9580 ; # 門
         :filling  [
             :structure [ a idc:⿰ ;
-                :left     a.ucs:0x2EA1 ; # ⺡
+                :left     a.ucs:0x6C35 ; # 氵
                 :right    [
                     :structure [ a idc:⿺ ;
                         :surround a.ucs:0x8272 ; # 色
@@ -30601,12 +30601,7 @@ ucs:0x29178   # 𩅸
 ucs:0x29179   # 𩅹
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x2ED7 ; # ⻗
-        :below    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x2EA1 ; # ⺡
-                :right    a.ucs:0x7709   # 眉
-            ]
-        ]
+        :below    a.ucs:0x6E44   # 湄
     ] .
 ucs:0x2917A   # 𩅺
     :structure [ a idc:⿱ ;
