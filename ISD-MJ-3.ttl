@@ -16,6 +16,16 @@ rep.mj:030243   # 鶴
         :left     a.ucs:0x5BC9 ; # 寉
         :right    a.ucs:0x9CE5   # 鳥
     ] .
+rep.mj:030271   # 琢
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x2EA9 ; # ⺩
+        :right    a.ucs:0x8C56   # 豖
+    ] .
+rep.mj:030273   # 琢
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x2EA9 ; # ⺩
+        :right    a.ucs:0x8C56   # 豖
+    ] .
 rep.mj:030386   # &MJ030386;
     :structure [ a idc:⿸ ;
         :surround a.ucs:0x20086 ; # 𠂆
