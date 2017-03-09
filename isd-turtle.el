@@ -80,6 +80,7 @@
     =>>adobe-japan1
     =jis-x0208@1983 =jis-x0208@1978
     =>ucs-itaiji-001
+    =>ucs-itaiji-002
     =>ucs-itaiji-005
     ==ucs@unicode
     ==>ucs@bucs
@@ -437,6 +438,29 @@
   (isd-turtle-dump-range "ISD-MJ-6.ttl" filename
 			 #'isd-turtle-insert-ccs-ranges
 			 '=mj '(60000 . 69999)))
+
+;;;###autoload
+(defun isd-turtle-dump-all (directory)
+  (interactive "DISD directory : ")
+  (isd-turtle-dump-ucs-basic directory)
+  (isd-turtle-dump-ucs-ext-a directory)
+  (isd-turtle-dump-ucs-ext-b-1 directory)
+  (isd-turtle-dump-ucs-ext-b-2 directory)
+  (isd-turtle-dump-ucs-ext-b-3 directory)
+  (isd-turtle-dump-ucs-ext-b-4 directory)
+  (isd-turtle-dump-ucs-ext-b-5 directory)
+  (isd-turtle-dump-ucs-ext-b-6 directory)
+  (isd-turtle-dump-ucs-ext-c directory)
+  (isd-turtle-dump-ucs-ext-d directory)
+  (isd-turtle-dump-ucs-ext-e directory)
+  (isd-turtle-dump-mj-0 directory)
+  (isd-turtle-dump-mj-1 directory)
+  (isd-turtle-dump-mj-2 directory)
+  (isd-turtle-dump-mj-3 directory)
+  (isd-turtle-dump-mj-4 directory)
+  (isd-turtle-dump-mj-5 directory)
+  (isd-turtle-dump-mj-6 directory)
+  )
 
 
 ;;; @ End.
