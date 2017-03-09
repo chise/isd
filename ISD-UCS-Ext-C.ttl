@@ -14325,10 +14325,9 @@ ucs:0x2B0B0   # 𫂰
         ]
     ] .
 ucs:0x2B0B1   # 𫂱
-    :structure [ a idc:⿲ ;
-        :left     a.ucs:0x4E3F ; # 丿
-        :middle   a.ucs:0x7C73 ; # 米
-        :right    a.ucs:0x4E28   # 丨
+    :structure [ a idc:⿴ ;
+        :surround rep.big5-cdp:0x8BF5 ; # &CDP-8BF5;
+        :filling  a.ucs:0x7C73   # 米
     ] .
 ucs:0x2B0B2   # 𫂲
     :structure [ a idc:⿱ ;
