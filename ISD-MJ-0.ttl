@@ -1978,17 +1978,7 @@ rep.mj:009237   # &MJ009237;
     ] .
 rep.mj:009270   # &MJ009270;
     :structure [ a idc:⿰ ;
-        :left     [
-            :structure [ a idc:⿰ ;
-                :left     [
-                    :structure [ a idc:⿱ ;
-                        :above    a.ucs:0x767D ; # 白
-                        :below    a.ucs:0x5315   # 匕
-                    ]
-                ] ;
-                :right    a.ucs:0x65E1   # 旡
-            ]
-        ] ;
+        :left     rep.adobe-japan1:13701 ; # &AJ1-13701;
         :right    a.ucs:0x571F   # 土
     ] .
 rep.mj:009279   # &MJ009279;
