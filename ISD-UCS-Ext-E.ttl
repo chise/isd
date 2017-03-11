@@ -9801,7 +9801,12 @@ ucs:0x2BEBC   # 𫺼
         :right    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x722B ; # 爫
-                :below    a.ucs:0x65E7   # 旧
+                :below    [
+                    :structure [ a idc:⿰ ;
+                        :left     a.ucs:0x4E28 ; # 丨
+                        :right    a.ucs:0x81FC   # 臼
+                    ]
+                ]
             ]
         ]
     ] .
@@ -17262,14 +17267,19 @@ ucs:0x2C39D   # 𬎝
         :left     a.ucs:0x738B ; # 王
         :right    [
             :structure [ a idc:⿳ ;
-                :above    a.ucs:0x722B ; # 爫
-                :middle   a.ucs:0x65E7 ; # 旧
-                :below    [
+                :above    [
                     :structure [ a idc:⿱ ;
-                        :above    a.ucs:0x7F52 ; # 罒
-                        :below    a.ucs:0x53C8   # 又
+                        :above    a.ucs:0x722B ; # 爫
+                        :below    [
+                            :structure [ a idc:⿰ ;
+                                :left     a.ucs:0x4E28 ; # 丨
+                                :right    a.ucs:0x5183   # 冃
+                            ]
+                        ]
                     ]
-                ]
+                ] ;
+                :middle   a.ucs:0x7F52 ; # 罒
+                :below    a.ucs:0x53C8   # 又
             ]
         ]
     ] .
