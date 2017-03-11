@@ -28966,7 +28966,7 @@ a.ucs:0x4945   # 䥅
                 :surround [
                     :structure [ a idc:⿹ ;
                         :surround a.ucs:0x5341 ; # 十
-                        :filling  a.ucs:0x2EA9   # ⺩
+                        :filling  a.ucs:0x248E9   # 𤣩
                     ]
                 ] ;
                 :filling  a.ucs:0x738B   # 王
@@ -29090,12 +29090,7 @@ a.ucs:0x495A   # 䥚
         :surround a.ucs:0x2E87 ; # ⺇
         :filling  [
             :structure [ a idc:⿱ ;
-                :above    [
-                    :structure [ a idc:⿰ ;
-                        :left     a.ucs:0x76EE ; # 目
-                        :right    a.ucs:0x76EE   # 目
-                    ]
-                ] ;
+                :above    a.ucs:0x4020 ; # 䀠
                 :below    a.ucs:0x91D1   # 金
             ]
         ]
