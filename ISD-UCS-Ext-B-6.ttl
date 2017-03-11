@@ -1519,12 +1519,7 @@ ucs:0x2A109   # 𪄉
     ] .
 ucs:0x2A10A   # 𪄊
     :structure [ a idc:⿰ ;
-        :left     [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x76EE ; # 目
-                :right    a.ucs:0x76EE   # 目
-            ]
-        ] ;
+        :left     a.ucs:0x4020 ; # 䀠
         :right    a.ucs:0x9CE5   # 鳥
     ] .
 ucs:0x2A10C   # 𪄌
