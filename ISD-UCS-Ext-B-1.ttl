@@ -33249,12 +33249,7 @@ ucs:0x2138B   # 𡎋
 ucs:0x2138C   # 𡎌
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x571F ; # 土
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x592A ; # 太
-                :below    a.ucs:0x76BF   # 皿
-            ]
-        ]
+        :right    a.ucs:0x76C7   # 盇
     ] .
 ucs:0x2138D   # 𡎍
     :structure [ a idc:⿰ ;
