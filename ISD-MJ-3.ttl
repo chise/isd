@@ -4,6 +4,7 @@
 @prefix a.ucs: <http://www.chise.org/est/view/character/rep.ucs=> .
 @prefix rep.ucs_iso: <http://www.chise.org/est/view/character/rep.ucs@iso=> .
 @prefix rep.ucs_unicode: <http://www.chise.org/est/view/character/rep.ucs@unicode=> .
+@prefix g.ucs_cns: <http://www.chise.org/est/view/character/g.ucs@cns=> .
 @prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
 @prefix rep.adobe-japan1: <http://www.chise.org/est/view/character/rep.adobe-japan1=> .
 @prefix a.jis-x0208: <http://www.chise.org/est/view/character/a.jis-x0208=> .
@@ -18,13 +19,13 @@ rep.mj:030243   # 鶴
     ] .
 rep.mj:030271   # 琢
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2EA9 ; # ⺩
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x8C56   # 豖
     ] .
-rep.mj:030273   # 琢
+rep.mj:030273   # &MJ030273;
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2EA9 ; # ⺩
-        :right    a.ucs:0x8C56   # 豖
+        :left     a.ucs:0x248E9 ; # 𤣩
+        :right    g.ucs_cns:0x8C56   # &G-CU+8C56;
     ] .
 rep.mj:030386   # &MJ030386;
     :structure [ a idc:⿸ ;
