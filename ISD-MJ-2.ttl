@@ -1323,7 +1323,7 @@ rep.mj:022335   # &MJ022335;
 rep.mj:022336   # &MJ022336;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x2EBE ; # ⺾
-        :below    rep.adobe-japan1:05134   # &AJ1-05134;
+        :below    rep.mj:013488   # &MJ013488;
     ] .
 rep.mj:022344   # &MJ022344;
     :structure [ a idc:⿱ ;
@@ -2894,12 +2894,12 @@ rep.mj:026041   # &MJ026041;
 rep.mj:026044   # &MJ026044;
     :structure [ a idc:⿺ ;
         :surround a.ucs:0x2ECC ; # ⻌
-        :filling  rep.adobe-japan1:05134   # &AJ1-05134;
+        :filling  rep.mj:013488   # &MJ013488;
     ] .
 rep.mj:026045   # &MJ026045;
     :structure [ a idc:⿺ ;
         :surround a.ucs:0x2ECD ; # ⻍
-        :filling  rep.adobe-japan1:05134   # &AJ1-05134;
+        :filling  rep.mj:013488   # &MJ013488;
     ] .
 rep.mj:026046   # &MJ026046;
     :structure [ a idc:⿺ ;
