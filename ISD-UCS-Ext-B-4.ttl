@@ -25787,12 +25787,7 @@ ucs:0x26F3D   # 𦼽
 ucs:0x26F3E   # 𦼾
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x2EBF ; # ⺿
-        :below    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x624C ; # 扌
-                :right    a.ucs:0x7559   # 留
-            ]
-        ]
+        :below    a.ucs:0x3A28   # 㨨
     ] .
 ucs:0x26F3F   # 𦼿
     :structure [ a idc:⿱ ;
@@ -48379,12 +48374,7 @@ ucs:0x27C19   # 𧰙
 ucs:0x27C1A   # 𧰚
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x8C4A ; # 豊
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x592A ; # 太
-                :below    a.ucs:0x76BF   # 皿
-            ]
-        ]
+        :right    a.ucs:0x76C7   # 盇
     ] .
 ucs:0x27C1B   # 𧰛
     :structure [ a idc:⿱ ;
