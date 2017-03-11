@@ -95,6 +95,11 @@ rep.mj:001814   # &MJ001814;
         :left     a.ucs:0x6728 ; # 木
         :right    a.ucs:0x5C07   # 將
     ] .
+rep.mj:002066   # &MJ002066;
+    :structure [ a idc:⿱ ;
+        :above    rep.adobe-japan1:01694 ; # &AJ1-01694;
+        :below    a.ucs:0x6C34   # 水
+    ] .
 rep.mj:002326   # &MJ002326;
     :structure [ a idc:⿺ ;
         :surround a.ucs:0x9ED2 ; # 黒
@@ -752,6 +757,11 @@ rep.mj:007324   # &MJ007324;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x5183 ; # 冃
         :below    rep.mj:007229   # &MJ007229;
+    ] .
+rep.mj:007326   # &MJ007326;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x66F0 ; # 曰
+        :below    rep.mj:007230   # &MJ007230;
     ] .
 rep.mj:007329   # &MJ007329;
     :structure [ a idc:⿱ ;
