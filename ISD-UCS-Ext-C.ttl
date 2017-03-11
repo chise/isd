@@ -11608,7 +11608,7 @@ ucs:0x2AED2   # 𪻒
     ] .
 ucs:0x2AED3   # 𪻓
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x706B   # 火
     ] .
 ucs:0x2AED4   # 𪻔
