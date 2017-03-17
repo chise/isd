@@ -21,6 +21,11 @@ rep.mj:051819   # 𨩐
         :left     a.ucs:0x91D1 ; # 金
         :right    a.ucs:0x5A04   # 娄
     ] .
+rep.mj:051979   # &MJ051979;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x91D1 ; # 金
+        :right    rep.adobe-japan1:06189   # &AJ1-06189;
+    ] .
 rep.mj:052611   # 𨿳
     :structure [ a idc:⿸ ;
         :surround rep.big5-cdp:0x887A ; # &CDP-887A;
