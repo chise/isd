@@ -1076,7 +1076,7 @@ a.ucs:0x34C6   # 㓆
 a.ucs:0x34C7   # 㓇
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x51AB ; # 冫
-        :right    a.ucs:0x592D   # 夭
+        :right    a.ucs_component:0x5929   # &IWDS1-008;
     ] .
 a.ucs:0x34C8   # 㓈
     :structure [ a idc:⿰ ;
@@ -9361,7 +9361,7 @@ a.ucs:0x3AD6   # 㫖
     ] .
 a.ucs:0x3AD7   # 㫗
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x66F0 ; # 曰
+        :above    a.ucs:0x65E5 ; # 日
         :below    a.ucs:0x5B50   # 子
     ] .
 a.ucs:0x3AD8   # 㫘
@@ -14333,7 +14333,7 @@ a.ucs:0x3E5F   # 㹟
     ] .
 a.ucs:0x3E60   # 㹠
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2EA8 ; # ⺨
+        :left     a.ucs:0x72AD ; # 犭
         :right    a.ucs:0x5C6F   # 屯
     ] .
 a.ucs:0x3E61   # 㹡
@@ -14508,7 +14508,7 @@ a.ucs:0x3E82   # 㺂
     ] .
 a.ucs:0x3E83   # 㺃
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2EA8 ; # ⺨
+        :left     a.ucs:0x72AD ; # 犭
         :right    a.ucs:0x82DF   # 苟
     ] .
 a.ucs:0x3E84   # 㺄
@@ -14604,8 +14604,8 @@ a.ucs:0x3E93   # 㺓
     ] .
 a.ucs:0x3E94   # 㺔
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2EA8 ; # ⺨
-        :right    a.ucs:0x7232   # 爲
+        :left     a.ucs:0x72AD ; # 犭
+        :right    a.ucs_component:0x7232   # &IWDS1-315;
     ] .
 a.ucs:0x3E95   # 㺕
     :structure [ a idc:⿰ ;
