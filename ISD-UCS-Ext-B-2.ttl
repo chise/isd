@@ -42,7 +42,7 @@ ucs:0x22001   # 𢀁
                 :below    a.ucs:0x53CD   # 反
             ]
         ] ;
-        :right    rep.jis-x0213-2:0x703B   # &JX2-703B;
+        :right    rep.adobe-japan1:18056   # &AJ1-18056;
     ] .
 ucs:0x22002   # 𢀂
     :structure [ a idc:⿳ ;
@@ -3315,7 +3315,7 @@ ucs:0x221F6   # 𢇶
 ucs:0x221F7   # 𢇷
     :structure [ a idc:⿸ ;
         :surround a.ucs:0x5E7F ; # 广
-        :filling  rep.jis-x0213-2:0x703B   # &JX2-703B;
+        :filling  rep.adobe-japan1:18056   # &AJ1-18056;
     ] .
 ucs:0x221F8   # 𢇸
     :structure [ a idc:⿸ ;
@@ -10479,7 +10479,7 @@ ucs:0x225FF   # 𢗿
 ucs:0x22600   # 𢘀
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x2E96 ; # ⺖
-        :right    rep.jis-x0213-2:0x703B   # &JX2-703B;
+        :right    rep.adobe-japan1:18056   # &AJ1-18056;
     ] .
 ucs:0x22601   # 𢘁
     :structure [ a idc:⿱ ;
@@ -44899,7 +44899,7 @@ ucs:0x239E6   # 𣧦
 ucs:0x239E7   # 𣧧
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6B79 ; # 歹
-        :right    rep.jis-x0213-2:0x703B   # &JX2-703B;
+        :right    rep.adobe-japan1:18056   # &AJ1-18056;
     ] .
 ucs:0x239E8   # 𣧨
     :structure [ a idc:⿰ ;
