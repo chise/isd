@@ -29652,7 +29652,7 @@ ucs:0x290F5   # 𩃵
 ucs:0x290F6   # 𩃶
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x96F2 ; # 雲
-        :right    rep.jis-x0213-2:0x703B   # &JX2-703B;
+        :right    rep.adobe-japan1:18056   # &AJ1-18056;
     ] .
 ucs:0x290F7   # 𩃷
     :structure [ a idc:⿰ ;
@@ -41503,11 +41503,11 @@ ucs:0x29814   # 𩠔
 ucs:0x29815   # 𩠕
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x9996 ; # 首
-        :right    rep.jis-x0213-2:0x703B   # &JX2-703B;
+        :right    rep.adobe-japan1:18056   # &AJ1-18056;
     ] .
 ucs:0x29816   # 𩠖
     :structure [ a idc:⿰ ;
-        :left     rep.jis-x0213-2:0x703B ; # &JX2-703B;
+        :left     rep.adobe-japan1:18056 ; # &AJ1-18056;
         :right    a.ucs:0x29810   # 𩠐
     ] .
 ucs:0x29817   # 𩠗
@@ -41522,7 +41522,7 @@ ucs:0x29818   # 𩠘
     ] .
 ucs:0x29819   # 𩠙
     :structure [ a idc:⿰ ;
-        :left     rep.jis-x0213-2:0x703B ; # &JX2-703B;
+        :left     rep.adobe-japan1:18056 ; # &AJ1-18056;
         :right    a.ucs:0x9996   # 首
     ] .
 ucs:0x2981A   # 𩠚
@@ -41706,7 +41706,7 @@ ucs:0x29837   # 𩠷
                 :right    [
                     :structure [ a idc:⿱ ;
                         :above    a.ucs:0x5F61 ; # 彡
-                        :below    rep.jis-x0213-2:0x703B   # &JX2-703B;
+                        :below    rep.adobe-japan1:18056   # &AJ1-18056;
                     ]
                 ]
             ]
