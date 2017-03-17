@@ -19,7 +19,6 @@
 @prefix rep.cns11643-7: <http://www.chise.org/est/view/character/rep.cns11643-7=> .
 @prefix rep.jis-x0213-1: <http://www.chise.org/est/view/character/rep.jis-x0213-1=> .
 @prefix rep.jis-x0213-2: <http://www.chise.org/est/view/character/rep.jis-x0213-2=> .
-@prefix rep.big5: <http://www.chise.org/est/view/character/rep.big5=> .
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
 @prefix rep.gt: <http://www.chise.org/est/view/character/rep.gt=> .
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
@@ -26751,7 +26750,7 @@ ucs:0x24FA0   # 𤾠
 ucs:0x24FA1   # 𤾡
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x767D ; # 白
-        :right    rep.big5:0xACB0   # &B-ACB0;
+        :right    a.ucs_component:0x7232   # &IWDS1-315;
     ] .
 ucs:0x24FA2   # 𤾢
     :structure [ a idc:⿰ ;
