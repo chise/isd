@@ -52724,7 +52724,7 @@ ucs:0x21E82   # 𡺂
 ucs:0x21E83   # 𡺃
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x5C71 ; # 山
-        :below    rep.adobe-japan1:02453   # &AJ1-02453;
+        :below    a.ucs:0x5C06   # 将
     ] .
 ucs:0x21E84   # 𡺄
     :structure [ a idc:⿱ ;
