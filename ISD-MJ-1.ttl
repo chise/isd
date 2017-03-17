@@ -22,6 +22,7 @@
 @prefix rep.gt: <http://www.chise.org/est/view/character/rep.gt=> .
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
 @prefix rep.daikanwa: <http://www.chise.org/est/view/character/rep.daikanwa=> .
+@prefix g2.daikanwa: <http://www.chise.org/est/view/character/g2.daikanwa=> .
 @prefix rep.jef-china3: <http://www.chise.org/est/view/character/rep.jef-china3=> .
 @prefix rep.big5-cdp-itaiji-001: <http://www.chise.org/est/view/character/rep.big5-cdp-itaiji-001=> .
 @prefix rep.ucs-var-001: <http://www.chise.org/est/view/character/rep.ucs-var-001=> .
@@ -896,14 +897,14 @@ rep.mj:013506   # &MJ013506;
         :above    a.ucs:0x65E5 ; # 日
         :below    a.ucs:0x53D6   # 取
     ] .
+rep.mj:013507   # &MJ013507;
+    :structure [ a idc:⿱ ;
+        :above    g2.daikanwa:0x557 ; # &g2-M-01367;
+        :below    a.ucs:0x66F0   # 曰
+    ] .
 rep.mj:013508   # &MJ013508;
     :structure [ a idc:⿱ ;
-        :above    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x65E1 ; # 旡
-                :right    a.ucs:0x65E1   # 旡
-            ]
-        ] ;
+        :above    rep.adobe-japan1:21179 ; # &AJ1-21179;
         :below    a.ucs:0x66F0   # 曰
     ] .
 rep.mj:013511   # &MJ013511;
