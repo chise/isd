@@ -1043,12 +1043,12 @@ rep.mj:022088   # &MJ022088;
 rep.mj:022091   # &MJ022091;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x2EBE ; # ⺾
-        :below    rep.jis-x0213-2:0x7137   # &JX2-7137;
+        :below    rep.adobe-japan1:18126   # &AJ1-18126;
     ] .
 rep.mj:022092   # &MJ022092;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x2EBF ; # ⺿
-        :below    rep.jis-x0213-2:0x7137   # &JX2-7137;
+        :below    rep.adobe-japan1:18126   # &AJ1-18126;
     ] .
 rep.mj:022095   # &MJ022095;
     :structure [ a idc:⿱ ;
@@ -3288,10 +3288,15 @@ rep.mj:027702   # &MJ027702;
         :left     a.ucs:0x2ED6 ; # ⻖
         :right    rep.adobe-japan1:03966   # &AJ1-03966;
     ] .
+rep.mj:027773   # &MJ027773;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x96E8 ; # 雨
+        :below    a.ucs:0x4E90   # 亐
+    ] .
 rep.mj:027775   # &MJ027775;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x96E8 ; # 雨
-        :below    a.ucs:0x5F50   # 彐
+        :below    a.ucs:0x2E95   # ⺕
     ] .
 rep.mj:027898   # &MJ027898;
     :structure [ a idc:⿰ ;
