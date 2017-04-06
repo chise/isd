@@ -1235,7 +1235,7 @@ ucs:0x2B7F5   # 𫟵
 ucs:0x2B7F6   # 𫟶
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x9485 ; # 钅
-        :right    rep.adobe-japan1:04221   # &AJ1-04221;
+        :right    a.ucs:0x518C   # 册
     ] .
 ucs:0x2B7F7   # 𫟷
     :structure [ a idc:⿰ ;
