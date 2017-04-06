@@ -8,6 +8,7 @@
 @prefix rep.ucs_unicode: <http://www.chise.org/est/view/character/rep.ucs@unicode=> .
 @prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
 @prefix rep.adobe-japan1: <http://www.chise.org/est/view/character/rep.adobe-japan1=> .
+@prefix rep.gb2312: <http://www.chise.org/est/view/character/rep.gb2312=> .
 @prefix rep.jis-x0212: <http://www.chise.org/est/view/character/rep.jis-x0212=> .
 @prefix a.jis-x0208: <http://www.chise.org/est/view/character/a.jis-x0208=> .
 @prefix a.jis-x0208_1997: <http://www.chise.org/est/view/character/a.jis-x0208@1997=> .
@@ -29,10 +30,12 @@
 @prefix a.daikanwa: <http://www.chise.org/est/view/character/a.daikanwa=> .
 @prefix rep.hanziku-2: <http://www.chise.org/est/view/character/rep.hanziku-2=> .
 @prefix rep.hanziku-7: <http://www.chise.org/est/view/character/rep.hanziku-7=> .
+@prefix a.cbeta: <http://www.chise.org/est/view/character/a.cbeta=> .
 @prefix rep.ucs-var-002: <http://www.chise.org/est/view/character/rep.ucs-var-002=> .
 @prefix rep.ucs-itaiji-001: <http://www.chise.org/est/view/character/rep.ucs-itaiji-001=> .
 @prefix a.ucs-itaiji-001: <http://www.chise.org/est/view/character/a.ucs-itaiji-001=> .
 @prefix rep.ucs-itaiji-002: <http://www.chise.org/est/view/character/rep.ucs-itaiji-002=> .
+@prefix rep.ucs-itaiji-005: <http://www.chise.org/est/view/character/rep.ucs-itaiji-005=> .
 
 ucs:0x20001   # 𠀁
     :structure [ a idc:⿻ ;
@@ -1078,20 +1081,10 @@ ucs:0x200B9   # 𠂹
         :surround [
             :structure [ a idc:⿹ ;
                 :surround a.ucs:0x4EBB ; # 亻
-                :filling  [
-                    :structure [ a idc:⿱ ;
-                        :above    a.ucs:0x4EBA ; # 人
-                        :below    a.ucs:0x4EBA   # 人
-                    ]
-                ]
+                :filling  a.ucs:0x4ECC   # 仌
             ]
         ] ;
-        :filling  [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x4EBA ; # 人
-                :below    a.ucs:0x4EBA   # 人
-            ]
-        ]
+        :filling  a.ucs:0x4ECC   # 仌
     ] .
 ucs:0x200BA   # 𠂺
     :structure [ a idc:⿱ ;
@@ -1127,7 +1120,7 @@ ucs:0x200C1   # 𠃁
     :structure [ a idc:⿳ ;
         :above    a.ucs:0x7536 ; # 甶
         :middle   a.ucs:0x4E3F ; # 丿
-        :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+        :below    a.ucs:0x27607   # 𧘇
     ] .
 ucs:0x200C2   # 𠃂
     :structure [ a idc:⿰ ;
@@ -1397,12 +1390,7 @@ ucs:0x200F3   # 𠃳
     ] .
 ucs:0x200F4   # 𠃴
     :structure [ a idc:⿰ ;
-        :left     [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x20AD3 ; # 𠫓
-                :below    rep.gt:37857   # &GT-37857;
-            ]
-        ] ;
+        :left     a.ucs:0x80B2 ; # 育
         :right    a.ucs:0x2E83   # ⺃
     ] .
 ucs:0x200F5   # 𠃵
@@ -2524,12 +2512,7 @@ ucs:0x2018B   # 𠆋
 ucs:0x2018C   # 𠆌
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x4EAF ; # 亯
-        :below    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x516B ; # 八
-                :below    a.ucs:0x767D   # 白
-            ]
-        ]
+        :below    a.ucs:0x34B6   # 㒶
     ] .
 ucs:0x2018D   # 𠆍
     :structure [ a idc:⿱ ;
@@ -2626,15 +2609,9 @@ ucs:0x20197   # 𠆗
         :below    a.ucs:0x5408   # 合
     ] .
 ucs:0x20198   # 𠆘
-    :structure [ a idc:⿳ ;
-        :above    [
-            :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8BEC ; # &CDP-8BEC;
-                :below    a.ucs:0x516B   # 八
-            ]
-        ] ;
-        :middle   rep.big5-cdp:0x8BE2 ; # &CDP-8BE2;
-        :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+    :structure [ a idc:⿱ ;
+        :above    rep.ucs-itaiji-002:0x5546 ; # &U-i002+5546;
+        :below    rep.gt-k:01369   # &GT-K01369;
     ] .
 ucs:0x20199   # 𠆙
     :structure [ a idc:⿰ ;
@@ -4620,13 +4597,8 @@ ucs:0x202C2   # 𠋂
     ] .
 ucs:0x202C3   # 𠋃
     :structure [ a idc:⿲ ;
-        :left     a.ucs:0x2E85 ; # ⺅
-        :middle   [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x20AD3 ; # 𠫓
-                :below    rep.gt:37857   # &GT-37857;
-            ]
-        ] ;
+        :left     a.ucs:0x4EBB ; # 亻
+        :middle   a.ucs:0x80B2 ; # 育
         :right    a.ucs:0x4E5A   # 乚
     ] .
 ucs:0x202C4   # 𠋄
@@ -6207,22 +6179,9 @@ ucs:0x20397   # 𠎗
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x2E85 ; # ⺅
         :right    [
-            :structure [ a idc:⿳ ;
-                :above    a.ucs:0x4EA0 ; # 亠
-                :middle   [
-                    :structure [ a idc:⿲ ;
-                        :left     a.ucs:0x5200 ; # 刀
-                        :middle   a.ucs:0x4E2B ; # 丫
-                        :right    rep.big5-cdp:0x89CA   # &CDP-89CA;
-                    ]
-                ] ;
-                :below    [
-                    :structure [ a idc:⿲ ;
-                        :left     a.ucs:0x4E3F ; # 丿
-                        :middle   rep.gt-k:00064 ; # &GT-K00064;
-                        :right    a.ucs:0x4E28   # 丨
-                    ]
-                ]
+            :structure [ a idc:⿵ ;
+                :surround rep.ucs-itaiji-005:0x9F4A ; # &U-i005+9F4A;
+                :filling  a.ucs:0x53C8   # 又
             ]
         ]
     ] .
@@ -7548,7 +7507,7 @@ ucs:0x2045A   # 𠑚
                         :filling  a.ucs:0x5DF3   # 巳
                     ]
                 ] ;
-                :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+                :below    rep.ucs_iso:0x27607   # &CDP-8B67;
             ]
         ]
     ] .
@@ -9233,7 +9192,7 @@ ucs:0x20557   # 𠕗
     :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    rep.big5-cdp:0x865C   # &CDP-865C;
             ]
         ] ;
@@ -10854,7 +10813,7 @@ ucs:0x2065D   # 𠙝
         :above    [
             :structure [ a idc:⿰ ;
                 :left     a.ucs:0x4E29 ; # 丩
-                :right    rep.big5-cdp:0x8BC3   # &CDP-8BC3;
+                :right    rep.gt:09333   # &GT-09333;
             ]
         ] ;
         :below    a.ucs:0x51E0   # 几
@@ -11947,13 +11906,13 @@ ucs:0x2070C   # 𠜌
     :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x5182   # 冂
             ]
         ] ;
         :below    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x5182   # 冂
             ]
         ]
@@ -12124,7 +12083,7 @@ ucs:0x20727   # 𠜧
             :structure [ a idc:⿸ ;
                 :surround [
                     :structure [ a idc:⿱ ;
-                        :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                        :above    a.ucs:0x2E88 ; # ⺈
                         :below    a.ucs:0x5C38   # 尸
                     ]
                 ] ;
@@ -12153,7 +12112,7 @@ ucs:0x2072A   # 𠜪
     :structure [ a idc:⿰ ;
         :left     [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x7530   # 田
             ]
         ] ;
@@ -12195,7 +12154,7 @@ ucs:0x20730   # 𠜰
             :structure [ a idc:⿸ ;
                 :surround [
                     :structure [ a idc:⿱ ;
-                        :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                        :above    a.ucs:0x2E88 ; # ⺈
                         :below    a.ucs:0x5C38   # 尸
                     ]
                 ] ;
@@ -12433,7 +12392,7 @@ ucs:0x2074E   # 𠝎
     :structure [ a idc:⿰ ;
         :left     [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x20063   # 𠁣
             ]
         ] ;
@@ -12595,8 +12554,8 @@ ucs:0x20767   # 𠝧
     :structure [ a idc:⿳ ;
         :above    [
             :structure [ a idc:⿰ ;
-                :left     rep.big5-cdp:0x897C ; # &CDP-897C;
-                :right    rep.big5-cdp:0x897C   # &CDP-897C;
+                :left     rep.gb2312:0x6566 ; # &G0-6566;
+                :right    rep.gb2312:0x6566   # &G0-6566;
             ]
         ] ;
         :middle   a.ucs:0x4E00 ; # 一
@@ -13613,7 +13572,7 @@ ucs:0x207FC   # 𠟼
                 :below    [
                     :structure [ a idc:⿱ ;
                         :above    a.ucs:0x20AD4 ; # 𠫔
-                        :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+                        :below    rep.ucs_iso:0x27607   # &CDP-8B67;
                     ]
                 ]
             ]
@@ -13888,14 +13847,14 @@ ucs:0x20824   # 𠠤
             :structure [ a idc:⿱ ;
                 :above    [
                     :structure [ a idc:⿳ ;
-                        :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                        :above    a.ucs:0x2E88 ; # ⺈
                         :middle   a.ucs:0x2BA4F ; # 𫩏
                         :below    a.ucs:0x6BD4   # 比
                     ]
                 ] ;
                 :below    [
                     :structure [ a idc:⿳ ;
-                        :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                        :above    a.ucs:0x2E88 ; # ⺈
                         :middle   a.ucs:0x2BA4F ; # 𫩏
                         :below    a.ucs:0x513F   # 儿
                     ]
@@ -14692,7 +14651,7 @@ ucs:0x208B0   # 𠢰
             :structure [ a idc:⿱ ;
                 :above    [
                     :structure [ a idc:⿱ ;
-                        :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                        :above    a.ucs:0x2E88 ; # ⺈
                         :below    a.ucs:0x2BA4F   # 𫩏
                     ]
                 ] ;
@@ -14720,7 +14679,7 @@ ucs:0x208B4   # 𠢴
     :structure [ a idc:⿰ ;
         :left     [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x9ED2   # 黒
             ]
         ] ;
@@ -15227,7 +15186,7 @@ ucs:0x20900   # 𠤀
     :structure [ a idc:⿰ ;
         :left     [
             :structure [ a idc:⿳ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :middle   a.ucs:0x76EE ; # 目
                 :below    a.ucs:0x5902   # 夂
             ]
@@ -15386,7 +15345,7 @@ ucs:0x20912   # 𠤒
     ] .
 ucs:0x20913   # 𠤓
     :structure [ a idc:⿱ ;
-        :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+        :above    a.ucs:0x2E88 ; # ⺈
         :below    a.ucs:0x5B83   # 它
     ] .
 ucs:0x20914   # 𠤔
@@ -16238,7 +16197,7 @@ ucs:0x209A8   # 𠦨
             :structure [ a idc:⿰ ;
                 :left     [
                     :structure [ a idc:⿱ ;
-                        :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                        :above    a.ucs:0x2E88 ; # ⺈
                         :below    a.ucs:0x2F878   # 屮
                     ]
                 ] ;
@@ -16272,20 +16231,10 @@ ucs:0x209AC   # 𠦬
                         :below    a.ucs:0x5341   # 十
                     ]
                 ] ;
-                :filling  [
-                    :structure [ a idc:⿱ ;
-                        :above    a.ucs:0x4EBA ; # 人
-                        :below    a.ucs:0x4EBA   # 人
-                    ]
-                ]
+                :filling  a.ucs:0x4ECC   # 仌
             ]
         ] ;
-        :filling  [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x4EBA ; # 人
-                :below    a.ucs:0x4EBA   # 人
-            ]
-        ]
+        :filling  a.ucs:0x4ECC   # 仌
     ] .
 ucs:0x209AD   # 𠦭
     :structure [ a idc:⿱ ;
@@ -16954,7 +16903,7 @@ ucs:0x20A01   # 𠨁
         :below    [
             :structure [ a idc:⿵ ;
                 :surround a.ucs:0x5182 ; # 冂
-                :filling  rep.big5-cdp:0x8B67   # &CDP-8B67;
+                :filling  rep.ucs_iso:0x27607   # &CDP-8B67;
             ]
         ]
     ] .
@@ -19419,7 +19368,7 @@ ucs:0x20B60   # 𠭠
     :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    [
                     :structure [ a idc:⿵ ;
                         :surround rep.big5-cdp:0x8BC0 ; # &CDP-8BC0;
@@ -19720,8 +19669,8 @@ ucs:0x20B7E   # 𠭾
         ] ;
         :middle   [
             :structure [ a idc:⿰ ;
-                :left     rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
-                :right    rep.big5-cdp:0x8B5B   # &CDP-8B5B;
+                :left     a.ucs:0x2E88 ; # ⺈
+                :right    a.ucs:0x2E88   # ⺈
             ]
         ] ;
         :below    [
@@ -22074,7 +22023,7 @@ ucs:0x20CF8   # 𠳸
             :structure [ a idc:⿱ ;
                 :above    [
                     :structure [ a idc:⿱ ;
-                        :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                        :above    a.ucs:0x2E88 ; # ⺈
                         :below    a.ucs:0x4E36   # 丶
                     ]
                 ] ;
@@ -23244,7 +23193,7 @@ ucs:0x20DB0   # 𠶰
     :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x4E36   # 丶
             ]
         ] ;
@@ -23631,7 +23580,7 @@ ucs:0x20DEB   # 𠷫
                 :overlaying a.ucs:0x5405   # 吅
             ]
         ] ;
-        :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+        :below    rep.ucs_iso:0x27607   # &CDP-8B67;
     ] .
 ucs:0x20DEC   # 𠷬
     :structure [ a idc:⿰ ;
@@ -23964,13 +23913,7 @@ ucs:0x20E1C   # 𠸜
 ucs:0x20E1D   # 𠸝
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
-        :right    [
-            :structure [ a idc:⿳ ;
-                :above    a.ucs:0x2E8A ; # ⺊
-                :middle   rep.adobe-japan1:15391 ; # &AJ1-15391;
-                :below    a.ucs:0x9FB0   # 龰
-            ]
-        ]
+        :right    rep.ucs-itaiji-001:0x758C   # &GT-K06360;
     ] .
 ucs:0x20E1E   # 𠸞
     :structure [ a idc:⿰ ;
@@ -24378,7 +24321,7 @@ ucs:0x20E5F   # 𠹟
         :above    [
             :structure [ a idc:⿳ ;
                 :above    a.ucs:0x5B80 ; # 宀
-                :middle   rep.big5-cdp:0x8BB7 ; # &CDP-8BB7;
+                :middle   rep.ucs_iso:0x2000E ; # &CDP-8BB7;
                 :below    a.ucs:0x516B   # 八
             ]
         ] ;
@@ -24468,7 +24411,7 @@ ucs:0x20E68   # 𠹨
     :structure [ a idc:⿰ ;
         :left     [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x21C2A   # 𡰪
             ]
         ] ;
@@ -25453,7 +25396,7 @@ ucs:0x20F01   # 𠼁
             :structure [ a idc:⿳ ;
                 :above    a.ucs:0x4E36 ; # 丶
                 :middle   a.ucs:0x4E9A ; # 亚
-                :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+                :below    rep.ucs_iso:0x27607   # &CDP-8B67;
             ]
         ]
     ] .
@@ -25494,7 +25437,7 @@ ucs:0x20F09   # 𠼉
         :right    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x8FB0 ; # 辰
-                :below    rep.gt:37857   # &GT-37857;
+                :below    a.ucs:0x2EBC   # ⺼
             ]
         ]
     ] .
@@ -29074,8 +29017,8 @@ ucs:0x2111C   # 𡄜
         ] ;
         :below    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8BB7 ; # &CDP-8BB7;
-                :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+                :above    rep.ucs_iso:0x2000E ; # &CDP-8BB7;
+                :below    rep.ucs_iso:0x27607   # &CDP-8B67;
             ]
         ]
     ] .
@@ -29316,8 +29259,8 @@ ucs:0x2113F   # 𡄿
         ] ;
         :below    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8BB7 ; # &CDP-8BB7;
-                :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+                :above    rep.ucs_iso:0x2000E ; # &CDP-8BB7;
+                :below    rep.ucs_iso:0x27607   # &CDP-8B67;
             ]
         ]
     ] .
@@ -30558,12 +30501,7 @@ ucs:0x211F3   # 𡇳
 ucs:0x211F4   # 𡇴
     :structure [ a idc:⿴ ;
         :surround a.ucs:0x56D7 ; # 囗
-        :filling  [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x6B62 ; # 止
-                :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
-            ]
-        ]
+        :filling  a.ucs:0x2394F   # 𣥏
     ] .
 ucs:0x211F5   # 𡇵
     :structure [ a idc:⿴ ;
@@ -32056,7 +31994,7 @@ ucs:0x212E0   # 𡋠
 ucs:0x212E1   # 𡋡
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x53BB ; # 去
-        :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+        :below    a.ucs:0x27607   # 𧘇
     ] .
 ucs:0x212E2   # 𡋢
     :structure [ a idc:⿻ ;
@@ -33746,7 +33684,7 @@ ucs:0x213CE   # 𡏎
         ] ;
         :right    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x5DF3   # 巳
             ]
         ]
@@ -34107,13 +34045,7 @@ ucs:0x21401   # 𡐁
         :left     a.ucs:0x571F ; # 土
         :right    [
             :structure [ a idc:⿱ ;
-                :above    [
-                    :structure [ a idc:⿳ ;
-                        :above    a.ucs:0x4EA0 ; # 亠
-                        :middle   a.ucs:0x4E37 ; # 丷
-                        :below    a.ucs:0x5196   # 冖
-                    ]
-                ] ;
+                :above    rep.big5-cdp:0x8BEC ; # &CDP-8BEC;
                 :below    a.ucs:0x4E14   # 且
             ]
         ]
@@ -34501,7 +34433,7 @@ ucs:0x21434   # 𡐴
         :right    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x342D ; # 㐭
-                :below    rep.gt:37857   # &GT-37857;
+                :below    a.ucs:0x2EBC   # ⺼
             ]
         ]
     ] .
@@ -35771,7 +35703,7 @@ ucs:0x214D9   # 𡓙
                         :below    a.ucs:0x53B6   # 厶
                     ]
                 ] ;
-                :middle   rep.big5-cdp:0x8BB7 ; # &CDP-8BB7;
+                :middle   rep.ucs_iso:0x2000E ; # &CDP-8BB7;
                 :below    a.ucs:0x53CE   # 収
             ]
         ]
@@ -36956,7 +36888,7 @@ ucs:0x21573   # 𡕳
     :structure [ a idc:⿳ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x65E5   # 日
             ]
         ] ;
@@ -37002,7 +36934,7 @@ ucs:0x21577   # 𡕷
     :structure [ a idc:⿳ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x2EAB   # ⺫
             ]
         ] ;
@@ -37437,7 +37369,7 @@ ucs:0x215B4   # 𡖴
     :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x4E36   # 丶
             ]
         ] ;
@@ -37474,7 +37406,7 @@ ucs:0x215B8   # 𡖸
     :structure [ a idc:⿳ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x4E36   # 丶
             ]
         ] ;
@@ -38435,7 +38367,7 @@ ucs:0x2165D   # 𡙝
     :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    rep.big5-cdp:0x88B3   # &CDP-88B3;
             ]
         ] ;
@@ -38450,7 +38382,7 @@ ucs:0x2165F   # 𡙟
     :structure [ a idc:⿳ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x2EB3   # ⺳
             ]
         ] ;
@@ -41734,17 +41666,7 @@ ucs:0x2185F   # 𡡟
 ucs:0x21860   # 𡡠
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5973 ; # 女
-        :right    [
-            :structure [ a idc:⿰ ;
-                :left     [
-                    :structure [ a idc:⿱ ;
-                        :above    rep.mj:031959 ; # &MJ031959;
-                        :below    rep.gt:37857   # &GT-37857;
-                    ]
-                ] ;
-                :right    a.ucs:0x2E99   # ⺙
-            ]
-        ]
+        :right    a.cbeta:0x2F8C   # &A-CB12172;
     ] .
 ucs:0x21861   # 𡡡
     :structure [ a idc:⿰ ;
@@ -42190,7 +42112,7 @@ ucs:0x21894   # 𡢔
         ] ;
         :below    [
             :structure [ a idc:⿲ ;
-                :left     rep.gt:37857 ; # &GT-37857;
+                :left     a.ucs:0x2EBC ; # ⺼
                 :middle   a.ucs:0x5973 ; # 女
                 :right    a.ucs:0x51E1   # 凡
             ]
@@ -44714,7 +44636,7 @@ ucs:0x21A04   # 𡨄
         :above    a.ucs:0x5B80 ; # 宀
         :below    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8BB7 ; # &CDP-8BB7;
+                :above    rep.ucs_iso:0x2000E ; # &CDP-8BB7;
                 :below    a.ucs:0x516B   # 八
             ]
         ]
@@ -45212,7 +45134,7 @@ ucs:0x21A45   # 𡩅
                         :below    rep.gt:39640   # &GT-39640;
                     ]
                 ] ;
-                :middle   rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :middle   a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x5DFE   # 巾
             ]
         ]
@@ -45314,7 +45236,7 @@ ucs:0x21A51   # 𡩑
         :below    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x2EAB ; # ⺫
-                :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+                :below    rep.ucs_iso:0x27607   # &CDP-8B67;
             ]
         ]
     ] .
@@ -45557,7 +45479,7 @@ ucs:0x21A72   # 𡩲
             :structure [ a idc:⿳ ;
                 :above    a.ucs:0x2EAB ; # ⺫
                 :middle   a.ucs:0x4E00 ; # 一
-                :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+                :below    rep.ucs_iso:0x27607   # &CDP-8B67;
             ]
         ]
     ] .
@@ -45747,7 +45669,7 @@ ucs:0x21A8A   # 𡪊
                 :below    [
                     :structure [ a idc:⿱ ;
                         :above    a.ucs:0x4E00 ; # 一
-                        :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+                        :below    rep.ucs_iso:0x27607   # &CDP-8B67;
                     ]
                 ]
             ]
@@ -46369,7 +46291,7 @@ ucs:0x21AD6   # 𡫖
                 :below    [
                     :structure [ a idc:⿱ ;
                         :above    a.ucs:0x65E5 ; # 日
-                        :below    rep.big5-cdp:0x8B67   # &CDP-8B67;
+                        :below    rep.ucs_iso:0x27607   # &CDP-8B67;
                     ]
                 ]
             ]
@@ -46584,7 +46506,7 @@ ucs:0x21AEA   # 𡫪
             :structure [ a idc:⿱ ;
                 :above    [
                     :structure [ a idc:⿱ ;
-                        :above    rep.big5-cdp:0x8BB7 ; # &CDP-8BB7;
+                        :above    rep.ucs_iso:0x2000E ; # &CDP-8BB7;
                         :below    [
                             :structure [ a idc:⿻ ;
                                 :underlying a.ucs:0x516B ; # 八
@@ -47005,7 +46927,7 @@ ucs:0x21B0B   # 𡬋
                     :structure [ a idc:⿱ ;
                         :above    [
                             :structure [ a idc:⿱ ;
-                                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                                :above    a.ucs:0x2E88 ; # ⺈
                                 :below    rep.gt:36329   # &GT-36329;
                             ]
                         ] ;
@@ -47117,10 +47039,9 @@ ucs:0x21B13   # 𡬓
             :structure [ a idc:⿰ ;
                 :left     a.ucs:0x723F ; # 爿
                 :right    [
-                    :structure [ a idc:⿳ ;
+                    :structure [ a idc:⿱ ;
                         :above    rep.big5-cdp:0x8D60 ; # &CDP-8D60;
-                        :middle   rep.adobe-japan1:15391 ; # &AJ1-15391;
-                        :below    a.ucs:0x53C8   # 又
+                        :below    a.ucs:0x20B36   # 𠬶
                     ]
                 ]
             ]
@@ -48988,7 +48909,7 @@ ucs:0x21C43   # 𡱃
         :surround a.ucs:0x5C38 ; # 尸
         :filling  [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x5DFE   # 巾
             ]
         ]
@@ -50750,7 +50671,7 @@ ucs:0x21D31   # 𡴱
     ] .
 ucs:0x21D32   # 𡴲
     :structure [ a idc:⿱ ;
-        :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+        :above    a.ucs:0x2E88 ; # ⺈
         :below    a.ucs:0x5C71   # 山
     ] .
 ucs:0x21D33   # 𡴳
@@ -50827,7 +50748,7 @@ ucs:0x21D41   # 𡵁
     :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
+                :above    a.ucs:0x2E88 ; # ⺈
                 :below    a.ucs:0x4E36   # 丶
             ]
         ] ;
@@ -52952,12 +52873,7 @@ ucs:0x21EA7   # 𡺧
     :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿰ ;
-                :left     [
-                    :structure [ a idc:⿱ ;
-                        :above    rep.big5-cdp:0x8B5B ; # &CDP-8B5B;
-                        :below    a.ucs:0x5F50   # 彐
-                    ]
-                ] ;
+                :left     a.ucs:0x520D ; # 刍
                 :right    a.ucs:0x6535   # 攵
             ]
         ] ;
