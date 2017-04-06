@@ -6,6 +6,7 @@
 @prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
 @prefix rep.adobe-japan1: <http://www.chise.org/est/view/character/rep.adobe-japan1=> .
 @prefix rep.cns11643-3: <http://www.chise.org/est/view/character/rep.cns11643-3=> .
+@prefix rep.cns11643-4: <http://www.chise.org/est/view/character/rep.cns11643-4=> .
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
 @prefix rep.gt: <http://www.chise.org/est/view/character/rep.gt=> .
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
@@ -76,6 +77,11 @@ rep.mj:057153   # &MJ057153;
             ]
         ] ;
         :filling  a.ucs:0x53E3   # 口
+    ] .
+rep.mj:057163   # 𫪛
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x53E3 ; # 口
+        :right    a.ucs:0x9577   # 長
     ] .
 rep.mj:057207   # &MJ057207;
     :structure [ a idc:⿴ ;
@@ -232,6 +238,11 @@ rep.mj:058090   # &MJ058090;
                 :filling  a.ucs:0x5341   # 十
             ]
         ]
+    ] .
+rep.mj:058166   # &MJ058166;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x2EAB ; # ⺫
+        :below    rep.cns11643-4:0x2231   # &C4-2231;
     ] .
 rep.mj:058176   # &MJ058176;
     :structure [ a idc:⿱ ;
