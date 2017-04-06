@@ -52,6 +52,11 @@ rep.mj:047264   # &MJ047264;
         :above    a.ucs:0x2EBE ; # ⺾
         :below    rep.mj:020736   # &MJ020736;
     ] .
+rep.mj:047790   # &MJ047790;
+    :structure [ a idc:⿱ ;
+        :above    rep.mj:007830 ; # &MJ007830;
+        :below    a.ucs:0x866B   # 虫
+    ] .
 rep.mj:049688   # 𧷇
     :structure [ a idc:⿳ ;
         :above    rep.big5-cdp:0x8CA6 ; # &CDP-8CA6;
