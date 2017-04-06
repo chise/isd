@@ -45,10 +45,15 @@ rep.mj:000558   # 㚈
         :left     a.ucs:0x5915 ; # 夕
         :right    a.ucs:0x5341   # 十
     ] .
+rep.mj:000567   # &MJ000567;
+    :structure [ a idc:⿱ ;
+        :above    rep.gb2312:0x6566 ; # &G0-6566;
+        :below    a.ucs:0x5927   # 大
+    ] .
 rep.mj:000568   # &MJ000568;
-    :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2E95 ; # ⺕
-        :right    a.ucs:0x5927   # 大
+    :structure [ a idc:⿱ ;
+        :above    rep.adobe-japan1:15391 ; # &AJ1-15391;
+        :below    a.ucs:0x5927   # 大
     ] .
 rep.mj:000835   # &MJ000835;
     :structure [ a idc:⿱ ;
@@ -119,6 +124,11 @@ rep.mj:004166   # &MJ004166;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x2EBE ; # ⺾
         :below    a.ucs:0x9682   # 隂
+    ] .
+rep.mj:004276   # &MJ004276;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x4E3F ; # 丿
+        :below    a.ucs:0x866B   # 虫
     ] .
 rep.mj:004487   # &MJ004487;
     :structure [ a idc:⿱ ;
@@ -695,7 +705,7 @@ rep.mj:007278   # 兮
 rep.mj:007279   # &MJ007279;
     :structure [ a idc:⿱ ;
         :above    rep.mj:007274 ; # &MJ007274;
-        :below    a.ucs:0x4E02   # 丂
+        :below    rep.adobe-japan1:17234   # &AJ1-17234;
     ] .
 rep.mj:007283   # &MJ007283;
     :structure [ a idc:⿱ ;
@@ -745,12 +755,12 @@ rep.mj:007313   # &MJ007313;
     ] .
 rep.mj:007320   # &MJ007320;
     :structure [ a idc:⿻ ;
-        :underlying rep.big5-cdp:0x8BB7 ; # &CDP-8BB7;
+        :underlying rep.ucs_iso:0x2000E ; # &CDP-8BB7;
         :overlaying rep.mj:007307   # &MJ007307;
     ] .
 rep.mj:007321   # &MJ007321;
     :structure [ a idc:⿱ ;
-        :above    rep.big5-cdp:0x8BB7 ; # &CDP-8BB7;
+        :above    rep.ucs_iso:0x2000E ; # &CDP-8BB7;
         :below    rep.mj:007308   # &MJ007308;
     ] .
 rep.mj:007324   # &MJ007324;
@@ -912,8 +922,8 @@ rep.mj:007455   # &MJ007455;
     ] .
 rep.mj:007456   # &MJ007456;
     :structure [ a idc:⿱ ;
-        :above    g2.mj:0x1C69 ; # &g2-MJ007273;
-        :below    g2.ucs_unicode:0x5200   # &g2-AJ1-03163;
+        :above    rep.jef-china3:0x43E4 ; # &G-AJ1-03392;
+        :below    a.ucs:0x5200   # 刀
     ] .
 rep.mj:007458   # &MJ007458;
     :structure [ a idc:⿰ ;
@@ -1987,9 +1997,9 @@ rep.mj:009237   # &MJ009237;
         :below    a.ucs:0x571F   # 土
     ] .
 rep.mj:009270   # &MJ009270;
-    :structure [ a idc:⿰ ;
-        :left     rep.adobe-japan1:13701 ; # &AJ1-13701;
-        :right    a.ucs:0x571F   # 土
+    :structure [ a idc:⿱ ;
+        :above    rep.adobe-japan1:13701 ; # &AJ1-13701;
+        :below    a.ucs:0x571F   # 土
     ] .
 rep.mj:009279   # &MJ009279;
     :structure [ a idc:⿱ ;
