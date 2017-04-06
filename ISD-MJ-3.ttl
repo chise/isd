@@ -117,6 +117,11 @@ rep.mj:037308   # &MJ037308;
         :left     a.ucs:0x2F83F ; # 周
         :right    a.ucs:0x6534   # 攴
     ] .
+rep.mj:037801   # &MJ037801;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x21390 ; # 𡎐
+        :below    a.ucs:0x65E5   # 日
+    ] .
 rep.mj:038008   # 𣑨
     :structure [ a idc:⿱ ;
         :above    [
