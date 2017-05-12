@@ -1,3 +1,19 @@
+2017-04-12  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* isd-turtle.el (isd-turtle-ccs-list): Abolished.
+	(chise-turtle-ccs-prefix-alist): New variable.
+	(chise-turtle-uri-encode-ccs-name): Renamed from
+	`isd-turtle-uri-encode-feature-name'; encode `+' and `='.
+	(chise-turtle-format-ccs-code-point): Renamed from
+	`isd-turtle-format-ccs-code-point'; update
+	`chise-turtle-ccs-prefix-alist' instead of `isd-turtle-ccs-list'.
+	(isd-turtle-encode-char): Use `chise-turtle-format-ccs-code-point'
+	instead of `isd-turtle-format-ccs-code-point'.
+	(isd-turtle-format-char): Add new optional variables `prefix' and
+	`without-head-char'.
+	(isd-turtle-dump-range): Use `chise-turtle-ccs-prefix-alist'
+	instead of `isd-turtle-ccs-list'.
+
 2017-04-06  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* ISD-MJ-2.ttl: Sync up with the current environment.
