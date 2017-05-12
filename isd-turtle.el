@@ -89,7 +89,8 @@
     =>cbeta
     ))
 
-(defvar isd-turtle-ccs-list nil)
+;; (defvar isd-turtle-ccs-list nil)
+(defvar chise-turtle-ccs-prefix-alist nil)
 
 (defun charset-code-point-format-spec (ccs)
   (cond ((memq ccs '(=ucs))
@@ -106,42 +107,73 @@
 	(t
 	 "0x%X")))
 
-(defun isd-turtle-uri-encode-feature-name (feature-name)
+;; (defun isd-turtle-uri-encode-feature-name (feature-name)
+;;   (cond
+;;    ((eq '=ucs feature-name)
+;;     "a.ucs")
+;;    ((eq '==>ucs@bucs feature-name)
+;;     "bucs")
+;;    (t
+;;     (mapconcat (lambda (c)
+;;                  (if (eq c ?@)
+;;                      "_"
+;;                    (char-to-string c)))
+;;                (www-uri-encode-feature-name feature-name)
+;;                ""))))
+(defun chise-turtle-uri-encode-ccs-name (feature-name)
   (cond
    ((eq '=ucs feature-name)
     "a.ucs")
+   ((eq '=big5 feature-name)
+    "a.big5")
    ((eq '==>ucs@bucs feature-name)
     "bucs")
    (t
     (mapconcat (lambda (c)
-		 (if (eq c ?@)
-		     "_"
-		   (char-to-string c)))
+		 (cond
+		  ((eq c ?@)
+		   "_")
+		  ((eq c ?+)
+		   "._.")
+		  ((eq c ?=)
+		   ".:.")
+		  (t
+		   (char-to-string c))))
 	       (www-uri-encode-feature-name feature-name)
 	       ""))))
 
-(defun isd-turtle-format-ccs-code-point (ccs code-point)
-  (unless (memq ccs isd-turtle-ccs-list)
-    (setq isd-turtle-ccs-list (cons ccs isd-turtle-ccs-list)))
-  (format "%s:%s"
-	  (isd-turtle-uri-encode-feature-name ccs)
-	  (format (charset-code-point-format-spec ccs)
-		  code-point)))
+;; (defun isd-turtle-format-ccs-code-point (ccs code-point)
+;;   (unless (memq ccs isd-turtle-ccs-list)
+;;     (setq isd-turtle-ccs-list (cons ccs isd-turtle-ccs-list)))
+;;   (format "%s:%s"
+;;           (isd-turtle-uri-encode-feature-name ccs)
+;;           (format (charset-code-point-format-spec ccs)
+;;                   code-point)))
+(defun chise-turtle-format-ccs-code-point (ccs code-point)
+  (let ((ccs-uri (chise-turtle-uri-encode-ccs-name ccs)))
+    (unless (assoc ccs-uri chise-turtle-ccs-prefix-alist)
+      (setq chise-turtle-ccs-prefix-alist
+	    (cons (cons ccs-uri ccs)
+		  chise-turtle-ccs-prefix-alist)))
+    (format "%s:%s"
+	    ccs-uri
+	    (format (charset-code-point-format-spec ccs)
+		    code-point))))
 
 (defun isd-turtle-encode-char (object)
   (let ((ccs-list est-coded-charset-priority-list)
 	ccs ret)
     (if (setq ret (encode-char object '=ucs))
-	(isd-turtle-format-ccs-code-point '=ucs ret)
+	(chise-turtle-format-ccs-code-point '=ucs ret)
       (while (and ccs-list
 		  (setq ccs (pop ccs-list))
 		  (not (setq ret (encode-char object ccs 'defined-only)))))
       (cond (ret
-	     (isd-turtle-format-ccs-code-point ccs ret)
+	     (chise-turtle-format-ccs-code-point ccs ret)
 	     )
 	    ((and (setq ccs (car (split-char object)))
 		  (setq ret (encode-char object ccs)))
-	     (isd-turtle-format-ccs-code-point ccs ret)
+	     (chise-turtle-format-ccs-code-point ccs ret)
 	     )
 	    (t
 	     (format (if est-hide-cgi-mode
@@ -168,9 +200,12 @@
 			      (isd-turtle-format-char nil nil (cdr ret) (1+ level)))
 		    (isd-turtle-format-char nil nil (cdr ret) (1+ level)))))))))
 
-(defun isd-turtle-format-char (ccs code-point &optional ids-list level)
+(defun isd-turtle-format-char (ccs code-point &optional ids-list level
+				   prefix without-head-char)
   (unless level
     (setq level 0))
+  (unless prefix
+    (setq prefix ""))
   (let ((indent (make-string (* level 4) ?\ ))
 	char
 	idc
@@ -229,45 +264,53 @@
     (cond
      (p3
       (format "%s
-%s    :structure [ a idc:%c ;
-%s        :%-8s %s
-%s        :%-8s %s
-%s        :%-8s %s
+%s    %s:structure [ a idc:%c ;
+%s        %s:%-8s %s
+%s        %s:%-8s %s
+%s        %s:%-8s %s
 %s    ]%s"
-	      (if (and ccs code-point)
-		  (format "%s   # %c"
-			  (isd-turtle-format-ccs-code-point ccs code-point)
-			  char)
-		"[")
-	      indent idc
-	      indent p1 (isd-turtle-format-component c1 ?\; (1+ level))
-	      indent p2 (isd-turtle-format-component c2 ?\; (1+ level))
-	      indent p3 (isd-turtle-format-component c3 ?\  (1+ level))
+	      (if without-head-char
+		  ""
+		(if (and ccs code-point)
+		    (format "%s   # %c"
+			    (chise-turtle-format-ccs-code-point ccs code-point)
+			    char)
+		  "["))
+	      indent prefix idc
+	      indent prefix p1 (isd-turtle-format-component c1 ?\; (1+ level))
+	      indent prefix p2 (isd-turtle-format-component c2 ?\; (1+ level))
+	      indent prefix p3 (isd-turtle-format-component c3 ?\  (1+ level))
 	      indent
-	      (if (null char)
-		  (format "\n%s]"
-			  indent)
-		""))
+	      (if without-head-char
+		  ""
+		(if (null char)
+		    (format "\n%s]"
+			    indent)
+		  "")))
       )
      (idc
       (format "%s
-%s    :structure [ a idc:%c ;
-%s        :%-8s %s
-%s        :%-8s %s
+%s    %s:structure [ a idc:%c ;
+%s        %s:%-8s %s
+%s        %s:%-8s %s
 %s    ]%s"
-	      (if (and ccs code-point)
-		  (format "%s   # %c"
-			  (isd-turtle-format-ccs-code-point ccs code-point)
-			  char)
-		"[")
-	      indent idc
-	      indent p1 (isd-turtle-format-component c1 ?\; (1+ level))
-	      indent p2 (isd-turtle-format-component c2 ?\  (1+ level))
+	      (if without-head-char
+		  ""
+		(if (and ccs code-point)
+		    (format "%s   # %c"
+			    (chise-turtle-format-ccs-code-point ccs code-point)
+			    char)
+		  "["))
+	      indent prefix idc
+	      indent prefix p1 (isd-turtle-format-component c1 ?\; (1+ level))
+	      indent prefix p2 (isd-turtle-format-component c2 ?\  (1+ level))
 	      indent
-	      (if (null char)
-		  (format "\n%s]"
-			  indent)
-		""))))
+	      (if without-head-char
+		  ""
+		(if (null char)
+		    (format "\n%s]"
+			    indent)
+		  "")))))
     ))
 
 (defun isd-turtle-insert-char (ccs code-point)
@@ -296,17 +339,25 @@
 (defun isd-turtle-dump-range (file path func &rest args)
   (with-temp-buffer
     (let ((coding-system-for-write 'utf-8-mcs-er)
-	  isd-turtle-ccs-list)
+          ;; isd-turtle-ccs-list
+	  chise-turtle-ccs-prefix-alist)
       (if (file-directory-p path)
 	  (setq path (expand-file-name file path)))
       (apply func args)
       (goto-char (point-min))
-      (dolist (ccs (sort isd-turtle-ccs-list
-			 #'char-attribute-name<))
-	(insert (format "@prefix %s: <%s%s=> .\n"
-			(isd-turtle-uri-encode-feature-name ccs)
-			"http://www.chise.org/est/view/character/"
-			(www-uri-encode-feature-name ccs))))
+      ;; (dolist (ccs (sort isd-turtle-ccs-list
+      ;;                    #'char-attribute-name<))
+      ;;   (insert (format "@prefix %s: <%s%s=> .\n"
+      ;;                   (isd-turtle-uri-encode-feature-name ccs)
+      ;;                   "http://www.chise.org/est/view/character/"
+      ;;                   (www-uri-encode-feature-name ccs))))
+      (dolist (cell (sort chise-turtle-ccs-prefix-alist
+			  (lambda (a b)
+			    (char-attribute-name< (cdr a)(cdr b)))))
+	(insert (format "@prefix %s: <%s/%s=> .\n"
+			(car cell)
+			"http://www.chise.org/est/view/character"
+			(www-uri-encode-feature-name (cdr cell)))))
       (insert "\n")
       (goto-char (point-min))
       (insert "# -*- coding: utf-8-mcs-er -*-\n")
