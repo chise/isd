@@ -31,7 +31,13 @@
 (setq est-coded-charset-priority-list
   '(; =ucs
     =mj
-    =adobe-japan1
+    =adobe-japan1-0
+    =adobe-japan1-1
+    =adobe-japan1-2
+    =adobe-japan1-3
+    =adobe-japan1-4
+    =adobe-japan1-5
+    =adobe-japan1-6
     =ucs@iso
     =jis-x0208 =jis-x0208@1990
     =jis-x0213-1
@@ -39,28 +45,42 @@
     =jis-x0213-2
     =jis-x0212
     =gt
+    =hanyo-denshi/ks
     =hanyo-denshi/tk
     =ucs-itaiji-001
     =ucs-itaiji-002
     =ucs-itaiji-003
+    =ucs-itaiji-004
     =ucs-itaiji-005
     =ucs-itaiji-006
+    =ucs-itaiji-009
     =ucs-itaiji-084
     =ucs-var-001
     =ucs-var-002
+    =ucs-var-003
     =ucs-var-004
     =cns11643-1 =cns11643-2 =cns11643-3
     =cns11643-4 =cns11643-5 =cns11643-6 =cns11643-7
     =gb2312
     =big5-cdp
+    =ks-x1001
     =gt-k
     =ucs@unicode
     =ucs@JP/hanazono
     =gb12345
+    =ucs@cns
+    =ucs@gb
     =zinbun-oracle =>zinbun-oracle
     =daikanwa
     =ruimoku-v6
     =cbeta =jef-china3
+    =daikanwa/+2p
+    =+>ucs@iso =+>ucs@unicode
+    =+>ucs@jis
+    =+>ucs@cns
+    =+>ucs@ks
+    =+>ucs@jis/1990
+    =>mj
     =>jis-x0208 =>jis-x0213-1
     =>jis-x0208@1997
     =>ucs@iwds-1
@@ -68,13 +88,42 @@
     =>iwds-1
     =>ucs@iso
     =>ucs@unicode
-    =+>ucs@iso =+>ucs@unicode
     =>ucs@jis =>ucs@cns =>ucs@ks
+    =>gt
+    =>gt-k
     =>>ucs@iso =>>ucs@unicode
     =>>ucs@jis =>>ucs@cns =>>ucs@ks
+    =>>gt-k
+    =>>hanyo-denshi/ks
     ==mj
+    ==ucs@iso
+    ==ucs@unicode
+    ==adobe-japan1-0
+    ==adobe-japan1-1
+    ==adobe-japan1-2
+    ==adobe-japan1-3
+    ==adobe-japan1-4
+    ==adobe-japan1-5
+    ==adobe-japan1-6
+    ==ks-x1001
+    ==hanyo-denshi/ks
+    ==hanyo-denshi/tk
+    ==ucs@jis
+    ==gt
+    ==cns11643-1 ==cns11643-2 ==cns11643-3
+    ==cns11643-4 ==cns11643-5 ==cns11643-6 ==cns11643-7
+    ==jis-x0212
+    ==ucs@cns
+    ==koseki
+    ==daikanwa
+    ==gt-k
+    ==ucs@gb
+    ==ucs-itaiji-003
+    ==ucs@JP/hanazono
+    ==daikanwa/+2p
     =>>jis-x0208 =>>jis-x0213-1 =>>jis-x0213-2
     =+>jis-x0208 =+>jis-x0213-1 =+>jis-x0213-2
+    =+>hanyo-denshi/jt
     =+>jis-x0208@1978
     =>>gt
     =+>adobe-japan1
@@ -83,10 +132,29 @@
     =>ucs-itaiji-001
     =>ucs-itaiji-002
     =>ucs-itaiji-005
-    ==ucs@unicode
     ==>ucs@bucs
     =big5
     =>cbeta
+    ===mj
+    ===ucs@iso
+    ===ucs@unicode
+    ===hanyo-denshi/ks
+    ===ks-x1001
+    ===gt
+    ===gt-k
+    ===ucs@ks
+    ===ucs@gb
+    =shinjigen
+    =shinjigen@rev
+    =shinjigen@1ed
+    =shinjigen/+p@rev
+    ==shinjigen
+    ==shinjigen@rev
+    ==daikanwa/+p
+    ==shinjigen@1ed
+    ===daikanwa/+p
+    =>daikanwa/ho
+    ===daikanwa/ho
     ))
 
 ;; (defvar isd-turtle-ccs-list nil)
