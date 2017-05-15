@@ -1,3 +1,25 @@
+2017-05-12  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* isd-turtle.el (est-coded-charset-priority-list):
+	- Use `=adobe-japan1-{0..6}' instead of `=adobe-japan1'.
+	- Add `=hanyo-denshi/ks', `=ucs-itaiji-004', `=ucs-itaiji-009',
+	  `=ucs-var-003', `=ks-x1001', `=ucs@cns', `=ucs@gb',
+	  `=daikanwa/+2p', `=+>ucs@jis', `=+>ucs@cns', `=+>ucs@ks',
+	  `=+>ucs@jis/1990', `=>mj', `=>gt', `=>gt-k', `=>>gt-k',
+	  `=>>hanyo-denshi/ks', `==ucs@iso', `==adobe-japan1-{0..6}',
+	  `==ks-x1001', `==hanyo-denshi/ks', `==hanyo-denshi/tk',
+	  `==ucs@jis', `==gt', `==cns11643-{1..7}', `==jis-x0212',
+	  `==ucs@cns', `==koseki', `==daikanwa', `==gt-k', `==ucs@gb',
+	  `==ucs-itaiji-003', `==ucs@JP/hanazono', `==daikanwa/+2p',
+	  `=+>hanyo-denshi/jt', `===mj', `===ucs@iso', `===ucs@unicode',
+	  `===hanyo-denshi/ks', `===ks-x1001', `===gt', `===gt-k',
+	  `===ucs@ks', `===ucs@gb', `=shinjigen', `=shinjigen@rev',
+	  `=shinjigen@1ed', `=shinjigen/+p@rev', `==shinjigen',
+	  `==shinjigen@rev', `==daikanwa/+p', `==shinjigen@1ed',
+	  `===daikanwa/+p', `=>daikanwa/ho' and `===daikanwa/ho'.
+	- Modify priority of `=+>ucs@iso', `=+>ucs@unicode' and
+	  `==ucs@unicode'.
+
 2017-04-12  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* isd-turtle.el (isd-turtle-ccs-list): Abolished.
