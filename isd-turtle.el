@@ -163,17 +163,23 @@
 (defun charset-code-point-format-spec (ccs)
   (cond ((memq ccs '(=ucs))
 	 "0x%04X")
-	((memq ccs '(=gt
-		     =gt-k =daikanwa =adobe-japan1
-		     =cbeta =zinbun-oracle))
-	 "%05d")
-	((memq ccs '(=hanyo-denshi/ks
-		     =koseki =mj))
-	 "%06d")
-	((memq ccs '(=hanyo-denshi/tk ==hanyo-denshi/tk))
-	 "%08d")
 	(t
-	 "0x%X")))
+	 (let ((ccs-name (symbol-name ccs)))
+	   (cond
+	    ((string-match
+	      "\\(shinjigen\\|daikanwa/ho\\|=>iwds-1\\)"
+	      ccs-name)
+	     "%04d")
+	    ((string-match
+	      "\\(gt\\|daikanwa\\|adobe-japan1\\|cbeta\\|zinbun-oracle\\|hng\\)"
+	      ccs-name)
+	     "%05d")
+	    ((string-match "\\(hanyo-denshi/ks\\|koseki\\|mj\\)" ccs-name)
+	     "%06d")
+	    ((string-match "hanyo-denshi/tk" ccs-name)
+	     "%08d")
+	    (t
+	     "0x%X"))))))
 
 ;; (defun isd-turtle-uri-encode-feature-name (feature-name)
 ;;   (cond
@@ -250,7 +256,7 @@
 		     (encode-char object 'system-char-id))
 	     )))))
 
-(defun isd-turtle-format-component (component separator level)
+(defun isd-turtle-format-component (component separator level prefix)
   (cond ((characterp component)
 	 (format "%s %c # %c"
 		 (isd-turtle-encode-char component)
@@ -265,8 +271,10 @@
 		 ((setq ret (assq 'ideographic-structure component))
 		  (if (eq separator ?\;)
 		      (format "%s ;"
-			      (isd-turtle-format-char nil nil (cdr ret) (1+ level)))
-		    (isd-turtle-format-char nil nil (cdr ret) (1+ level)))))))))
+			      (isd-turtle-format-char nil nil (cdr ret) (1+ level)
+						      prefix))
+		    (isd-turtle-format-char nil nil (cdr ret) (1+ level)
+					    prefix))))))))
 
 (defun isd-turtle-format-char (ccs code-point &optional ids-list level
 				   prefix without-head-char)
@@ -345,9 +353,9 @@
 			    char)
 		  "["))
 	      indent prefix idc
-	      indent prefix p1 (isd-turtle-format-component c1 ?\; (1+ level))
-	      indent prefix p2 (isd-turtle-format-component c2 ?\; (1+ level))
-	      indent prefix p3 (isd-turtle-format-component c3 ?\  (1+ level))
+	      indent prefix p1 (isd-turtle-format-component c1 ?\; (1+ level) prefix)
+	      indent prefix p2 (isd-turtle-format-component c2 ?\; (1+ level) prefix)
+	      indent prefix p3 (isd-turtle-format-component c3 ?\  (1+ level) prefix)
 	      indent
 	      (if without-head-char
 		  ""
@@ -370,8 +378,8 @@
 			    char)
 		  "["))
 	      indent prefix idc
-	      indent prefix p1 (isd-turtle-format-component c1 ?\; (1+ level))
-	      indent prefix p2 (isd-turtle-format-component c2 ?\  (1+ level))
+	      indent prefix p1 (isd-turtle-format-component c1 ?\; (1+ level) prefix)
+	      indent prefix p2 (isd-turtle-format-component c2 ?\  (1+ level) prefix)
 	      indent
 	      (if without-head-char
 		  ""
