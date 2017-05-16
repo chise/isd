@@ -1,3 +1,12 @@
+2017-05-15  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* isd-turtle.el (charset-code-point-format-spec): New
+	implementation [sync with chiset/char-db-turtle.el].
+	(isd-turtle-format-component): Add new argument `prefix'; use it
+	for `isd-turtle-format-char'.
+	(isd-turtle-format-char): Specify `prefix' for
+	`isd-turtle-format-component'.
+
 2017-05-12  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* isd-turtle.el (est-coded-charset-priority-list):
