@@ -37197,7 +37197,7 @@ a.ucs:0x6B0E   # 欎
     :structure [ a idc:⿳ ;
         :above    a.ucs:0x68E5 ; # 棥
         :middle   a.ucs:0x5196 ; # 冖
-        :below    rep.big5-cdp:0x8D42   # &CDP-8D42;
+        :below    rep.ucs_iso:0x21B20   # &C6-2A69;
     ] .
 a.ucs:0x6B0F   # 欏
     :structure [ a idc:⿰ ;
@@ -37273,7 +37273,7 @@ a.ucs:0x6B1D   # 欝
     :structure [ a idc:⿳ ;
         :above    a.ucs:0x68E5 ; # 棥
         :middle   a.ucs:0x2EAB ; # ⺫
-        :below    rep.big5-cdp:0x8D42   # &CDP-8D42;
+        :below    rep.ucs_iso:0x21B20   # &C6-2A69;
     ] .
 a.ucs:0x6B1E   # 欞
     :structure [ a idc:⿰ ;
@@ -46546,7 +46546,7 @@ a.ucs:0x7235   # 爵
     :structure [ a idc:⿳ ;
         :above    a.ucs:0x722B ; # 爫
         :middle   a.ucs:0x2EAB ; # ⺫
-        :below    rep.big5-cdp:0x8D42   # &CDP-8D42;
+        :below    rep.ucs_iso:0x21B20   # &C6-2A69;
     ] .
 a.ucs:0x7237   # 爷
     :structure [ a idc:⿱ ;
