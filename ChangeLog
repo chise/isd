@@ -1,5 +1,15 @@
 2017-05-15  MORIOKA Tomohiko  <tomo.git@chise.org>
 
+	* ISD-MJ-4.ttl: Reformatted.
+
+	* ISD-MJ-3.ttl: Sync up with the current environment.
+
+	* ISD-MJ-0.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Ext-D.ttl: Reformatted.
+
+	* ISD-UCS-Ext-B-6.ttl: Sync up with the current environment.
+
 	* isd-turtle.el (charset-code-point-format-spec): New
 	implementation [sync with chiset/char-db-turtle.el].
 	(isd-turtle-format-component): Add new argument `prefix'; use it
@@ -8,6 +18,8 @@
 	`isd-turtle-format-component'.
 
 2017-05-12  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* ISD-MJ-6.ttl: Reformatted.
 
 	* isd-turtle.el (est-coded-charset-priority-list):
 	- Use `=adobe-japan1-{0..6}' instead of `=adobe-japan1'.
