@@ -22,7 +22,6 @@
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
 @prefix a.gt-k: <http://www.chise.org/est/view/character/a.gt-k=> .
 @prefix rep.daikanwa: <http://www.chise.org/est/view/character/rep.daikanwa=> .
-@prefix rep.daikanwa_rev1: <http://www.chise.org/est/view/character/rep.daikanwa@rev1=> .
 @prefix rep.cbeta: <http://www.chise.org/est/view/character/rep.cbeta=> .
 @prefix rep.big5-cdp-itaiji-001: <http://www.chise.org/est/view/character/rep.big5-cdp-itaiji-001=> .
 @prefix rep.big5-cdp-var-005: <http://www.chise.org/est/view/character/rep.big5-cdp-var-005=> .
@@ -15145,7 +15144,7 @@ a.ucs:0x3EFF   # 㻿
 a.ucs:0x3F00   # 㼀
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x738B ; # 王
-        :right    rep.daikanwa_rev1:39011   # &I-M-39011;
+        :right    rep.adobe-japan1-4:13912   # &AJ1-13912;
     ] .
 a.ucs:0x3F01   # 㼁
     :structure [ a idc:⿰ ;
@@ -15175,7 +15174,7 @@ a.ucs:0x3F04   # 㼄
 a.ucs:0x3F05   # 㼅
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x738B ; # 王
-        :right    rep.daikanwa_rev1:09493   # &I-M-09493;
+        :right    rep.mj:011077   # &MJ011077;
     ] .
 a.ucs:0x3F06   # 㼆
     :structure [ a idc:⿰ ;
@@ -25944,7 +25943,7 @@ a.ucs:0x4717   # 䜗
 a.ucs:0x4718   # 䜘
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x8A00 ; # 言
-        :right    rep.daikanwa_rev1:13303   # &I-M-13303;
+        :right    rep.mj:013007   # &MJ013007;
     ] .
 a.ucs:0x4719   # 䜙
     :structure [ a idc:⿰ ;
