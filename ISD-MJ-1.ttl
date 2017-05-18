@@ -1634,13 +1634,13 @@ rep.mj:014742   # &MJ014742;
     :structure [ a idc:⿳ ;
         :above    a.ucs:0x68E5 ; # 棥
         :middle   a.ucs:0x2EAB ; # ⺫
-        :below    rep.big5-cdp:0x8D42   # &CDP-8D42;
+        :below    rep.ucs_iso:0x21B20   # &C6-2A69;
     ] .
 rep.mj:014743   # &MJ014743;
     :structure [ a idc:⿳ ;
         :above    a.ucs:0x68E5 ; # 棥
         :middle   a.ucs:0x2EAB ; # ⺫
-        :below    rep.big5-cdp:0x8D42   # &CDP-8D42;
+        :below    rep.ucs_iso:0x21B20   # &C6-2A69;
     ] .
 rep.mj:014745   # &MJ014745;
     :structure [ a idc:⿰ ;
@@ -2335,7 +2335,7 @@ rep.mj:016747   # &MJ016747;
     :structure [ a idc:⿳ ;
         :above    a.ucs:0x722B ; # 爫
         :middle   a.ucs:0x2EAB ; # ⺫
-        :below    rep.big5-cdp:0x8D42   # &CDP-8D42;
+        :below    rep.ucs_iso:0x21B20   # &C6-2A69;
     ] .
 rep.mj:016762   # &MJ016762;
     :structure [ a idc:⿱ ;
