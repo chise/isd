@@ -4,7 +4,7 @@
 @prefix a.ucs: <http://www.chise.org/est/view/character/rep.ucs=> .
 @prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
-@prefix rep.ucs-bmp-itaiji-004: <http://www.chise.org/est/view/character/rep.ucs-bmp-itaiji-004=> .
+@prefix rep.ucs-itaiji-004: <http://www.chise.org/est/view/character/rep.ucs-itaiji-004=> .
 
 rep.mj:060177   # &MJ060177;
     :structure [ a idc:⿱ ;
@@ -19,5 +19,5 @@ rep.mj:060177   # &MJ060177;
 rep.mj:060240   # &MJ060240;
     :structure [ a idc:⿺ ;
         :surround a.ucs:0x2ECC ; # ⻌
-        :filling  rep.ucs-bmp-itaiji-004:0x81F1   # &U-i004+81F1;
+        :filling  rep.ucs-itaiji-004:0x81F1   # &U-i004+81F1;
     ] .
