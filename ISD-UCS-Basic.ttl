@@ -122,6 +122,11 @@ a.ucs:0x4E2A   # 个
         :above    a.ucs:0x201A2 ; # 𠆢
         :below    a.ucs:0x4E28   # 丨
     ] .
+a.ucs:0x4E2B   # 丫
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x4E37 ; # 丷
+        :below    a.ucs:0x4E28   # 丨
+    ] .
 a.ucs:0x4E2E   # 丮
     :structure [ a idc:⿹ ;
         :surround a.ucs:0x2E84 ; # ⺄
@@ -505,12 +510,7 @@ a.ucs:0x4EA6   # 亦
     ] .
 a.ucs:0x4EA7   # 产
     :structure [ a idc:⿱ ;
-        :above    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x4EA0 ; # 亠
-                :below    a.ucs:0x4E37   # 丷
-            ]
-        ] ;
+        :above    rep.big5-cdp:0x8BAE ; # &CDP-8BAE;
         :below    a.ucs:0x5382   # 厂
     ] .
 a.ucs:0x4EA8   # 亨
@@ -4156,12 +4156,7 @@ a.ucs:0x5178   # 典
 a.ucs:0x5179   # 兹
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x4491 ; # 䒑
-        :below    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x5E7A ; # 幺
-                :right    a.ucs:0x5E7A   # 幺
-            ]
-        ]
+        :below    a.ucs:0x221B6   # 𢆶
     ] .
 a.ucs:0x517A   # 兺
     :structure [ a idc:⿱ ;
@@ -22106,7 +22101,7 @@ a.ucs:0x5F65   # 彥
     ] .
 a.ucs:0x5F66   # 彦
     :structure [ a idc:⿸ ;
-        :surround rep.gt-k:02308 ; # &GT-K02308;
+        :surround a.ucs:0x4EA7 ; # 产
         :filling  a.ucs:0x5F61   # 彡
     ] .
 a.ucs:0x5F67   # 彧
@@ -50256,7 +50251,7 @@ a.ucs:0x7522   # 產
     ] .
 a.ucs:0x7523   # 産
     :structure [ a idc:⿱ ;
-        :above    rep.gt-k:02308 ; # &GT-K02308;
+        :above    a.ucs:0x4EA7 ; # 产
         :below    a.ucs:0x751F   # 生
     ] .
 a.ucs:0x7524   # 甤
@@ -57596,12 +57591,7 @@ a.ucs:0x7AD1   # 竑
     ] .
 a.ucs:0x7AD2   # 竒
     :structure [ a idc:⿱ ;
-        :above    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x4EA0 ; # 亠
-                :below    a.ucs:0x4E37   # 丷
-            ]
-        ] ;
+        :above    rep.big5-cdp:0x8BAE ; # &CDP-8BAE;
         :below    a.ucs:0x53EF   # 可
     ] .
 a.ucs:0x7AD3   # 竓
@@ -68414,12 +68404,7 @@ a.ucs:0x8331   # 茱
 a.ucs:0x8332   # 茲
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x8279 ; # 艹
-        :below    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x5E7A ; # 幺
-                :right    a.ucs:0x5E7A   # 幺
-            ]
-        ]
+        :below    a.ucs:0x221B6   # 𢆶
     ] .
 a.ucs:0x8333   # 茳
     :structure [ a idc:⿱ ;
