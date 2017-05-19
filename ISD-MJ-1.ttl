@@ -550,6 +550,11 @@ rep.mj:011802   # &MJ011802;
         :above    a.ucs:0x5179 ; # 兹
         :below    a.ucs:0x5FC3   # 心
     ] .
+rep.mj:011803   # 慈
+    :structure [ a idc:⿱ ;
+        :above    rep.cns11643-1:0x577B ; # &C1-577B;
+        :below    a.ucs:0x5FC3   # 心
+    ] .
 rep.mj:011807   # &MJ011807;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5FC4 ; # 忄
