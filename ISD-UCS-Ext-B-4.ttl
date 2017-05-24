@@ -3197,17 +3197,7 @@ ucs:0x261C7   # 𦇇
 ucs:0x261C8   # 𦇈
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x7CF9 ; # 糹
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x200B9 ; # 𠂹
-                :below    [
-                    :structure [ a idc:⿸ ;
-                        :surround a.ucs:0x4E06 ; # 丆
-                        :filling  a.ucs:0x5DE5   # 工
-                    ]
-                ]
-            ]
-        ]
+        :right    a.ucs:0x22029   # 𢀩
     ] .
 ucs:0x261C9   # 𦇉
     :structure [ a idc:⿰ ;
@@ -10532,7 +10522,7 @@ ucs:0x26642   # 𦙂
 ucs:0x26643   # 𦙃
     :structure [ a idc:⿱ ;
         :above    rep.gt-k:00724 ; # &GT-K00724;
-        :below    a.ucs_component:0x6708   # &IWDS1-053;
+        :below    a.ucs_component:0x6708   # &A-compU+6708;
     ] .
 ucs:0x26644   # 𦙄
     :structure [ a idc:⿱ ;
@@ -13443,7 +13433,7 @@ ucs:0x26802   # 𦠂
 ucs:0x26803   # 𦠃
     :structure [ a idc:⿵ ;
         :surround rep.ucs-itaiji-005:0x9F4A ; # &U-i005+9F4A;
-        :filling  a.ucs_component:0x6708   # &IWDS1-053;
+        :filling  a.ucs_component:0x6708   # &A-compU+6708;
     ] .
 ucs:0x26804   # 𦠄
     :structure [ a idc:⿰ ;
@@ -19832,12 +19822,7 @@ ucs:0x26BF9   # 𦯹
 ucs:0x26BFA   # 𦯺
     :structure [ a idc:⿳ ;
         :above    a.ucs:0x2EBF ; # ⺿
-        :middle   [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x4EA0 ; # 亠
-                :below    a.ucs:0x4E37   # 丷
-            ]
-        ] ;
+        :middle   rep.big5-cdp:0x8BAE ; # &CDP-8BAE;
         :below    a.ucs:0x5973   # 女
     ] .
 ucs:0x26BFB   # 𦯻
@@ -44048,14 +44033,9 @@ ucs:0x279D0   # 𧧐
         :right    a.ucs:0x620C   # 戌
     ] .
 ucs:0x279D1   # 𧧑
-    :structure [ a idc:⿱ ;
-        :above    rep.big5-cdp:0x8BAE ; # &CDP-8BAE;
-        :below    [
-            :structure [ a idc:⿸ ;
-                :surround a.ucs:0x5382 ; # 厂
-                :filling  a.ucs:0x8A00   # 言
-            ]
-        ]
+    :structure [ a idc:⿸ ;
+        :surround a.ucs:0x4EA7 ; # 产
+        :filling  a.ucs:0x8A00   # 言
     ] .
 ucs:0x279D2   # 𧧒
     :structure [ a idc:⿰ ;
