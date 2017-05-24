@@ -12,6 +12,9 @@
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
 @prefix rep.cbeta: <http://www.chise.org/est/view/character/rep.cbeta=> .
+@prefix rep.ucs-var-001: <http://www.chise.org/est/view/character/rep.ucs-var-001=> .
+@prefix rep.ucs-itaiji-001: <http://www.chise.org/est/view/character/rep.ucs-itaiji-001=> .
+@prefix rep.ucs-itaiji-002: <http://www.chise.org/est/view/character/rep.ucs-itaiji-002=> .
 
 rep.mj:030243   # 鶴
     :structure [ a idc:⿰ ;
@@ -128,6 +131,26 @@ rep.mj:034920   # &MJ034920;
         :above    a.ucs:0x5DDB ; # 巛
         :below    a.ucs:0x56DF   # 囟
     ] .
+rep.mj:034953   # &MJ034953;
+    :structure [ a idc:⿱ ;
+        :above    rep.ucs-var-001:0x200B9 ; # &U-v001+200B9;
+        :below    rep.ucs-itaiji-002:0x5DE6   # &U-i002+5DE6;
+    ] .
+rep.mj:034954   # &MJ034954;
+    :structure [ a idc:⿱ ;
+        :above    rep.ucs_iso:0x200B9 ; # &GT-00211;
+        :below    rep.ucs-itaiji-002:0x5DE6   # &U-i002+5DE6;
+    ] .
+rep.mj:034970   # &MJ034970;
+    :structure [ a idc:⿱ ;
+        :above    [
+            :structure [ a idc:⿰ ;
+                :left     a.ucs:0x5DF3 ; # 巳
+                :right    a.ucs:0x5DF3   # 巳
+            ]
+        ] ;
+        :below    a.ucs:0x5E75   # 幵
+    ] .
 rep.mj:035179   # &MJ035179;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5E1D ; # 帝
@@ -178,10 +201,20 @@ rep.mj:038008   # 𣑨
         ] ;
         :below    a.ucs:0x6728   # 木
     ] .
+rep.mj:038598   # &MJ038598;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0xFA17 ; # 益
+        :right    a.ucs:0x6B20   # 欠
+    ] .
 rep.mj:038948   # &MJ038948;
     :structure [ a idc:⿰ ;
         :left     rep.big5-cdp:0x8DD3 ; # &CDP-8DD3;
         :right    rep.mj:014908   # &MJ014908;
+    ] .
+rep.mj:038958   # &MJ038958;
+    :structure [ a idc:⿱ ;
+        :above    rep.ucs-itaiji-001:0x7A40 ; # &U-i001+7A40;
+        :below    rep.adobe-japan1-0:04171   # &AJ1-04171;
     ] .
 rep.mj:039805   # &MJ039805;
     :structure [ a idc:⿰ ;
