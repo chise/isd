@@ -555,6 +555,11 @@ rep.mj:011803   # 慈
         :above    rep.cns11643-1:0x577B ; # &C1-577B;
         :below    a.ucs:0x5FC3   # 心
     ] .
+rep.mj:011804   # &MJ011804;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x7386 ; # 玆
+        :below    a.ucs:0x5FC3   # 心
+    ] .
 rep.mj:011807   # &MJ011807;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5FC4 ; # 忄
@@ -1651,6 +1656,11 @@ rep.mj:014745   # &MJ014745;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6728 ; # 木
         :right    rep.adobe-japan1-0:06650   # &AJ1-06650;
+    ] .
+rep.mj:014748   # &MJ014748;
+    :structure [ a idc:⿰ ;
+        :left     rep.gt-k:00083 ; # &GT-K00083;
+        :right    a.ucs:0x6B20   # 欠
     ] .
 rep.mj:014787   # 歆
     :structure [ a idc:⿰ ;
