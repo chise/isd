@@ -20198,13 +20198,8 @@ ucs:0x26C33   # 𦰳
     ] .
 ucs:0x26C34   # 𦰴
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x2EBF ; # ⺿
-        :below    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x5F13 ; # 弓
-                :right    a.ucs:0x5C14   # 尔
-            ]
-        ]
+        :above    a.ucs:0x8279 ; # 艹
+        :below    a.ucs:0x5F25   # 弥
     ] .
 ucs:0x26C35   # 𦰵
     :structure [ a idc:⿱ ;
@@ -42745,12 +42740,7 @@ ucs:0x27905   # 𧤅
 ucs:0x27906   # 𧤆
     :structure [ a idc:⿰ ;
         :left     rep.adobe-japan1-0:01455 ; # &AJ1-01455;
-        :right    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x5F13 ; # 弓
-                :right    a.ucs:0x5C14   # 尔
-            ]
-        ]
+        :right    a.ucs:0x5F25   # 弥
     ] .
 ucs:0x27907   # 𧤇
     :structure [ a idc:⿰ ;
