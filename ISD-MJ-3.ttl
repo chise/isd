@@ -216,6 +216,11 @@ rep.mj:038958   # &MJ038958;
         :above    rep.ucs-itaiji-001:0x7A40 ; # &U-i001+7A40;
         :below    rep.adobe-japan1-0:04171   # &AJ1-04171;
     ] .
+rep.mj:038969   # &MJ038969;
+    :structure [ a idc:⿰ ;
+        :left     rep.ucs_iso:0x23AED ; # &C6-283D;
+        :right    rep.mj:020960   # &MJ020960;
+    ] .
 rep.mj:039805   # &MJ039805;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6C35 ; # 氵
