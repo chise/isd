@@ -22478,12 +22478,7 @@ ucs:0x28CC1   # 𨳁
 ucs:0x28CC2   # 𨳂
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x9578 ; # 镸
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    rep.big5-cdp:0x8CD1 ; # &CDP-8CD1;
-                :below    a.ucs:0x514D   # 免
-            ]
-        ]
+        :right    a.ucs:0x6BDA   # 毚
     ] .
 ucs:0x28CC3   # 𨳃
     :structure [ a idc:⿰ ;
