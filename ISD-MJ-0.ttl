@@ -93,6 +93,11 @@ rep.mj:001165   # &MJ001165;
         :above    rep.adobe-japan1-5:17472 ; # &AJ1-17472;
         :below    rep.cns11643-6:0x217E   # &C6-217E;
     ] .
+rep.mj:001193   # 㤵
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x5B5C ; # 孜
+        :below    a.ucs:0x5FC3   # 心
+    ] .
 rep.mj:001247   # &MJ001247;
     :structure [ a idc:⿱ ;
         :above    rep.daikanwa:19680 ; # &M-19680;
