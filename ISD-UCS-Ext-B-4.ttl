@@ -3303,15 +3303,9 @@ ucs:0x261D4   # 𦇔
         :right    a.ucs:0x6B77   # 歷
     ] .
 ucs:0x261D5   # 𦇕
-    :structure [ a idc:⿲ ;
+    :structure [ a idc:⿰ ;
         :left     a.ucs:0x7CF9 ; # 糹
-        :middle   [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x6797 ; # 林
-                :below    rep.big5-cdp:0x8958   # &CDP-8958;
-            ]
-        ] ;
-        :right    a.ucs:0x6535   # 攵
+        :right    a.ucs:0x22FF1   # 𢿱
     ] .
 ucs:0x261D6   # 𦇖
     :structure [ a idc:⿰ ;
@@ -14095,12 +14089,7 @@ ucs:0x26867   # 𦡧
     ] .
 ucs:0x26868   # 𦡨
     :structure [ a idc:⿰ ;
-        :left     [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x6797 ; # 林
-                :below    rep.big5-cdp:0x8958   # &CDP-8958;
-            ]
-        ] ;
+        :left     a.ucs-itaiji-001:0x6614 ; # &A-U-i001+6614;
         :right    a.ucs:0x76AE   # 皮
     ] .
 ucs:0x26869   # 𦡩
@@ -53656,17 +53645,7 @@ ucs:0x27FAB   # 𧾫
 ucs:0x27FAC   # 𧾬
     :structure [ a idc:⿺ ;
         :surround a.ucs:0x8D70 ; # 走
-        :filling  [
-            :structure [ a idc:⿰ ;
-                :left     [
-                    :structure [ a idc:⿱ ;
-                        :above    a.ucs:0x6797 ; # 林
-                        :below    rep.big5-cdp:0x8958   # &CDP-8958;
-                    ]
-                ] ;
-                :right    a.ucs:0x6534   # 攴
-            ]
-        ]
+        :filling  a.ucs:0x22FE8   # 𢿨
     ] .
 ucs:0x27FAD   # 𧾭
     :structure [ a idc:⿱ ;
