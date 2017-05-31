@@ -986,10 +986,9 @@ a.ucs:0x34B6   # 㒶
         :below    a.ucs:0x767D   # 白
     ] .
 a.ucs:0x34B7   # 㒷
-    :structure [ a idc:⿳ ;
+    :structure [ a idc:⿱ ;
         :above    a.ucs:0x2053F ; # 𠔿
-        :middle   a.ucs:0x4E00 ; # 一
-        :below    a.ucs:0x516B   # 八
+        :below    rep.gt-k:00264   # &GT-K00264;
     ] .
 a.ucs:0x34B8   # 㒸
     :structure [ a idc:⿱ ;
@@ -4345,7 +4344,7 @@ a.ucs:0x3728   # 㜨
 a.ucs:0x3729   # 㜩
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5973 ; # 女
-        :right    a.ucs:0x5967   # 奧
+        :right    a.ucs_component:0x5967   # &A-compU+5967;
     ] .
 a.ucs:0x372A   # 㜪
     :structure [ a idc:⿱ ;
@@ -8967,7 +8966,7 @@ a.ucs:0x3A93   # 㪓
     ] .
 a.ucs:0x3A94   # 㪔
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x6797 ; # 林
+        :left     a.ucs_component:0x6797 ; # &A-compU+6797;
         :right    a.ucs:0x6534   # 攴
     ] .
 a.ucs:0x3A95   # 㪕
