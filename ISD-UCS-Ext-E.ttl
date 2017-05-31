@@ -1534,7 +1534,7 @@ ucs:0x2B92C   # 𫤬
     ] .
 ucs:0x2B92D   # 𫤭
     :structure [ a idc:⿱ ;
-        :above    a.ucs-itaiji-001:0x56DF ; # &A-U-i001+56DF;
+        :above    rep.ucs-itaiji-001:0x56DF ; # &U-i001+56DF;
         :below    rep.gt-k:00264   # &GT-K00264;
     ] .
 ucs:0x2B92E   # 𫤮
