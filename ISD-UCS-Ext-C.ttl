@@ -9,7 +9,9 @@
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
 @prefix rep.ucs-itaiji-001: <http://www.chise.org/est/view/character/rep.ucs-itaiji-001=> .
+@prefix rep.ucs-itaiji-002: <http://www.chise.org/est/view/character/rep.ucs-itaiji-002=> .
 @prefix rep.ucs-itaiji-003: <http://www.chise.org/est/view/character/rep.ucs-itaiji-003=> .
+@prefix rep.ucs-itaiji-005: <http://www.chise.org/est/view/character/rep.ucs-itaiji-005=> .
 
 ucs:0x2A701   # 𪜁
     :structure [ a idc:⿱ ;
@@ -3351,12 +3353,7 @@ ucs:0x2A94B   # 𪥋
     ] .
 ucs:0x2A94C   # 𪥌
     :structure [ a idc:⿱ ;
-        :above    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x4E3F ; # 丿
-                :below    a.ucs:0x2053F   # 𠔿
-            ]
-        ] ;
+        :above    rep.ucs-itaiji-005:0x56DF ; # &U-i005+56DF;
         :below    a.ucs:0x5927   # 大
     ] .
 ucs:0x2A94D   # 𪥍
@@ -3678,12 +3675,7 @@ ucs:0x2A981   # 𪦁
 ucs:0x2A982   # 𪦂
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5973 ; # 女
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    rep.ucs-itaiji-001:0x56DF ; # &U-i001+56DF;
-                :below    a.ucs:0x5927   # 大
-            ]
-        ]
+        :right    rep.ucs-itaiji-002:0x5965   # &U-i002+5965;
     ] .
 ucs:0x2A983   # 𪦃
     :structure [ a idc:⿰ ;
