@@ -91,6 +91,11 @@ rep.mj:031960   # &MJ031960;
         :above    rep.adobe-japan1-0:04110 ; # &AJ1-04110;
         :below    a.ucs:0x53B6   # 厶
     ] .
+rep.mj:032017   # &MJ032017;
+    :structure [ a idc:⿵ ;
+        :surround rep.big5-cdp:0x8BD6 ; # &CDP-8BD6;
+        :filling  a.ucs:0x53C8   # 又
+    ] .
 rep.mj:032900   # &MJ032900;
     :structure [ a idc:⿴ ;
         :surround a.ucs:0x56D7 ; # 囗
