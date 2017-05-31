@@ -2043,7 +2043,7 @@ rep.mj:015838   # &MJ015838;
     ] .
 rep.mj:015839   # &MJ015839;
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2EA1 ; # ⺡
+        :left     a.ucs:0x6C35 ; # 氵
         :right    rep.cns11643-1:0x5C7B   # &C1-5C7B;
     ] .
 rep.mj:015844   # &MJ015844;
