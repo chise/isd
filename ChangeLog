@@ -1,5 +1,13 @@
 2017-05-31  MORIOKA Tomohiko  <tomo.git@chise.org>
 
+	* ISD-UCS-Ext-B-4.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Ext-A.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Basic.ttl: Sync up with the current environment.
+
+2017-05-31  MORIOKA Tomohiko  <tomo.git@chise.org>
+
 	* ISD-MJ-3.ttl: Sync up with the current environment.
 
 	* ISD-MJ-1.ttl: Sync up with the current environment.
@@ -7,6 +15,8 @@
 	* ISD-UCS-Ext-C.ttl: Sync up with the current environment.
 
 	* ISD-UCS-Ext-B-5.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Ext-B-3.ttl: Sync up with the current environment.
 
 	* ISD-UCS-Ext-B-1.ttl: Sync up with the current environment.
 
