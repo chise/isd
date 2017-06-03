@@ -4,6 +4,7 @@
 @prefix a.ucs: <http://www.chise.org/est/view/character/rep.ucs=> .
 @prefix rep.ucs_iso: <http://www.chise.org/est/view/character/rep.ucs@iso=> .
 @prefix rep.ucs_unicode: <http://www.chise.org/est/view/character/rep.ucs@unicode=> .
+@prefix g.ucs_cns: <http://www.chise.org/est/view/character/g.ucs@cns=> .
 @prefix g2.ucs_unicode: <http://www.chise.org/est/view/character/g2.ucs@unicode=> .
 @prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
 @prefix g2.mj: <http://www.chise.org/est/view/character/g2.mj=> .
@@ -128,10 +129,25 @@ rep.mj:002066   # &MJ002066;
         :above    rep.adobe-japan1-0:01694 ; # &AJ1-01694;
         :below    a.ucs:0x6C34   # 水
     ] .
+rep.mj:002208   # &MJ002208;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x6C35 ; # 氵
+        :right    rep.ucs_iso:0x21EDF   # &C4-4325;
+    ] .
 rep.mj:002326   # &MJ002326;
     :structure [ a idc:⿺ ;
         :surround a.ucs:0x9ED2 ; # 黒
         :filling  a.ucs:0x5360   # 占
+    ] .
+rep.mj:002335   # &MJ002335;
+    :structure [ a idc:⿸ ;
+        :surround rep.adobe-japan1-0:07430 ; # &AJ1-07430;
+        :filling  a.ucs:0x706B   # 火
+    ] .
+rep.mj:002336   # &MJ002336;
+    :structure [ a idc:⿸ ;
+        :surround g.ucs_cns:0x9761 ; # &G-CU+9761;
+        :filling  a.ucs:0x706B   # 火
     ] .
 rep.mj:002815   # 䀠
     :structure [ a idc:⿰ ;
