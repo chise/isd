@@ -2039,7 +2039,7 @@ rep.mj:015832   # &MJ015832;
 rep.mj:015838   # &MJ015838;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6C35 ; # 氵
-        :right    rep.cns11643-1:0x5C7B   # &C1-5C7B;
+        :right    rep.mj:022034   # &MJ022034;
     ] .
 rep.mj:015839   # &MJ015839;
     :structure [ a idc:⿰ ;
@@ -2332,6 +2332,21 @@ rep.mj:016266   # &MJ016266;
     :structure [ a idc:⿸ ;
         :surround a.ucs:0x20087 ; # 𠂇
         :filling  a.ucs:0x706B   # 火
+    ] .
+rep.mj:016516   # &MJ016516;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x706B ; # 火
+        :right    rep.mj:026434   # &MJ026434;
+    ] .
+rep.mj:016688   # &MJ016688;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x706B ; # 火
+        :right    rep.mj:007965   # &MJ007965;
+    ] .
+rep.mj:016721   # &MJ016721;
+    :structure [ a idc:⿱ ;
+        :above    rep.adobe-japan1-0:07430 ; # &AJ1-07430;
+        :below    a.ucs:0x706C   # 灬
     ] .
 rep.mj:016740   # &MJ016740;
     :structure [ a idc:⿳ ;
