@@ -29850,7 +29850,7 @@ a.ucs:0x6568   # 敨
 a.ucs:0x6569   # 敩
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5B66 ; # 学
-        :right    a.ucs:0x6535   # 攵
+        :right    a.ucs_component:0x6535   # &A-compU+6535;
     ] .
 a.ucs:0x656A   # 敪
     :structure [ a idc:⿰ ;
@@ -30005,7 +30005,7 @@ a.ucs:0x6585   # 斅
 a.ucs:0x6586   # 斆
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5B78 ; # 學
-        :right    a.ucs:0x6535   # 攵
+        :right    a.ucs_component:0x6535   # &A-compU+6535;
     ] .
 a.ucs:0x6587   # 文
     :structure [ a idc:⿱ ;
@@ -44452,7 +44452,7 @@ a.ucs:0x70A1   # 炡
 a.ucs:0x70A2   # 炢
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x706B ; # 火
-        :right    a.ucs:0x672F   # 术
+        :right    a.ucs_component:0x672F   # &A-compU+672F;
     ] .
 a.ucs:0x70A3   # 炣
     :structure [ a idc:⿰ ;
@@ -62104,13 +62104,8 @@ a.ucs:0x7E4B   # 繋
     ] .
 a.ucs:0x7E4C   # 繌
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x7CF9 ; # 糹
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x56DF ; # 囟
-                :below    a.ucs:0x5902   # 夂
-            ]
-        ]
+        :left     a.ucs:0x7CF8 ; # 糸
+        :right    a.ucs:0x21569   # 𡕩
     ] .
 a.ucs:0x7E4D   # 繍
     :structure [ a idc:⿰ ;
