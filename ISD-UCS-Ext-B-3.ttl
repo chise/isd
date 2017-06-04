@@ -6501,13 +6501,7 @@ ucs:0x24390   # 𤎐
 ucs:0x24391   # 𤎑
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x706B ; # 火
-        :right    [
-            :structure [ a idc:⿳ ;
-                :above    a.ucs:0x56DF ; # 囟
-                :middle   a.ucs:0x516B ; # 八
-                :below    a.ucs:0x590A   # 夊
-            ]
-        ]
+        :right    a.ucs:0x21569   # 𡕩
     ] .
 ucs:0x24392   # 𤎒
     :structure [ a idc:⿰ ;
@@ -31489,13 +31483,7 @@ ucs:0x25298   # 𥊘
 ucs:0x25299   # 𥊙
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x76EE ; # 目
-        :right    [
-            :structure [ a idc:⿳ ;
-                :above    a.ucs:0x56DF ; # 囟
-                :middle   a.ucs:0x516B ; # 八
-                :below    a.ucs:0x590A   # 夊
-            ]
-        ]
+        :right    a.ucs:0x21569   # 𡕩
     ] .
 ucs:0x2529A   # 𥊚
     :structure [ a idc:⿰ ;
