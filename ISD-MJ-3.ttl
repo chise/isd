@@ -51,6 +51,17 @@ rep.mj:030647   # &MJ030647;
         :left     a.ucs:0x2E85 ; # ⺅
         :right    rep.mj:007645   # &MJ007645;
     ] .
+rep.mj:031009   # &MJ031009;
+    :structure [ a idc:⿳ ;
+        :above    a.ucs:0x516B ; # 八
+        :middle   [
+            :structure [ a idc:⿱ ;
+                :above    a.ucs:0x4E00 ; # 一
+                :below    rep.big5-cdp:0x88BB   # &CDP-88BB;
+            ]
+        ] ;
+        :below    a.ucs:0x706C   # 灬
+    ] .
 rep.mj:031055   # &MJ031055;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x2E9C ; # ⺜
