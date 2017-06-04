@@ -15430,13 +15430,7 @@ ucs:0x288BB   # 𨢻
 ucs:0x288BC   # 𨢼
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x9149 ; # 酉
-        :right    [
-            :structure [ a idc:⿳ ;
-                :above    a.ucs:0x56DF ; # 囟
-                :middle   a.ucs:0x516B ; # 八
-                :below    a.ucs:0x590A   # 夊
-            ]
-        ]
+        :right    a.ucs:0x21569   # 𡕩
     ] .
 ucs:0x288BD   # 𨢽
     :structure [ a idc:⿰ ;
@@ -42820,12 +42814,7 @@ ucs:0x29915   # 𩤕
 ucs:0x29916   # 𩤖
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x99AC ; # 馬
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x56DF ; # 囟
-                :below    a.ucs:0x513F   # 儿
-            ]
-        ]
+        :right    a.ucs:0x20486   # 𠒆
     ] .
 ucs:0x29917   # 𩤗
     :structure [ a idc:⿰ ;
