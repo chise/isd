@@ -24617,7 +24617,7 @@ a.ucs:0x6154   # 慔
 a.ucs:0x6155   # 慕
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x83AB ; # 莫
-        :below    rep.adobe-japan1-4:13852   # &AJ1-13852;
+        :below    a.ucs:0x38FA   # 㣺
     ] .
 a.ucs:0x6156   # 慖
     :structure [ a idc:⿰ ;
