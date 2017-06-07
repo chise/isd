@@ -586,7 +586,7 @@ rep.mj:011821   # &MJ011821;
     ] .
 rep.mj:011822   # &MJ011822;
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x83AB ; # 莫
+        :above    rep.cns11643-1:0x5C7B ; # &C1-5C7B;
         :below    rep.adobe-japan1-4:13852   # &AJ1-13852;
     ] .
 rep.mj:011831   # &MJ011831;
@@ -2053,8 +2053,8 @@ rep.mj:015844   # &MJ015844;
     ] .
 rep.mj:015854   # &MJ015854;
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2EA1 ; # ⺡
-        :right    a.ucs:0x66FC   # 曼
+        :left     a.ucs:0x6C35 ; # 氵
+        :right    rep.mj:013499   # &MJ013499;
     ] .
 rep.mj:015855   # &MJ015855;
     :structure [ a idc:⿰ ;
