@@ -149,6 +149,11 @@ rep.mj:002336   # &MJ002336;
         :surround g.ucs_cns:0x9761 ; # &G-CU+9761;
         :filling  a.ucs:0x706B   # 火
     ] .
+rep.mj:002339   # &MJ002339;
+    :structure [ a idc:⿱ ;
+        :above    rep.jis-x0213-2:0x702A ; # &GT-25225;
+        :below    a.ucs:0x2123C   # 𡈼
+    ] .
 rep.mj:002815   # 䀠
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x76EE ; # 目
