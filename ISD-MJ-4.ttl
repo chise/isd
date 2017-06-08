@@ -8,6 +8,7 @@
 @prefix rep.cns11643-2: <http://www.chise.org/est/view/character/rep.cns11643-2=> .
 @prefix rep.cns11643-4: <http://www.chise.org/est/view/character/rep.cns11643-4=> .
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
+@prefix rep.gt: <http://www.chise.org/est/view/character/rep.gt=> .
 
 rep.mj:040072   # 𤏐
     :structure [ a idc:⿰ ;
@@ -28,6 +29,11 @@ rep.mj:040193   # &MJ040193;
                 :below    a.ucs:0x706C   # 灬
             ]
         ]
+    ] .
+rep.mj:040249   # &MJ040249;
+    :structure [ a idc:⿰ ;
+        :left     rep.gt:25281 ; # &GT-25281;
+        :right    a.ucs:0x4E90   # 亐
     ] .
 rep.mj:042408   # &MJ042408;
     :structure [ a idc:⿰ ;
