@@ -27572,7 +27572,7 @@ ucs:0x22FE1   # 𢿡
     ] .
 ucs:0x22FE2   # 𢿢
     :structure [ a idc:⿰ ;
-        :left     rep.cns11643-4:0x386A ; # &C4-386A;
+        :left     a.ucs:0x24514 ; # 𤔔
         :right    a.ucs:0x6534   # 攴
     ] .
 ucs:0x22FE3   # 𢿣
@@ -27678,8 +27678,8 @@ ucs:0x22FF2   # 𢿲
     ] .
 ucs:0x22FF3   # 𢿳
     :structure [ a idc:⿰ ;
-        :left     rep.cns11643-4:0x386A ; # &C4-386A;
-        :right    a.ucs:0x2E99   # ⺙
+        :left     a.ucs:0x24514 ; # 𤔔
+        :right    a.ucs:0x6535   # 攵
     ] .
 ucs:0x22FF4   # 𢿴
     :structure [ a idc:⿰ ;
