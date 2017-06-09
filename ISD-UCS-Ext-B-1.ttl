@@ -41261,7 +41261,7 @@ ucs:0x21856   # 𡡖
 ucs:0x21857   # 𡡗
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5973 ; # 女
-        :right    rep.cns11643-4:0x386A   # &C4-386A;
+        :right    a.ucs:0x24514   # 𤔔
     ] .
 ucs:0x21858   # 𡡘
     :structure [ a idc:⿱ ;
