@@ -11241,13 +11241,7 @@ ucs:0x2AE94   # 𪺔
 ucs:0x2AE95   # 𪺕
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x722B ; # 爫
-        :below    [
-            :structure [ a idc:⿲ ;
-                :left     a.ucs:0x5E7A ; # 幺
-                :middle   a.ucs:0x5E7A ; # 幺
-                :right    a.ucs:0x5E7A   # 幺
-            ]
-        ]
+        :below    rep.ucs-itaiji-001:0x221C7   # &U-i001+221C7;
     ] .
 ucs:0x2AE96   # 𪺖
     :structure [ a idc:⿰ ;
