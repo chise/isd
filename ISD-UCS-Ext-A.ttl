@@ -14163,8 +14163,8 @@ a.ucs:0x3E4B   # 㹋
     ] .
 a.ucs:0x3E4C   # 㹌
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x725C ; # 牜
-        :right    a.ucs:0x7522   # 產
+        :left     a.ucs:0x725B ; # 牛
+        :right    a.jis-x0208:0x3B3A   # &J97-3B3A;
     ] .
 a.ucs:0x3E4D   # 㹍
     :structure [ a idc:⿰ ;
@@ -27880,7 +27880,7 @@ a.ucs:0x4888   # 䢈
     ] .
 a.ucs:0x4889   # 䢉
     :structure [ a idc:⿱ ;
-        :above    rep.gt-k:11083 ; # &GT-K11083;
+        :above    a.gt-k:11083 ; # &A-GT-K11083;
         :below    a.ucs:0x8FB0   # 辰
     ] .
 a.ucs:0x488A   # 䢊
