@@ -133,6 +133,7 @@
     =>ucs-itaiji-001
     =>ucs-itaiji-002
     =>ucs-itaiji-005
+    =>ucs-itaiji-007
     ==>ucs@bucs
     =big5
     =>cbeta
