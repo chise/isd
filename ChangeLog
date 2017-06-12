@@ -1,3 +1,16 @@
+2017-06-09  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* isd-turtle.el (est-coded-charset-priority-list): Add
+	`=>ucs-itaiji-007'.
+
+	* ISD-MJ-5.ttl: Sync up with the current environment.
+
+	* ISD-MJ-3.ttl: Sync up with the current environment.
+
+	* ISD-MJ-1.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Basic.ttl: Sync up with the current environment.
+
 2017-06-08  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* ISD-UCS-Ext-B-1.ttl: Sync up with the current environment.
