@@ -10,6 +10,7 @@
 @prefix rep.adobe-japan1-0: <http://www.chise.org/est/view/character/rep.adobe-japan1-0=> .
 @prefix rep.adobe-japan1-4: <http://www.chise.org/est/view/character/rep.adobe-japan1-4=> .
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
+@prefix rep.gt: <http://www.chise.org/est/view/character/rep.gt=> .
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
 @prefix rep.cbeta: <http://www.chise.org/est/view/character/rep.cbeta=> .
 @prefix rep.ucs-var-001: <http://www.chise.org/est/view/character/rep.ucs-var-001=> .
@@ -137,6 +138,11 @@ rep.mj:033579   # &MJ033579;
         :left     a.ucs:0x5973 ; # 女
         :right    rep.big5-cdp:0x8CEA   # &CDP-8CEA;
     ] .
+rep.mj:033743   # &MJ033743;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x5973 ; # 女
+        :right    rep.gt:25282   # &GT-25282;
+    ] .
 rep.mj:034510   # 𡵯
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x5C71 ; # 山
@@ -190,6 +196,16 @@ rep.mj:036296   # &MJ036296;
 rep.mj:037308   # &MJ037308;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x2F83F ; # 周
+        :right    a.ucs:0x6534   # 攴
+    ] .
+rep.mj:037396   # &MJ037396;
+    :structure [ a idc:⿰ ;
+        :left     rep.gt:25281 ; # &GT-25281;
+        :right    a.ucs:0x6534   # 攴
+    ] .
+rep.mj:037397   # &MJ037397;
+    :structure [ a idc:⿰ ;
+        :left     rep.gt:25282 ; # &GT-25282;
         :right    a.ucs:0x6534   # 攴
     ] .
 rep.mj:037742   # &MJ037742;
