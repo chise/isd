@@ -36,6 +36,7 @@
 @prefix rep.ucs-itaiji-001: <http://www.chise.org/est/view/character/rep.ucs-itaiji-001=> .
 @prefix a.ucs-itaiji-001: <http://www.chise.org/est/view/character/a.ucs-itaiji-001=> .
 @prefix rep.ucs-itaiji-002: <http://www.chise.org/est/view/character/rep.ucs-itaiji-002=> .
+@prefix a.ucs-itaiji-007: <http://www.chise.org/est/view/character/a.ucs-itaiji-007=> .
 @prefix rep.ucs-itaiji-007: <http://www.chise.org/est/view/character/rep.ucs-itaiji-007=> .
 
 ucs:0x22000   # 𢀀
@@ -27645,6 +27646,11 @@ ucs:0x22FED   # 𢿭
     :structure [ a idc:⿱ ;
         :above    rep.big5-cdp:0x8CB6 ; # &CDP-8CB6;
         :below    a.ucs:0x5353   # 卓
+    ] .
+ucs:0x22FEE   # 𢿮
+    :structure [ a idc:⿰ ;
+        :left     a.ucs-itaiji-007:0x24514 ; # &A-U-i007+24514;
+        :right    a.ucs:0x6534   # 攴
     ] .
 ucs:0x22FEF   # 𢿯
     :structure [ a idc:⿰ ;
