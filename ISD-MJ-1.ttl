@@ -216,6 +216,17 @@ rep.mj:010801   # &MJ010801;
         ] ;
         :below    rep.adobe-japan1-0:01694   # &AJ1-01694;
     ] .
+rep.mj:010874   # &MJ010874;
+    :structure [ a idc:⿳ ;
+        :above    a.ucs:0x5196 ; # 冖
+        :middle   a.ucs:0x5183 ; # 冃
+        :below    a.ucs:0x2BBDC   # 𫯜
+    ] .
+rep.mj:010875   # &MJ010875;
+    :structure [ a idc:⿱ ;
+        :above    rep.ucs_iso:0x20587 ; # &U-00020587;
+        :below    a.ucs:0x5DFE   # 巾
+    ] .
 rep.mj:010888   # &MJ010888;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5DFE ; # 巾
