@@ -46900,7 +46900,7 @@ a.ucs:0x7285   # 犅
     ] .
 a.ucs:0x7286   # 犆
     :structure [ a idc:⿰ ;
-        :left     rep.big5-cdp:0x8BA9 ; # &CDP-8BA9;
+        :left     a.ucs:0x725B ; # 牛
         :right    a.ucs:0x76F4   # 直
     ] .
 a.ucs:0x7287   # 犇
