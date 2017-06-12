@@ -41813,6 +41813,11 @@ ucs:0x2189A   # 𡢚
         :left     a.ucs:0x5973 ; # 女
         :right    rep.cns11643-3:0x415A   # &C3-415A;
     ] .
+ucs:0x2189B   # 𡢛
+    :structure [ a idc:⿱ ;
+        :above    a.ucs-itaiji-001:0x2452D ; # &A-U-i001+2452D;
+        :below    a.ucs:0x5973   # 女
+    ] .
 ucs:0x2189C   # 𡢜
     :structure [ a idc:⿸ ;
         :surround a.ucs:0x5E7F ; # 广
