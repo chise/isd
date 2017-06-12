@@ -125,6 +125,16 @@ rep.mj:057365   # &MJ057365;
         :left     a.ucs:0x4EB0 ; # 亰
         :right    a.ucs:0x5C24   # 尤
     ] .
+rep.mj:057404   # &MJ057404;
+    :structure [ a idc:⿱ ;
+        :above    [
+            :structure [ a idc:⿰ ;
+                :left     a.ucs:0x21FE8 ; # 𡿨
+                :right    a.ucs:0x4E37   # 丷
+            ]
+        ] ;
+        :below    a.ucs:0x679C   # 果
+    ] .
 rep.mj:057407   # &MJ057407;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x4E00 ; # 一
