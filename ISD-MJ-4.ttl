@@ -46,6 +46,11 @@ rep.mj:040503   # &MJ040503;
         :left     a.ucs:0x725B ; # 牛
         :right    rep.adobe-japan1-0:04216   # &AJ1-04216;
     ] .
+rep.mj:041434   # &MJ041434;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x7530 ; # 田
+        :right    rep.mj:007897   # &MJ007897;
+    ] .
 rep.mj:042408   # &MJ042408;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x76EE ; # 目
