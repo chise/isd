@@ -8556,13 +8556,7 @@ a.ucs:0x3A49   # 㩉
 a.ucs:0x3A4A   # 㩊
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x2E98 ; # ⺘
-        :right    [
-            :structure [ a idc:⿳ ;
-                :above    a.ucs:0x722B ; # 爫
-                :middle   a.ucs:0x2EAB ; # ⺫
-                :below    a.ucs:0x5BF8   # 寸
-            ]
-        ]
+        :right    a.ucs:0x21B33   # 𡬳
     ] .
 a.ucs:0x3A4B   # 㩋
     :structure [ a idc:⿰ ;
@@ -15406,7 +15400,7 @@ a.ucs:0x3F35   # 㼵
     ] .
 a.ucs:0x3F36   # 㼶
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x4FDE ; # 俞
+        :left     a.jis-x0208:0x5141 ; # &J97-5141;
         :right    a.ucs:0x74E6   # 瓦
     ] .
 a.ucs:0x3F37   # 㼷
@@ -27018,8 +27012,8 @@ a.ucs:0x47E2   # 䟢
     ] .
 a.ucs:0x47E3   # 䟣
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2ECA ; # ⻊
-        :right    a.ucs:0x672F   # 术
+        :left     a.ucs:0x27FB7 ; # 𧾷
+        :right    a.ucs_component:0x672F   # &A-compU+672F;
     ] .
 a.ucs:0x47E4   # 䟤
     :structure [ a idc:⿰ ;
