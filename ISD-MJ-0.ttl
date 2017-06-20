@@ -154,6 +154,11 @@ rep.mj:002339   # &MJ002339;
         :above    rep.jis-x0213-2:0x702A ; # &GT-25225;
         :below    a.ucs:0x2123C   # 𡈼
     ] .
+rep.mj:002594   # &MJ002594;
+    :structure [ a idc:⿰ ;
+        :left     rep.adobe-japan1-0:04216 ; # &AJ1-04216;
+        :right    a.ucs:0x74E6   # 瓦
+    ] .
 rep.mj:002815   # 䀠
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x76EE ; # 目
