@@ -187,9 +187,9 @@ rep.mj:010790   # &MJ010790;
         :below    a.ucs:0x5DF1   # 己
     ] .
 rep.mj:010798   # &MJ010798;
-    :structure [ a idc:⿰ ;
-        :left     rep.gt-k:01769 ; # &GT-K01769;
-        :right    a.ucs:0x5DF1   # 己
+    :structure [ a idc:⿱ ;
+        :above    rep.gt-k:01769 ; # &GT-K01769;
+        :below    a.ucs:0x5DF1   # 己
     ] .
 rep.mj:010799   # &MJ010799;
     :structure [ a idc:⿱ ;
@@ -2501,6 +2501,11 @@ rep.mj:017420   # 璋
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x738B ; # 王
         :right    a.ucs:0x7AE0   # 章
+    ] .
+rep.mj:017427   # &MJ017427;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x248E9 ; # 𤣩
+        :right    rep.cns11643-1:0x5D22   # &C1-5D22;
     ] .
 rep.mj:017433   # 璘
     :structure [ a idc:⿰ ;
