@@ -54,7 +54,9 @@
     =ucs-itaiji-005
     =ucs-itaiji-006
     =ucs-itaiji-007
+    =ucs-itaiji-008
     =ucs-itaiji-009
+    =ucs-itaiji-010
     =ucs-itaiji-084
     =ucs-var-001
     =ucs-var-002
@@ -85,6 +87,7 @@
     =>jis-x0208 =>jis-x0213-1
     =>jis-x0208@1997
     =>ucs@iwds-1
+    =>ucs@cognate
     =>ucs@component
     =>iwds-1
     =>ucs@iso
@@ -132,7 +135,10 @@
     =jis-x0208@1983 =jis-x0208@1978
     =>ucs-itaiji-001
     =>ucs-itaiji-002
+    =>ucs-itaiji-003
+    =>ucs-itaiji-004
     =>ucs-itaiji-005
+    =>ucs-itaiji-006
     =>ucs-itaiji-007
     ==>ucs@bucs
     =big5
