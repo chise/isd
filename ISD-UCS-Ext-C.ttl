@@ -3,11 +3,13 @@
 @prefix idc: <http://rdf.chise.org/rdf/type/character/idc/> .
 @prefix a.ucs: <http://www.chise.org/est/view/character/rep.ucs=> .
 @prefix ucs: <http://www.chise.org/est/view/character/ucs=> .
+@prefix a.ucs_component: <http://www.chise.org/est/view/character/a.ucs@component=> .
 @prefix rep.ucs_iso: <http://www.chise.org/est/view/character/rep.ucs@iso=> .
 @prefix rep.ucs_JP...hanazono: <http://www.chise.org/est/view/character/rep.ucs@JP...hanazono=> .
 @prefix rep.adobe-japan1-4: <http://www.chise.org/est/view/character/rep.adobe-japan1-4=> .
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
+@prefix a.gt-k: <http://www.chise.org/est/view/character/a.gt-k=> .
 @prefix rep.ucs-itaiji-001: <http://www.chise.org/est/view/character/rep.ucs-itaiji-001=> .
 @prefix rep.ucs-itaiji-002: <http://www.chise.org/est/view/character/rep.ucs-itaiji-002=> .
 @prefix rep.ucs-itaiji-003: <http://www.chise.org/est/view/character/rep.ucs-itaiji-003=> .
@@ -5027,14 +5029,9 @@ ucs:0x2AA67   # 𪩧
 ucs:0x2AA68   # 𪩨
     :structure [ a idc:⿰ ;
         :left     [
-            :structure [ a idc:⿱ ;
-                :above    [
-                    :structure [ a idc:⿳ ;
-                        :above    a.ucs:0x2E88 ; # ⺈
-                        :middle   a.ucs:0x7F52 ; # 罒
-                        :below    a.ucs:0x5196   # 冖
-                    ]
-                ] ;
+            :structure [ a idc:⿳ ;
+                :above    rep.gt-k:03322 ; # &GT-K03322;
+                :middle   a.ucs:0x5196 ; # 冖
                 :below    a.ucs:0x5915   # 夕
             ]
         ] ;
@@ -7588,7 +7585,7 @@ ucs:0x2AC1D   # 𪰝
 ucs:0x2AC1E   # 𪰞
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x65E5 ; # 日
-        :below    a.ucs:0x200B9   # 𠂹
+        :below    a.gt-k:03433   # &A-GT-K03433;
     ] .
 ucs:0x2AC1F   # 𪰟
     :structure [ a idc:⿰ ;
@@ -8207,12 +8204,7 @@ ucs:0x2AC8C   # 𪲌
 ucs:0x2AC8D   # 𪲍
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6728 ; # 木
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x4491 ; # 䒑
-                :below    a.ucs:0x5DFE   # 巾
-            ]
-        ]
+        :right    rep.gt-k:02281   # &GT-K02281;
     ] .
 ucs:0x2AC8E   # 𪲎
     :structure [ a idc:⿰ ;
@@ -8238,7 +8230,7 @@ ucs:0x2AC91   # 𪲑
     :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿰ ;
-                :left     a.ucs:0x738B ; # 王
+                :left     a.ucs:0x248E9 ; # 𤣩
                 :right    a.ucs:0x961D   # 阝
             ]
         ] ;
@@ -8324,7 +8316,7 @@ ucs:0x2ACA0   # 𪲠
     :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿰ ;
-                :left     a.ucs:0x738B ; # 王
+                :left     a.ucs:0x248E9 ; # 𤣩
                 :right    a.ucs:0x5205   # 刅
             ]
         ] ;
@@ -9927,12 +9919,7 @@ ucs:0x2ADB2   # 𪶲
 ucs:0x2ADB3   # 𪶳
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6C35 ; # 氵
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x514D ; # 免
-                :below    a.ucs:0x2E80   # ⺀
-            ]
-        ]
+        :right    a.ucs:0x2B94E   # 𫥎
     ] .
 ucs:0x2ADB4   # 𪶴
     :structure [ a idc:⿰ ;
@@ -10795,9 +10782,8 @@ ucs:0x2AE4B   # 𪹋
         :right    a.ucs:0x79B9   # 禹
     ] .
 ucs:0x2AE4C   # 𪹌
-    :structure [ a idc:⿳ ;
-        :above    a.ucs:0x2E88 ; # ⺈
-        :middle   a.ucs:0x7F52 ; # 罒
+    :structure [ a idc:⿱ ;
+        :above    rep.gt-k:03322 ; # &GT-K03322;
         :below    a.ucs:0x7073   # 灳
     ] .
 ucs:0x2AE4D   # 𪹍
@@ -11563,32 +11549,32 @@ ucs:0x2AECC   # 𪻌
     ] .
 ucs:0x2AECD   # 𪻍
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x53C8   # 又
     ] .
 ucs:0x2AECE   # 𪻎
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x52FB   # 勻
     ] .
 ucs:0x2AECF   # 𪻏
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x53CA   # 及
     ] .
 ucs:0x2AED0   # 𪻐
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x4ECE   # 从
     ] .
 ucs:0x2AED1   # 𪻑
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x4EA2   # 亢
     ] .
 ucs:0x2AED2   # 𪻒
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5FC3   # 心
     ] .
 ucs:0x2AED3   # 𪻓
@@ -11598,17 +11584,17 @@ ucs:0x2AED3   # 𪻓
     ] .
 ucs:0x2AED4   # 𪻔
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5198   # 冘
     ] .
 ucs:0x2AED5   # 𪻕
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x53E4   # 古
     ] .
 ucs:0x2AED6   # 𪻖
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x201A2 ; # 𠆢
@@ -11618,42 +11604,42 @@ ucs:0x2AED6   # 𪻖
     ] .
 ucs:0x2AED7   # 𪻗
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5736   # 圶
     ] .
 ucs:0x2AED8   # 𪻘
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x4E98   # 亘
     ] .
 ucs:0x2AED9   # 𪻙
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5F0F   # 式
     ] .
 ucs:0x2AEDA   # 𪻚
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x827E   # 艾
     ] .
 ucs:0x2AEDB   # 𪻛
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x540C   # 同
     ] .
 ucs:0x2AEDC   # 𪻜
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x4F11   # 休
     ] .
 ucs:0x2AEDD   # 𪻝
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5B87   # 宇
     ] .
 ucs:0x2AEDE   # 𪻞
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x4EA5   # 亥
     ] .
 ucs:0x2AEDF   # 𪻟
@@ -11668,72 +11654,72 @@ ucs:0x2AEDF   # 𪻟
     ] .
 ucs:0x2AEE0   # 𪻠
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5F04   # 弄
     ] .
 ucs:0x2AEE1   # 𪻡
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x8C46   # 豆
     ] .
 ucs:0x2AEE2   # 𪻢
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x6298   # 折
     ] .
 ucs:0x2AEE3   # 𪻣
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x518F   # 冏
     ] .
 ucs:0x2AEE4   # 𪻤
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5175   # 兵
     ] .
 ucs:0x2AEE5   # 𪻥
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x4EA8   # 亨
     ] .
 ucs:0x2AEE6   # 𪻦
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5948   # 奈
     ] .
 ucs:0x2AEE7   # 𪻧
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5774   # 坴
     ] .
 ucs:0x2AEE8   # 𪻨
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5356   # 卖
     ] .
 ucs:0x2AEE9   # 𪻩
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x6790   # 析
     ] .
 ucs:0x2AEEA   # 𪻪
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x660E   # 明
     ] .
 ucs:0x2AEEB   # 𪻫
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x7F54   # 罔
     ] .
 ucs:0x2AEEC   # 𪻬
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5CB3   # 岳
     ] .
 ucs:0x2AEED   # 𪻭
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x5196 ; # 冖
@@ -11742,14 +11728,13 @@ ucs:0x2AEED   # 𪻭
         ]
     ] .
 ucs:0x2AEEE   # 𪻮
-    :structure [ a idc:⿲ ;
-        :left     a.ucs:0x738B ; # 王
-        :middle   a.ucs:0x706B ; # 火
-        :right    a.ucs:0x738B   # 王
+    :structure [ a idc:⿴ ;
+        :surround a.ucs:0x73A8 ; # 玨
+        :filling  a.ucs:0x706B   # 火
     ] .
 ucs:0x2AEEF   # 𪻯
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x653E   # 放
     ] .
 ucs:0x2AEF0   # 𪻰
@@ -11759,17 +11744,17 @@ ucs:0x2AEF0   # 𪻰
     ] .
 ucs:0x2AEF1   # 𪻱
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x51FD   # 函
     ] .
 ucs:0x2AEF2   # 𪻲
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x8D2F   # 贯
     ] .
 ucs:0x2AEF3   # 𪻳
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5357   # 南
     ] .
 ucs:0x2AEF4   # 𪻴
@@ -11779,22 +11764,22 @@ ucs:0x2AEF4   # 𪻴
     ] .
 ucs:0x2AEF5   # 𪻵
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5398   # 厘
     ] .
 ucs:0x2AEF6   # 𪻶
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x539A   # 厚
     ] .
 ucs:0x2AEF7   # 𪻷
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x82E5   # 若
     ] .
 ucs:0x2AEF8   # 𪻸
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x82DB   # 苛
     ] .
 ucs:0x2AEF9   # 𪻹
@@ -11804,32 +11789,32 @@ ucs:0x2AEF9   # 𪻹
     ] .
 ucs:0x2AEFA   # 𪻺
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x8D35   # 贵
     ] .
 ucs:0x2AEFB   # 𪻻
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x7701   # 省
     ] .
 ucs:0x2AEFC   # 𪻼
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x23429   # 𣐩
     ] .
 ucs:0x2AEFD   # 𪻽
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5BA2   # 客
     ] .
 ucs:0x2AEFE   # 𪻾
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5F65   # 彥
     ] .
 ucs:0x2AEFF   # 𪻿
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5EA6   # 度
     ] .
 ucs:0x2AF00   # 𪼀
@@ -11839,7 +11824,7 @@ ucs:0x2AF00   # 𪼀
     ] .
 ucs:0x2AF01   # 𪼁
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5955   # 奕
     ] .
 ucs:0x2AF02   # 𪼂
@@ -11849,12 +11834,12 @@ ucs:0x2AF02   # 𪼂
     ] .
 ucs:0x2AF03   # 𪼃
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x6CF0   # 泰
     ] .
 ucs:0x2AF04   # 𪼄
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x8881   # 袁
     ] .
 ucs:0x2AF05   # 𪼅
@@ -11869,12 +11854,12 @@ ucs:0x2AF05   # 𪼅
     ] .
 ucs:0x2AF06   # 𪼆
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x539F   # 原
     ] .
 ucs:0x2AF07   # 𪼇
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5CEF   # 峯
     ] .
 ucs:0x2AF08   # 𪼈
@@ -11889,22 +11874,22 @@ ucs:0x2AF09   # 𪼉
     ] .
 ucs:0x2AF0A   # 𪼊
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5F92   # 徒
     ] .
 ucs:0x2AF0B   # 𪼋
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x7B14   # 笔
     ] .
 ucs:0x2AF0C   # 𪼌
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x96BB   # 隻
     ] .
 ucs:0x2AF0D   # 𪼍
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x7A74 ; # 穴
@@ -11914,37 +11899,37 @@ ucs:0x2AF0D   # 𪼍
     ] .
 ucs:0x2AF0E   # 𪼎
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x7F97   # 羗
     ] .
 ucs:0x2AF0F   # 𪼏
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x6851   # 桑
     ] .
 ucs:0x2AF10   # 𪼐
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x723D   # 爽
     ] .
 ucs:0x2AF11   # 𪼑
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5805   # 堅
     ] .
 ucs:0x2AF12   # 𪼒
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x839E   # 莞
     ] .
 ucs:0x2AF13   # 𪼓
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x570B   # 國
     ] .
 ucs:0x2AF14   # 𪼔
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x4EBC ; # 亼
@@ -11954,12 +11939,12 @@ ucs:0x2AF14   # 𪼔
     ] .
 ucs:0x2AF15   # 𪼕
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x65CF   # 族
     ] .
 ucs:0x2AF16   # 𪼖
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x5B80 ; # 宀
@@ -11969,12 +11954,12 @@ ucs:0x2AF16   # 𪼖
     ] .
 ucs:0x2AF17   # 𪼗
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x96EF   # 雯
     ] .
 ucs:0x2AF18   # 𪼘
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x2B1E6 ; # 𫇦
@@ -11984,82 +11969,82 @@ ucs:0x2AF18   # 𪼘
     ] .
 ucs:0x2AF19   # 𪼙
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x958F   # 閏
     ] .
 ucs:0x2AF1A   # 𪼚
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5195   # 冕
     ] .
 ucs:0x2AF1B   # 𪼛
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x96C6   # 集
     ] .
 ucs:0x2AF1C   # 𪼜
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x7FD5   # 翕
     ] .
 ucs:0x2AF1D   # 𪼝
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5C31   # 就
     ] .
 ucs:0x2AF1E   # 𪼞
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x6220   # 戠
     ] .
 ucs:0x2AF1F   # 𪼟
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x7280   # 犀
     ] .
 ucs:0x2AF20   # 𪼠
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x767C   # 發
     ] .
 ucs:0x2AF21   # 𪼡
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x757A   # 畺
     ] .
 ucs:0x2AF22   # 𪼢
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x776A   # 睪
     ] .
 ucs:0x2AF23   # 𪼣
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5967   # 奧
     ] .
 ucs:0x2AF24   # 𪼤
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x8A79   # 詹
     ] .
 ucs:0x2AF25   # 𪼥
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5EC9   # 廉
     ] .
 ucs:0x2AF26   # 𪼦
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x610F   # 意
     ] .
 ucs:0x2AF27   # 𪼧
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x84BC   # 蒼
     ] .
 ucs:0x2AF28   # 𪼨
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    [
             :structure [ a idc:⿱ ;
                 :above    a.ucs:0x5B80 ; # 宀
@@ -12075,17 +12060,17 @@ ucs:0x2AF28   # 𪼨
     ] .
 ucs:0x2AF29   # 𪼩
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x596D   # 奭
     ] .
 ucs:0x2AF2A   # 𪼪
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x78D0   # 磐
     ] .
 ucs:0x2AF2B   # 𪼫
     :structure [ a idc:⿲ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :middle   [
             :structure [ a idc:⿳ ;
                 :above    a.ucs:0x4491 ; # 䒑
@@ -12097,17 +12082,17 @@ ucs:0x2AF2B   # 𪼫
     ] .
 ucs:0x2AF2C   # 𪼬
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x9716   # 霖
     ] .
 ucs:0x2AF2D   # 𪼭
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x61B2   # 憲
     ] .
 ucs:0x2AF2E   # 𪼮
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x5BF0   # 寰
     ] .
 ucs:0x2AF2F   # 𪼯
@@ -12117,17 +12102,17 @@ ucs:0x2AF2F   # 𪼯
     ] .
 ucs:0x2AF30   # 𪼰
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x64E7   # 擧
     ] .
 ucs:0x2AF31   # 𪼱
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x8D07   # 贇
     ] .
 ucs:0x2AF32   # 𪼲
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x738B ; # 王
+        :left     a.ucs:0x248E9 ; # 𤣩
         :right    a.ucs:0x9EE8   # 黨
     ] .
 ucs:0x2AF33   # 𪼳
@@ -14653,10 +14638,14 @@ ucs:0x2B0F0   # 𫃰
         :right    a.ucs:0x53C1   # 叁
     ] .
 ucs:0x2B0F1   # 𫃱
-    :structure [ a idc:⿳ ;
-        :above    a.ucs:0x7CF9 ; # 糹
-        :middle   rep.adobe-japan1-4:15391 ; # &AJ1-15391;
-        :below    a.ucs:0x23C73   # 𣱳
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x7CF8 ; # 糸
+        :right    [
+            :structure [ a idc:⿱ ;
+                :above    rep.adobe-japan1-4:15391 ; # &AJ1-15391;
+                :below    a.ucs:0x23C73   # 𣱳
+            ]
+        ]
     ] .
 ucs:0x2B0F2   # 𫃲
     :structure [ a idc:⿰ ;
@@ -16342,7 +16331,7 @@ ucs:0x2B226   # 𫈦
 ucs:0x2B227   # 𫈧
     :structure [ a idc:⿳ ;
         :above    a.ucs:0x8279 ; # 艹
-        :middle   a.ucs:0x65E5 ; # 日
+        :middle   a.ucs_component:0x65E5 ; # &A-compU+65E5;
         :below    a.ucs:0x79B8   # 禸
     ] .
 ucs:0x2B228   # 𫈨
@@ -16605,12 +16594,7 @@ ucs:0x2B252   # 𫉒
     ] .
 ucs:0x2B253   # 𫉓
     :structure [ a idc:⿰ ;
-        :left     [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x4491 ; # 䒑
-                :below    a.ucs:0x5DFE   # 巾
-            ]
-        ] ;
+        :left     rep.gt-k:02281 ; # &GT-K02281;
         :right    a.ucs:0x6771   # 東
     ] .
 ucs:0x2B254   # 𫉔
@@ -16718,7 +16702,7 @@ ucs:0x2B266   # 𫉦
         :above    a.ucs:0x8279 ; # 艹
         :below    [
             :structure [ a idc:⿰ ;
-                :left     a.ucs:0x738B ; # 王
+                :left     a.ucs:0x248E9 ; # 𤣩
                 :right    a.ucs:0x6542   # 敂
             ]
         ]
@@ -17342,10 +17326,9 @@ ucs:0x2B2D1   # 𫋑
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x866B ; # 虫
         :right    [
-            :structure [ a idc:⿲ ;
-                :left     a.ucs:0x738B ; # 王
-                :middle   a.ucs:0x3405 ; # 㐅
-                :right    a.ucs:0x738B   # 王
+            :structure [ a idc:⿴ ;
+                :surround a.ucs:0x73A8 ; # 玨
+                :filling  a.ucs:0x3405   # 㐅
             ]
         ]
     ] .
@@ -18107,7 +18090,7 @@ ucs:0x2B35C   # 𫍜
 ucs:0x2B35D   # 𫍝
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x8BA0 ; # 讠
-        :right    rep.big5-cdp:0x89BA   # &CDP-89BA;
+        :right    a.ucs:0x2B823   # 𫠣
     ] .
 ucs:0x2B35E   # 𫍞
     :structure [ a idc:⿰ ;
@@ -19974,7 +19957,7 @@ ucs:0x2B4A0   # 𫒠
 ucs:0x2B4A1   # 𫒡
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x91D1 ; # 金
-        :right    rep.big5-cdp:0x8DA6   # &CDP-8DA6;
+        :right    a.ucs:0x2DEFE   # 𭻾
     ] .
 ucs:0x2B4A2   # 𫒢
     :structure [ a idc:⿰ ;
@@ -20473,7 +20456,7 @@ ucs:0x2B4F6   # 𫓶
 ucs:0x2B4F7   # 𫓷
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x9485 ; # 钅
-        :right    rep.big5-cdp:0x8DA6   # &CDP-8DA6;
+        :right    a.ucs:0x2DEFE   # 𭻾
     ] .
 ucs:0x2B4F8   # 𫓸
     :structure [ a idc:⿰ ;
@@ -21245,8 +21228,9 @@ ucs:0x2B583   # 𫖃
         :right    a.ucs:0x8D35   # 贵
     ] .
 ucs:0x2B584   # 𫖄
-    :structure [ a idc:⿰ ;
-        :left     a.ucs:0x5047 ; # 假
+    :structure [ a idc:⿲ ;
+        :left     a.ucs:0x4EBB ; # 亻
+        :middle   a.ucs:0x2C1A3 ; # 𬆣
         :right    a.ucs:0x9762   # 面
     ] .
 ucs:0x2B585   # 𫖅
@@ -21256,13 +21240,7 @@ ucs:0x2B585   # 𫖅
     ] .
 ucs:0x2B586   # 𫖆
     :structure [ a idc:⿰ ;
-        :left     [
-            :structure [ a idc:⿳ ;
-                :above    a.ucs:0x5EFF ; # 廿
-                :middle   a.ucs:0x53E3 ; # 口
-                :below    a.ucs:0x5341   # 十
-            ]
-        ] ;
+        :left     rep.ucs-itaiji-001:0x2E9D3 ; # &U-i001+2E9D3;
         :right    a.ucs:0x53EA   # 只
     ] .
 ucs:0x2B587   # 𫖇
@@ -22530,13 +22508,7 @@ ucs:0x2B66C   # 𫙬
 ucs:0x2B66D   # 𫙭
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x29D4B ; # 𩵋
-        :right    [
-            :structure [ a idc:⿳ ;
-                :above    a.ucs:0x514D ; # 免
-                :middle   a.ucs:0x4E36 ; # 丶
-                :below    a.ucs:0x4E36   # 丶
-            ]
-        ]
+        :right    a.ucs:0x2B94E   # 𫥎
     ] .
 ucs:0x2B66E   # 𫙮
     :structure [ a idc:⿰ ;
