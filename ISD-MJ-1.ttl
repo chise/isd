@@ -2297,7 +2297,7 @@ rep.mj:016165   # &MJ016165;
 rep.mj:016166   # &MJ016166;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6C35 ; # 氵
-        :right    a.ucs:0x856D   # 蕭
+        :right    rep.mj:022847   # &MJ022847;
     ] .
 rep.mj:016175   # &MJ016175;
     :structure [ a idc:⿰ ;
