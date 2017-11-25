@@ -1,3 +1,9 @@
+2017-11-24  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* ISD-MJ-4.ttl: Sync up with the current environment.
+
+	* ISD-MJ-3.ttl: Sync up with the current environment.
+
 2017-11-20  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* ISD-MJ-6.ttl: Sync up with the current environment.
@@ -5,6 +11,8 @@
 	* ISD-MJ-1.ttl: Sync up with the current environment.
 
 	* ISD-MJ-0.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Ext-B-6.ttl: Sync up with the current environment.
 
 2017-11-11  MORIOKA Tomohiko  <tomo.git@chise.org>
 
