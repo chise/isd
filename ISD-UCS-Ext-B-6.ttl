@@ -2781,12 +2781,7 @@ ucs:0x2A1DB   # 𪇛
     ] .
 ucs:0x2A1DC   # 𪇜
     :structure [ a idc:⿰ ;
-        :left     [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x8279 ; # 艹
-                :below    a.ucs:0x5BB3   # 害
-            ]
-        ] ;
+        :left     a.ucs:0x26D6F ; # 𦵯
         :right    a.ucs:0x9CE5   # 鳥
     ] .
 ucs:0x2A1DD   # 𪇝
@@ -3638,7 +3633,7 @@ ucs:0x2A253   # 𪉓
     ] .
 ucs:0x2A254   # 𪉔
     :structure [ a idc:⿰ ;
-        :left     rep.ucs_iso:0x23B09 ; # &C6-386A;
+        :left     a.ucs:0x23B09 ; # 𣬉
         :right    a.ucs:0x2EE6   # ⻦
     ] .
 ucs:0x2A255   # 𪉕
@@ -5183,17 +5178,7 @@ ucs:0x2A35D   # 𪍝
 ucs:0x2A35E   # 𪍞
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x9EA5 ; # 麥
-        :right    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x4EBB ; # 亻
-                :right    [
-                    :structure [ a idc:⿱ ;
-                        :above    a.ucs:0x5902 ; # 夂
-                        :below    a.ucs:0x7530   # 田
-                    ]
-                ]
-            ]
-        ]
+        :right    a.ucs:0x4FFB   # 俻
     ] .
 ucs:0x2A35F   # 𪍟
     :structure [ a idc:⿰ ;
@@ -7927,12 +7912,7 @@ ucs:0x2A535   # 𪔵
 ucs:0x2A536   # 𪔶
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x9F13 ; # 鼓
-        :below    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x4EBB ; # 亻
-                :right    a.ucs:0x767B   # 登
-            ]
-        ]
+        :below    a.ucs:0x50DC   # 僜
     ] .
 ucs:0x2A537   # 𪔷
     :structure [ a idc:⿱ ;
@@ -9194,12 +9174,7 @@ ucs:0x2A616   # 𪘖
     ] .
 ucs:0x2A617   # 𪘗
     :structure [ a idc:⿱ ;
-        :above    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x4EBB ; # 亻
-                :right    a.ucs:0x340C   # 㐌
-            ]
-        ] ;
+        :above    a.ucs:0x2CF72 ; # 𬽲
         :below    a.ucs:0x9F52   # 齒
     ] .
 ucs:0x2A618   # 𪘘
@@ -9250,17 +9225,7 @@ ucs:0x2A61F   # 𪘟
 ucs:0x2A620   # 𪘠
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x9F52 ; # 齒
-        :right    [
-            :structure [ a idc:⿰ ;
-                :left     a.ucs:0x4EBB ; # 亻
-                :right    [
-                    :structure [ a idc:⿱ ;
-                        :above    a.ucs:0x6728 ; # 木
-                        :below    a.ucs:0x4E00   # 一
-                    ]
-                ]
-            ]
-        ]
+        :right    a.ucs:0x201FE   # 𠇾
     ] .
 ucs:0x2A621   # 𪘡
     :structure [ a idc:⿰ ;
