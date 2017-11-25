@@ -44,6 +44,11 @@ rep.mj:040193   # &MJ040193;
             ]
         ]
     ] .
+rep.mj:040211   # &MJ040211;
+    :structure [ a idc:⿱ ;
+        :above    rep.jis-x0213-2:0x702A ; # &GT-25225;
+        :below    rep.gt-k:00363   # &GT-K00363;
+    ] .
 rep.mj:040247   # &MJ040247;
     :structure [ a idc:⿱ ;
         :above    rep.adobe-japan1-5:19722 ; # &AJ1-19722;
@@ -261,6 +266,16 @@ rep.mj:044893   # &MJ044893;
     :structure [ a idc:⿱ ;
         :above    rep.jis-x0213-2:0x746A ; # &JX2-746A;
         :below    rep.mj:007527   # &MJ007527;
+    ] .
+rep.mj:044922   # 𮊘
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x7F51 ; # 网
+        :below    a.ucs:0x5C09   # 尉
+    ] .
+rep.mj:044942   # &MJ044942;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x7F51 ; # 网
+        :below    rep.ucs-itaiji-002:0x2422B   # &U-i002+2422B;
     ] .
 rep.mj:045110   # &MJ045110;
     :structure [ a idc:⿱ ;
