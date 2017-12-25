@@ -4232,7 +4232,7 @@ ucs:0x2A9DF   # 𪧟
 ucs:0x2A9E0   # 𪧠
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x5B93 ; # 宓
-        :below    a.ucs:0x4E14   # 且
+        :below    a.ucs_component:0x4E14   # &A-compU+4E14;
     ] .
 ucs:0x2A9E1   # 𪧡
     :structure [ a idc:⿰ ;
@@ -13057,7 +13057,7 @@ ucs:0x2AFDC   # 𪿜
     ] .
 ucs:0x2AFDD   # 𪿝
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x5174 ; # 兴
+        :above    rep.gt-k:02290 ; # &GT-K02290;
         :below    a.ucs:0x77F3   # 石
     ] .
 ucs:0x2AFDE   # 𪿞
