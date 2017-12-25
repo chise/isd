@@ -226,6 +226,11 @@ rep.mj:003054   # &MJ003054;
         :left     a.ucs:0x793A ; # 示
         :right    a.ucs:0x53D5   # 叕
     ] .
+rep.mj:003217   # &MJ003217;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x7A74 ; # 穴
+        :below    rep.adobe-japan1-0:04815   # &AJ1-04815;
+    ] .
 rep.mj:003315   # &MJ003315;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x7AF9 ; # 竹
@@ -255,6 +260,11 @@ rep.mj:003607   # &MJ003607;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x7CF8 ; # 糸
         :right    rep.mj:001247   # &MJ001247;
+    ] .
+rep.mj:003642   # 䍑
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x7F51 ; # 网
+        :below    a.ucs:0x5E72   # 干
     ] .
 rep.mj:003943   # &MJ003943;
     :structure [ a idc:⿰ ;
