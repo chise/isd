@@ -4,13 +4,13 @@
 @prefix a.ucs: <http://www.chise.org/est/view/character/rep.ucs=> .
 @prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
+@prefix rep.ucs-itaiji-002: <http://www.chise.org/est/view/character/rep.ucs-itaiji-002=> .
 @prefix rep.ucs-itaiji-004: <http://www.chise.org/est/view/character/rep.ucs-itaiji-004=> .
 
 rep.mj:060027   # &MJ060027;
-    :structure [ a idc:⿳ ;
+    :structure [ a idc:⿱ ;
         :above    a.ucs:0x7AF9 ; # 竹
-        :middle   a.ucs:0x9FB1 ; # 龱
-        :below    a.ucs:0x6BD4   # 比
+        :below    rep.ucs-itaiji-002:0x23B09   # &U-i002+23B09;
     ] .
 rep.mj:060177   # &MJ060177;
     :structure [ a idc:⿱ ;
