@@ -14,7 +14,7 @@
 @prefix rep.gt-k: <http://www.chise.org/est/view/character/rep.gt-k=> .
 @prefix rep.ucs-var-004: <http://www.chise.org/est/view/character/rep.ucs-var-004=> .
 @prefix rep.ucs-itaiji-001: <http://www.chise.org/est/view/character/rep.ucs-itaiji-001=> .
-@prefix a.ucs-itaiji-004: <http://www.chise.org/est/view/character/a.ucs-itaiji-004=> .
+@prefix rep.ucs-itaiji-004: <http://www.chise.org/est/view/character/rep.ucs-itaiji-004=> .
 @prefix a.ucs-itaiji-006: <http://www.chise.org/est/view/character/a.ucs-itaiji-006=> .
 
 ucs:0x2B740   # 𫝀
@@ -680,9 +680,8 @@ ucs:0x2B7A1   # 𫞡
         :right    a.ucs:0x8363   # 荣
     ] .
 ucs:0x2B7A2   # 𫞢
-    :structure [ a idc:⿳ ;
-        :above    a.ucs:0x2E8D ; # ⺍
-        :middle   a.ucs:0x5196 ; # 冖
+    :structure [ a idc:⿱ ;
+        :above    rep.gt-k:01443 ; # &GT-K01443;
         :below    a.ucs:0x725B   # 牛
     ] .
 ucs:0x2B7A3   # 𫞣
@@ -788,7 +787,7 @@ ucs:0x2B7B3   # 𫞳
     ] .
 ucs:0x2B7B4   # 𫞴
     :structure [ a idc:⿱ ;
-        :above    a.ucs-itaiji-004:0x7676 ; # &A-U-i004+7676;
+        :above    rep.ucs-itaiji-004:0x7676 ; # &U-i004+7676;
         :below    a.ucs:0x793A   # 示
     ] .
 ucs:0x2B7B5   # 𫞵
