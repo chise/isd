@@ -295,7 +295,7 @@ rep.mj:011104   # &MJ011104;
     ] .
 rep.mj:011220   # &MJ011220;
     :structure [ a idc:⿰ ;
-        :left     rep.adobe-japan1-0:01655 ; # &AJ1-01655;
+        :left     a.ucs:0x5F13 ; # 弓
         :right    rep.mj:058020   # &MJ058020;
     ] .
 rep.mj:011233   # &MJ011233;
@@ -1837,7 +1837,7 @@ rep.mj:015493   # &MJ015493;
         :left     a.ucs:0x6C35 ; # 氵
         :right    rep.big5-cdp:0x8AC0   # &CDP-8AC0;
     ] .
-rep.mj:015504   # &MJ015504;
+rep.mj:015504   # 淵
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6C35 ; # 氵
         :right    a.ucs:0x23D92   # 𣶒
@@ -1960,7 +1960,7 @@ rep.mj:015704   # &MJ015704;
 rep.mj:015713   # &MJ015713;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6C35 ; # 氵
-        :right    a.ucs:0x53DF   # 叟
+        :right    rep.mj:008019   # &MJ008019;
     ] .
 rep.mj:015723   # &MJ015723;
     :structure [ a idc:⿰ ;
