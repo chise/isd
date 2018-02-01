@@ -1,6 +1,6 @@
 ;;; isd-turtle.el --- Utility to dump ideographic-structure as Turtle files
 
-;; Copyright (C) 2017 MORIOKA Tomohiko
+;; Copyright (C) 2017, 2018 MORIOKA Tomohiko
 
 ;; Author: MORIOKA Tomohiko <tomo@kanji.zinbun.kyoto-u.ac.jp>
 ;; Keywords: Ideographic Structures (漢字構造、解字), IDS, CHISE, RDF, Turtle
