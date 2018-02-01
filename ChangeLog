@@ -2,6 +2,8 @@
 
 	* ISD-UCS-Basic.ttl: Sync up with the current environment.
 
+	* isd-turtle.el (isd-turtle-format-char): Support idc:⿱・⿸.
+
 	* ISD-MJ-5.ttl: Sync up with the current environment.
 
 	* ISD-MJ-4.ttl: Sync up with the current environment.
