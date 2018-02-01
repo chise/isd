@@ -293,7 +293,7 @@
     (setq prefix ""))
   (let ((indent (make-string (* level 4) ?\ ))
 	char
-	idc
+	idc idc-str
 	p1 p2 p3
 	c1 c2 c3
 	ret)
@@ -345,11 +345,16 @@
      ((eq idc ?⿻)
       (setq p1 'underlying
 	    p2 'overlaying)
+      )
+     ((and idc (eq (encode-char idc '=>iwds-1) 305))
+      (setq idc-str "⿱・⿸")
+      (setq p1 'above
+	    p2 'below)
       ))
     (cond
      (p3
       (format "%s
-%s    %s:structure [ a idc:%c ;
+%s    %s:structure [ a idc:%s ;
 %s        %s:%-8s %s
 %s        %s:%-8s %s
 %s        %s:%-8s %s
@@ -361,7 +366,7 @@
 			    (chise-turtle-format-ccs-code-point ccs code-point)
 			    char)
 		  "["))
-	      indent prefix idc
+	      indent prefix (or idc-str (char-to-string idc))
 	      indent prefix p1 (isd-turtle-format-component c1 ?\; (1+ level) prefix)
 	      indent prefix p2 (isd-turtle-format-component c2 ?\; (1+ level) prefix)
 	      indent prefix p3 (isd-turtle-format-component c3 ?\  (1+ level) prefix)
@@ -375,7 +380,7 @@
       )
      (idc
       (format "%s
-%s    %s:structure [ a idc:%c ;
+%s    %s:structure [ a idc:%s ;
 %s        %s:%-8s %s
 %s        %s:%-8s %s
 %s    ]%s"
@@ -386,7 +391,7 @@
 			    (chise-turtle-format-ccs-code-point ccs code-point)
 			    char)
 		  "["))
-	      indent prefix idc
+	      indent prefix (or idc-str (char-to-string idc))
 	      indent prefix p1 (isd-turtle-format-component c1 ?\; (1+ level) prefix)
 	      indent prefix p2 (isd-turtle-format-component c2 ?\  (1+ level) prefix)
 	      indent
