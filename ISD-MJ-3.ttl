@@ -400,7 +400,7 @@ rep.mj:035479   # 𢌬
     ] .
 rep.mj:035486   # &MJ035486;
     :structure [ a idc:⿱ ;
-        :above    rep.big5-cdp:0x88F0 ; # &CDP-88F0;
+        :above    rep.big5-cdp:0x8B5E ; # &CDP-8B5E;
         :below    rep.mj:011120   # &MJ011120;
     ] .
 rep.mj:035744   # &MJ035744;
