@@ -350,6 +350,11 @@
       (setq idc-str "⿱・⿸")
       (setq p1 'above
 	    p2 'below)
+      )
+     ((and idc (eq (encode-char idc '=>ucs@component) #x2FF5))
+      (setq idc-str "⿱・⿵")
+      (setq p1 'above
+	    p2 'below)
       ))
     (cond
      (p3
