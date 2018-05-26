@@ -3,14 +3,28 @@
 @prefix idc: <http://rdf.chise.org/rdf/type/character/idc/> .
 @prefix a.ucs: <http://www.chise.org/est/view/character/rep.ucs=> .
 @prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
+@prefix rep.adobe-japan1-4: <http://www.chise.org/est/view/character/rep.adobe-japan1-4=> .
 @prefix rep.big5-cdp: <http://www.chise.org/est/view/character/rep.big5-cdp=> .
+@prefix rep.hanyo-denshi...tk: <http://www.chise.org/est/view/character/rep.hanyo-denshi...tk=> .
 @prefix rep.ucs-itaiji-002: <http://www.chise.org/est/view/character/rep.ucs-itaiji-002=> .
 @prefix rep.ucs-itaiji-004: <http://www.chise.org/est/view/character/rep.ucs-itaiji-004=> .
+@prefix rep.ucs-itaiji-005: <http://www.chise.org/est/view/character/rep.ucs-itaiji-005=> .
+@prefix rep.ucs-itaiji-006: <http://www.chise.org/est/view/character/rep.ucs-itaiji-006=> .
 
 rep.mj:060027   # &MJ060027;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x7AF9 ; # 竹
         :below    rep.ucs-itaiji-002:0x23B09   # &U-i002+23B09;
+    ] .
+rep.mj:060175   # &MJ060175;
+    :structure [ a idc:⿱ ;
+        :above    rep.ucs-itaiji-005:0x2696F ; # &U-i005+2696F;
+        :below    a.ucs:0x898B   # 見
+    ] .
+rep.mj:060176   # 𮗖
+    :structure [ a idc:⿱ ;
+        :above    rep.ucs-itaiji-006:0x2696F ; # &U-i006+2696F;
+        :below    a.ucs:0x898B   # 見
     ] .
 rep.mj:060177   # &MJ060177;
     :structure [ a idc:⿱ ;
@@ -22,8 +36,44 @@ rep.mj:060177   # &MJ060177;
         ] ;
         :below    a.ucs:0x898B   # 見
     ] .
+rep.mj:060191   # &MJ060191;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x8A00 ; # 言
+        :right    rep.hanyo-denshi...tk:01007810   # &HD-TK-01007810;
+    ] .
+rep.mj:060227   # &MJ060227;
+    :structure [ a idc:⿺ ;
+        :surround a.ucs:0x8FB6 ; # 辶
+        :filling  rep.ucs-itaiji-002:0x2D063   # &U-i002+2D063;
+    ] .
 rep.mj:060240   # &MJ060240;
     :structure [ a idc:⿺ ;
         :surround a.ucs:0x2ECC ; # ⻌
         :filling  rep.ucs-itaiji-004:0x81F1   # &U-i004+81F1;
+    ] .
+rep.mj:060264   # &MJ060264;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x91D1 ; # 金
+        :right    rep.ucs-itaiji-002:0x3427   # &U-i002+3427;
+    ] .
+rep.mj:060276   # 𮢀
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x91D1 ; # 金
+        :right    a.ucs:0x24F26   # 𤼦
+    ] .
+rep.mj:060323   # 𮦀
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x4EB2 ; # 亲
+        :right    a.ucs:0x96B9   # 隹
+    ] .
+rep.mj:068054   # &MJ068054;
+    :structure [ a idc:⿳ ;
+        :above    rep.adobe-japan1-4:15391 ; # &AJ1-15391;
+        :middle   a.ucs:0x5196 ; # 冖
+        :below    a.ucs:0x679C   # 果
+    ] .
+rep.mj:068081   # 𤄼
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x6C35 ; # 氵
+        :right    rep.ucs-itaiji-002:0x71FC   # &U-i002+71FC;
     ] .
