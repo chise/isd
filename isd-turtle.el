@@ -346,6 +346,11 @@
       (setq p1 'underlying
 	    p2 'overlaying)
       )
+     ((and idc (eq (encode-char idc '=ucs-itaiji-001) #x2FF6))
+      (setq idc-str "SLR")
+      (setq p1 'surround
+	    p2 'filling)
+      )
      ((and idc (eq (encode-char idc '=>iwds-1) 305))
       (setq idc-str "⿱・⿸")
       (setq p1 'above
