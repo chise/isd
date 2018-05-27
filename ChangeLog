@@ -1,3 +1,13 @@
+2018-05-26  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* ISD-MJ-3.ttl: Sync up with the current environment.
+
+	* ISD-MJ-1.ttl: Sync up with the current environment.
+
+	* ISD-MJ-0.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Basic.ttl: Sync up with the current environment.
+
 2018-05-23  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* isd-turtle.el (isd-turtle-format-char): Support idc:SLR.
