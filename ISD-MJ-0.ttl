@@ -2,6 +2,7 @@
 @prefix : <http://rdf.chise.org/rdf/property/character/isd/> .
 @prefix idc: <http://rdf.chise.org/rdf/type/character/idc/> .
 @prefix a.ucs: <http://www.chise.org/est/view/character/rep.ucs=> .
+@prefix a.ucs_component: <http://www.chise.org/est/view/character/a.ucs@component=> .
 @prefix rep.ucs_iso: <http://www.chise.org/est/view/character/rep.ucs@iso=> .
 @prefix rep.ucs_unicode: <http://www.chise.org/est/view/character/rep.ucs@unicode=> .
 @prefix g.ucs_cns: <http://www.chise.org/est/view/character/g.ucs@cns=> .
@@ -24,7 +25,6 @@
 @prefix rep.cns11643-3: <http://www.chise.org/est/view/character/rep.cns11643-3=> .
 @prefix rep.cns11643-4: <http://www.chise.org/est/view/character/rep.cns11643-4=> .
 @prefix rep.cns11643-5: <http://www.chise.org/est/view/character/rep.cns11643-5=> .
-@prefix rep.cns11643-6: <http://www.chise.org/est/view/character/rep.cns11643-6=> .
 @prefix rep.jis-x0213-1: <http://www.chise.org/est/view/character/rep.jis-x0213-1=> .
 @prefix a.jis-x0213-1: <http://www.chise.org/est/view/character/a.jis-x0213-1=> .
 @prefix rep.jis-x0213-2: <http://www.chise.org/est/view/character/rep.jis-x0213-2=> .
@@ -46,6 +46,16 @@
 @prefix rep.ucs-itaiji-003: <http://www.chise.org/est/view/character/rep.ucs-itaiji-003=> .
 @prefix rep.ucs-itaiji-004: <http://www.chise.org/est/view/character/rep.ucs-itaiji-004=> .
 
+rep.mj:000022   # 㐪
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x4EA0 ; # 亠
+        :below    rep.big5-cdp:0x88B8   # &CDP-88B8;
+    ] .
+rep.mj:000023   # &MJ000023;
+    :structure [ a idc:⿻ ;
+        :underlying a.ucs:0x4E00 ; # 一
+        :overlaying rep.big5-cdp:0x88B8   # &CDP-88B8;
+    ] .
 rep.mj:000147   # 㒺
     :structure [ a idc:⿵ ;
         :surround rep.gt-k:01266 ; # &GT-K01266;
@@ -81,6 +91,26 @@ rep.mj:000568   # &MJ000568;
         :above    rep.adobe-japan1-4:15391 ; # &AJ1-15391;
         :below    a.ucs:0x5927   # 大
     ] .
+rep.mj:000737   # 㝎
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x5B80 ; # 宀
+        :below    a.ucs:0x4E4B   # 之
+    ] .
+rep.mj:000739   # 㝐
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x5B80 ; # 宀
+        :below    a.ucs:0x516C   # 公
+    ] .
+rep.mj:000758   # &MJ000758;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x5B80 ; # 宀
+        :below    rep.mj:009490   # &MJ009490;
+    ] .
+rep.mj:000796   # 㞋
+    :structure [ a idc:⿸ ;
+        :surround a.ucs:0x5C38 ; # 尸
+        :filling  a.ucs:0x53C8   # 又
+    ] .
 rep.mj:000813   # 㞡
     :structure [ a idc:⿸ ;
         :surround a.ucs:0x5C38 ; # 尸
@@ -106,6 +136,16 @@ rep.mj:000836   # &MJ000836;
         :above    a.ucs:0x5C71 ; # 山
         :below    a.ucs:0x738B   # 王
     ] .
+rep.mj:000906   # &MJ000906;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x5C71 ; # 山
+        :below    rep.adobe-japan1-0:03566   # &AJ1-03566;
+    ] .
+rep.mj:000916   # 㠎
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x5C71 ; # 山
+        :right    a.ucs:0x96C6   # 集
+    ] .
 rep.mj:000975   # &MJ000975;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5DFE ; # 巾
@@ -116,10 +156,15 @@ rep.mj:001076   # &MJ001076;
         :surround a.ucs:0x5F13 ; # 弓
         :filling  rep.ucs-itaiji-003:0x56EA   # &U-i003+56EA;
     ] .
+rep.mj:001090   # &MJ001090;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x5F13 ; # 弓
+        :right    rep.mj:013508   # &MJ013508;
+    ] .
 rep.mj:001165   # &MJ001165;
     :structure [ a idc:⿱ ;
         :above    rep.adobe-japan1-5:17472 ; # &AJ1-17472;
-        :below    rep.cns11643-6:0x217E   # &C6-217E;
+        :below    a.ucs:0x2E97   # ⺗
     ] .
 rep.mj:001193   # 㤵
     :structure [ a idc:⿱ ;
@@ -176,15 +221,40 @@ rep.mj:001981   # &MJ001981;
         :left     a.ucs:0x8FB0 ; # 辰
         :right    rep.mj:014908   # &MJ014908;
     ] .
+rep.mj:001984   # &MJ001984;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x209E2 ; # 𠧢
+        :right    rep.mj:014908   # &MJ014908;
+    ] .
+rep.mj:002064   # &MJ002064;
+    :structure [ a idc:⿱ ;
+        :above    rep.adobe-japan1-0:01694 ; # &AJ1-01694;
+        :below    a.ucs:0x6C3A   # 氺
+    ] .
 rep.mj:002066   # &MJ002066;
     :structure [ a idc:⿱ ;
         :above    rep.adobe-japan1-0:01694 ; # &AJ1-01694;
         :below    a.ucs:0x6C34   # 水
     ] .
+rep.mj:002179   # &MJ002179;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x6C35 ; # 氵
+        :right    rep.mj:011343   # &MJ011343;
+    ] .
 rep.mj:002208   # &MJ002208;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6C35 ; # 氵
         :right    rep.ucs_iso:0x21EDF   # &C4-4325;
+    ] .
+rep.mj:002216   # &MJ002216;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x6C35 ; # 氵
+        :right    rep.adobe-japan1-0:06268   # &AJ1-06268;
+    ] .
+rep.mj:002218   # &MJ002218;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x6C35 ; # 氵
+        :right    rep.jis-x0213-1:0x7B50   # &JX1-7B50;
     ] .
 rep.mj:002319   # 㷼
     :structure [ a idc:⿳ ;
@@ -226,6 +296,11 @@ rep.mj:002594   # &MJ002594;
     :structure [ a idc:⿰ ;
         :left     rep.adobe-japan1-0:04216 ; # &AJ1-04216;
         :right    a.ucs:0x74E6   # 瓦
+    ] .
+rep.mj:002793   # &MJ002793;
+    :structure [ a idc:⿱ ;
+        :above    rep.adobe-japan1-4:13701 ; # &AJ1-13701;
+        :below    a.ucs:0x76BF   # 皿
     ] .
 rep.mj:002815   # 䀠
     :structure [ a idc:⿰ ;
@@ -271,6 +346,11 @@ rep.mj:003479   # &MJ003479;
     :structure [ a idc:⿵ ;
         :surround rep.ucs-itaiji-001:0x23386 ; # &U-i001+23386;
         :filling  a.ucs:0x7C73   # 米
+    ] .
+rep.mj:003521   # 䋎
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x7CF8 ; # 糸
+        :right    a.ucs:0x65E6   # 旦
     ] .
 rep.mj:003595   # &MJ003595;
     :structure [ a idc:⿰ ;
@@ -387,6 +467,26 @@ rep.mj:004541   # &MJ004541;
         :left     rep.adobe-japan1-0:01455 ; # &AJ1-01455;
         :right    rep.jis-x0212:0x6676   # &HD-JB-6676;
     ] .
+rep.mj:004642   # &MJ004642;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x8A00 ; # 言
+        :right    a.ucs:0x5967   # 奧
+    ] .
+rep.mj:004643   # &MJ004643;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x8A00 ; # 言
+        :right    rep.cns11643-1:0x6634   # &HD-JT-B9DA;
+    ] .
+rep.mj:004644   # &MJ004644;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x8A00 ; # 言
+        :right    rep.cns11643-1:0x655C   # &C1-655C;
+    ] .
+rep.mj:006293   # &MJ006293;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x9FA0 ; # 龠
+        :right    rep.jis-x0212:0x5A39   # &JSP-5A39;
+    ] .
 rep.mj:006311   # &MJ006311;
     :structure [ a idc:⿹ ;
         :surround rep.big5-cdp:0x8BBF ; # &CDP-8BBF;
@@ -427,9 +527,9 @@ rep.mj:006467   # &MJ006467;
         :above    a.ucs:0x4EA0 ; # 亠
         :below    a.ucs:0x7236   # 父
     ] .
-rep.mj:006470   # &MJ006470;
+rep.mj:006470   # 亥
     :structure [ a idc:⿳ ;
-        :above    rep.adobe-japan1-0:04110 ; # &AJ1-04110;
+        :above    a.ucs:0x4EA0 ; # 亠
         :middle   rep.gt:00154 ; # &GT-00154;
         :below    a.ucs:0x4EBA   # 人
     ] .
@@ -437,7 +537,7 @@ rep.mj:006471   # &MJ006471;
     :structure [ a idc:⿳ ;
         :above    a.ucs:0x2011E ; # 𠄞
         :middle   rep.gt:00154 ; # &GT-00154;
-        :below    a.ucs:0x4EBA   # 人
+        :below    rep.gt-k:00049   # &GT-K00049;
     ] .
 rep.mj:006477   # &MJ006477;
     :structure [ a idc:⿱ ;
@@ -521,7 +621,7 @@ rep.mj:006605   # 伶
     ] .
 rep.mj:006606   # &MJ006606;
     :structure [ a idc:⿰ ;
-        :left     a.ucs:0x2E85 ; # ⺅
+        :left     a.ucs:0x4EBB ; # 亻
         :right    rep.gt-k:01022   # &GT-K01022;
     ] .
 rep.mj:006632   # 住
@@ -724,6 +824,11 @@ rep.mj:006997   # &MJ006997;
         :left     a.ucs:0x4EBB ; # 亻
         :right    rep.daikanwa:21714   # &M-21714;
     ] .
+rep.mj:007022   # &MJ007022;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x4EBB ; # 亻
+        :right    rep.adobe-japan1-0:02704   # &AJ1-02704;
+    ] .
 rep.mj:007023   # &MJ007023;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x4EBB ; # 亻
@@ -843,6 +948,11 @@ rep.mj:007134   # &MJ007134;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x2E85 ; # ⺅
         :right    rep.jef-china3:0x4DD9   # &g2-AJ1-13639;
+    ] .
+rep.mj:007143   # &MJ007143;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x4EBB ; # 亻
+        :right    rep.ucs-var-001:0x21570   # &U-v001+21570;
     ] .
 rep.mj:007158   # &MJ007158;
     :structure [ a idc:⿰ ;
@@ -1019,6 +1129,11 @@ rep.mj:007299   # &MJ007299;
         :above    a.ucs:0x516B ; # 八
         :below    rep.mj:017706   # &MJ017706;
     ] .
+rep.mj:007302   # &MJ007302;
+    :structure [ a idc:⿴ ;
+        :surround a.ucs:0x5182 ; # 冂
+        :filling  a.ucs_component:0x4E8C   # &A-compU+4E8C;
+    ] .
 rep.mj:007312   # 再
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x4E00 ; # 一
@@ -1031,12 +1146,12 @@ rep.mj:007313   # &MJ007313;
     ] .
 rep.mj:007320   # &MJ007320;
     :structure [ a idc:⿻ ;
-        :underlying rep.ucs_iso:0x2000E ; # &CDP-8BB7;
+        :underlying a.ucs:0x2000E ; # 𠀎
         :overlaying rep.mj:007307   # &MJ007307;
     ] .
 rep.mj:007321   # &MJ007321;
     :structure [ a idc:⿱ ;
-        :above    rep.ucs_iso:0x2000E ; # &CDP-8BB7;
+        :above    a.ucs:0x2000E ; # 𠀎
         :below    rep.mj:007308   # &MJ007308;
     ] .
 rep.mj:007324   # &MJ007324;
@@ -1461,6 +1576,11 @@ rep.mj:007762   # &MJ007762;
         :surround a.ucs:0x52F9 ; # 勹
         :filling  a.ucs:0x5915   # 夕
     ] .
+rep.mj:007782   # &MJ007782;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x5315 ; # 匕
+        :right    a.ucs:0x21FFA   # 𡿺
+    ] .
 rep.mj:007817   # &MJ007817;
     :structure [ a idc:⿷ ;
         :surround rep.adobe-japan1-0:04307 ; # &AJ1-04307;
@@ -1551,6 +1671,11 @@ rep.mj:007891   # &MJ007891;
         :left     rep.big5-cdp:0x8B7C ; # &CDP-8B7C;
         :right    a.ucs:0x5369   # 卩
     ] .
+rep.mj:007892   # 即
+    :structure [ a idc:⿰ ;
+        :left     rep.gt-k:02400 ; # &CDP-v001-8B7C;
+        :right    a.ucs:0x5369   # 卩
+    ] .
 rep.mj:007897   # &MJ007897;
     :structure [ a idc:⿱ ;
         :above    rep.adobe-japan1-5:17299 ; # &AJ1-17299;
@@ -1574,7 +1699,7 @@ rep.mj:007914   # 卿
 rep.mj:007915   # &MJ007915;
     :structure [ a idc:⿰ ;
         :left     rep.big5-cdp:0x8D41 ; # &CDP-8D41;
-        :right    rep.daikanwa:02873   # &M-02873;
+        :right    rep.daikanwa:02873   # &HD-JT-AE7B;
     ] .
 rep.mj:007920   # &MJ007920;
     :structure [ a idc:⿸ ;
@@ -1776,6 +1901,11 @@ rep.mj:008358   # &MJ008358;
         :left     a.ucs:0x53E3 ; # 口
         :right    rep.daikanwa:13628   # &M-13628;
     ] .
+rep.mj:008364   # 唿
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x53E3 ; # 口
+        :right    a.ucs:0x5FFD   # 忽
+    ] .
 rep.mj:008370   # &MJ008370;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
@@ -1839,7 +1969,7 @@ rep.mj:008449   # &MJ008449;
 rep.mj:008469   # &MJ008469;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x53E3 ; # 口
-        :right    rep.daikanwa:02873   # &M-02873;
+        :right    rep.daikanwa:02873   # &HD-JT-AE7B;
     ] .
 rep.mj:008470   # &MJ008470;
     :structure [ a idc:⿰ ;
@@ -1885,6 +2015,11 @@ rep.mj:008494   # &MJ008494;
     :structure [ a idc:⿰ ;
         :left     g2.ucs_unicode:0x53E3 ; # &g2-AJ1-01969;
         :right    g2.ks-x1001:0x635D   # &g2-GT-59026;
+    ] .
+rep.mj:008523   # &MJ008523;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x53E3 ; # 口
+        :right    rep.mj:010159   # &MJ010159;
     ] .
 rep.mj:008526   # &MJ008526;
     :structure [ a idc:⿰ ;
@@ -2325,7 +2460,7 @@ rep.mj:009291   # &MJ009291;
 rep.mj:009292   # &MJ009292;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x571F ; # 土
-        :right    a.ucs:0x865A   # 虚
+        :right    rep.adobe-japan1-0:01679   # &AJ1-01679;
     ] .
 rep.mj:009304   # &MJ009304;
     :structure [ a idc:⿰ ;
@@ -2432,7 +2567,7 @@ rep.mj:009438   # &MJ009438;
         :above    rep.adobe-japan1-4:14521 ; # &AJ1-14521;
         :below    a.ucs:0x5915   # 夕
     ] .
-rep.mj:009446   # 夢
+rep.mj:009446   # &MJ009446;
     :structure [ a idc:⿱ ;
         :above    rep.gt-k:07341 ; # &GT-K07341;
         :below    a.ucs:0x5915   # 夕
@@ -2566,6 +2701,11 @@ rep.mj:009852   # &MJ009852;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5973 ; # 女
         :right    rep.mj:016741   # &MJ016741;
+    ] .
+rep.mj:009866   # &MJ009866;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x5973 ; # 女
+        :right    rep.mj:026434   # &MJ026434;
     ] .
 rep.mj:009881   # &MJ009881;
     :structure [ a idc:⿰ ;
