@@ -351,6 +351,11 @@
       (setq p1 'surround
 	    p2 'filling)
       )
+     ((and idc (eq (encode-char idc '=ucs-var-001) #x2FF0))
+      (setq idc-str "⿰・SLR")
+      (setq p1 'left
+	    p2 'right)
+      )
      ((and idc (eq (encode-char idc '=>iwds-1) 305))
       (setq idc-str "⿱・⿸")
       (setq p1 'above
@@ -360,7 +365,8 @@
       (setq idc-str "⿱・⿵")
       (setq p1 'above
 	    p2 'below)
-      ))
+      )
+     )
     (cond
      (p3
       (format "%s
