@@ -735,6 +735,11 @@ rep.mj:058390   # &MJ058390;
         :left     a.ucs:0x2EBC ; # ⺼
         :right    rep.cbeta:09464   # &CB09464;
     ] .
+rep.mj:058403   # &MJ058403;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x2EBC ; # ⺼
+        :right    rep.ucs-itaiji-003:0x22002   # &U-i003+22002;
+    ] .
 rep.mj:058412   # 𭁇
     :structure [ a idc:⿱ ;
         :above    [
