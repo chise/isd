@@ -356,6 +356,11 @@
       (setq p1 'left
 	    p2 'right)
       )
+     ((and idc (eq (encode-char idc '=>iwds-1) 307))
+      (setq idc-str "⿰・⿺")
+      (setq p1 'left
+	    p2 'right)
+      )
      ((and idc (eq (encode-char idc '=>iwds-1) 305))
       (setq idc-str "⿱・⿸")
       (setq p1 'above
