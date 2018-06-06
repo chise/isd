@@ -71,6 +71,11 @@ rep.mj:000302   # &MJ000302;
         :surround a.ucs:0x5382 ; # 厂
         :filling  rep.adobe-japan1-0:03709   # &AJ1-03709;
     ] .
+rep.mj:000536   # &MJ000536;
+    :structure [ a idc:⿱ ;
+        :above    rep.adobe-japan1-4:14431 ; # &AJ1-14431;
+        :below    a.ucs:0x4E91   # 云
+    ] .
 rep.mj:000556   # &MJ000556;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x23140 ; # 𣅀
