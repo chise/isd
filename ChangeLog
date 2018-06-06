@@ -1,3 +1,15 @@
+2018-05-31  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* isd-turtle.el (isd-turtle-format-char): Support idc:⿰・⿺.
+
+	* ISD-MJ-5.ttl: Sync up with the current environment.
+
+	* ISD-MJ-3.ttl: Sync up with the current environment.
+
+	* ISD-MJ-0.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Ext-A.ttl: Sync up with the current environment.
+
 2018-05-27  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* ISD-UCS-Ext-A.ttl: Sync up with the current environment.
