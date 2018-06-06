@@ -6745,7 +6745,7 @@ a.ucs:0x38FB   # 㣻
 a.ucs:0x38FC   # 㣼
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x5FC4 ; # 忄
-        :right    a.ucs_component:0x5203   # &BUCS+5203;
+        :right    a.ucs_iwds-1:0x5203   # &A-IWDSU+5203;
     ] .
 a.ucs:0x38FD   # 㣽
     :structure [ a idc:⿱ ;
