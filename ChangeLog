@@ -1,3 +1,14 @@
+2018-06-06  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* isd-turtle.el (est-coded-charset-priority-list): Add
+	`=>ucs-itaiji-009'.
+
+	* ISD-MJ-4.ttl: Sync up with the current environment.
+
+	* ISD-MJ-1.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Basic.ttl: Sync up with the current environment.
+
 2018-05-31  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* isd-turtle.el (isd-turtle-format-char): Support idc:⿰・⿺.
