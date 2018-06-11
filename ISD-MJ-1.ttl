@@ -837,6 +837,11 @@ rep.mj:012744   # &MJ012744;
         :above    rep.adobe-japan1-0:05070 ; # &AJ1-05070;
         :below    a.ucs:0x624B   # 手
     ] .
+rep.mj:012878   # &MJ012878;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x624C ; # 扌
+        :right    rep.adobe-japan1-5:17586   # &AJ1-17586;
+    ] .
 rep.mj:012952   # &MJ012952;
     :structure [ a idc:⿰ ;
         :left     rep.big5-cdp:0x8B7A ; # &CDP-8B7A;
