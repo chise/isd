@@ -161,6 +161,11 @@ rep.mj:041434   # &MJ041434;
         :left     a.ucs:0x7530 ; # 田
         :right    rep.mj:007897   # &MJ007897;
     ] .
+rep.mj:041507   # &MJ041507;
+    :structure [ a idc:⿱ ;
+        :above    a.ucs:0x4E00 ; # 一
+        :below    a.ucs:0x24D13   # 𤴓
+    ] .
 rep.mj:041862   # 𤼦
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x7676 ; # 癶
@@ -230,6 +235,11 @@ rep.mj:042408   # &MJ042408;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x76EE ; # 目
         :right    rep.mj:021865   # &MJ021865;
+    ] .
+rep.mj:042476   # &MJ042476;
+    :structure [ a idc:⿱ ;
+        :above    rep.cns11643-4:0x2E55 ; # &C4-2E55;
+        :below    a.ucs:0x5F1F   # 弟
     ] .
 rep.mj:042557   # 𥍉
     :structure [ a idc:⿰ ;
@@ -412,6 +422,11 @@ rep.mj:045756   # 𦠊
         :left     a.ucs:0x2EBC ; # ⺼
         :right    a.ucs:0x6B6E   # 歮
     ] .
+rep.mj:045787   # &MJ045787;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x2EBC ; # ⺼
+        :right    rep.ucs-itaiji-002:0x22002   # &U-i002+22002;
+    ] .
 rep.mj:045807   # &MJ045807;
     :structure [ a idc:⿰ ;
         :left     rep.ucs-itaiji-002:0x6614 ; # &U-i002+6614;
@@ -512,6 +527,11 @@ rep.mj:046955   # &MJ046955;
         :above    a.ucs:0x2EBF ; # ⺿
         :below    rep.mj:026017   # &MJ026017;
     ] .
+rep.mj:047101   # &MJ047101;
+    :structure [ a idc:⿱ ;
+        :above    rep.big5-cdp:0x8D60 ; # &CDP-8D60;
+        :below    a.ucs:0x8C46   # 豆
+    ] .
 rep.mj:047123   # &MJ047123;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x2EBF ; # ⺿
@@ -552,10 +572,25 @@ rep.mj:047455   # &MJ047455;
         :left     rep.adobe-japan1-0:01931 ; # &AJ1-01931;
         :right    rep.gt:60481   # &GT-60481;
     ] .
+rep.mj:047642   # &MJ047642;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x866B ; # 虫
+        :right    rep.ucs-itaiji-002:0x864E   # &U-i002+864E;
+    ] .
 rep.mj:047790   # &MJ047790;
     :structure [ a idc:⿱ ;
         :above    rep.mj:007830 ; # &MJ007830;
         :below    a.ucs:0x866B   # 虫
+    ] .
+rep.mj:048202   # 𧘮
+    :structure [ a idc:⿴ ;
+        :surround a.ucs:0x8863 ; # 衣
+        :filling  a.ucs:0x51F6   # 凶
+    ] .
+rep.mj:048210   # &MJ048210;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x8864 ; # 衤
+        :right    rep.ucs-itaiji-001:0x212AE   # &U-i001+212AE;
     ] .
 rep.mj:048327   # &MJ048327;
     :structure [ a idc:⿴ ;
@@ -609,13 +644,7 @@ rep.mj:048627   # &MJ048627;
     ] .
 rep.mj:048643   # &MJ048643;
     :structure [ a idc:⿰ ;
-        :left     [
-            :structure [ a idc:⿳ ;
-                :above    a.ucs:0x2EBE ; # ⺾
-                :middle   a.ucs:0x4E00 ; # 一
-                :below    rep.gb2312:0x4356   # &G0-4356;
-            ]
-        ] ;
+        :left     rep.ucs-itaiji-001:0x26C34 ; # &U-i001+26C34;
         :right    a.ucs:0x898B   # 見
     ] .
 rep.mj:048645   # 𧢜
