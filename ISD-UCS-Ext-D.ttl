@@ -3,6 +3,7 @@
 @prefix idc: <http://rdf.chise.org/rdf/type/character/idc/> .
 @prefix a.ucs: <http://www.chise.org/est/view/character/rep.ucs=> .
 @prefix ucs: <http://www.chise.org/est/view/character/ucs=> .
+@prefix a.ucs_iwds-1: <http://www.chise.org/est/view/character/a.ucs@iwds-1=> .
 @prefix rep.ucs_iso: <http://www.chise.org/est/view/character/rep.ucs@iso=> .
 @prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
 @prefix rep.adobe-japan1-0: <http://www.chise.org/est/view/character/rep.adobe-japan1-0=> .
@@ -113,15 +114,14 @@ ucs:0x2B74B   # 𫝋
         ]
     ] .
 ucs:0x2B74C   # 𫝌
-    :structure [ a idc:⿳ ;
+    :structure [ a idc:⿱ ;
         :above    [
             :structure [ a idc:⿰ ;
-                :left     a.ucs:0x3022 ; # 〢
-                :right    a.ucs:0x6729   # 朩
+                :left     rep.big5-cdp:0x8969 ; # &CDP-8969;
+                :right    a.ucs_iwds-1:0x6729   # &A-IWDSU+6729;
             ]
         ] ;
-        :middle   a.ucs:0x4E00 ; # 一
-        :below    a.ucs:0x516B   # 八
+        :below    rep.gt-k:00264   # &GT-K00264;
     ] .
 ucs:0x2B74D   # 𫝍
     :structure [ a idc:⿵ ;
