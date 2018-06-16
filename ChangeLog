@@ -1,3 +1,25 @@
+2018-06-16  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* README.md: Modified.
+
+2018-06-15  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* README.md: New file.
+
+2018-06-11  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* ISD-UCS-Ext-E.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Ext-D.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Ext-C.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Ext-B-6.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Ext-B-5.ttl: Sync up with the current environment.
+
+	* ISD-UCS-Ext-B-1.ttl: Sync up with the current environment.
+
 2018-06-06  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* isd-turtle.el (est-coded-charset-priority-list): Add
