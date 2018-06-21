@@ -1,3 +1,9 @@
+2018-06-21  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* README.md: Use https://gitlab.chise.org/CHISE/ids instead of
+	http://git.chise.org/gitweb/?p=chise/ids.git;a=tree as the
+	representative URL of CHISE-IDS.
+
 2018-06-16  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* README.md: Modified.
