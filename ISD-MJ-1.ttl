@@ -180,6 +180,11 @@ rep.mj:010416   # &MJ010416;
         :above    a.ucs:0x5C71 ; # 山
         :below    rep.mj:007989   # &MJ007989;
     ] .
+rep.mj:010704   # 嶩
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x5C71 ; # 山
+        :right    a.ucs:0x8FB2   # 農
+    ] .
 rep.mj:010713   # &MJ010713;
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x5C71 ; # 山
@@ -571,7 +576,7 @@ rep.mj:011790   # &MJ011790;
     ] .
 rep.mj:011802   # &MJ011802;
     :structure [ a idc:⿱ ;
-        :above    a.ucs:0x5179 ; # 兹
+        :above    rep.adobe-japan1-4:14201 ; # &AJ1-14201;
         :below    a.ucs:0x5FC3   # 心
     ] .
 rep.mj:011803   # 慈
@@ -1701,7 +1706,7 @@ rep.mj:014724   # &MJ014724;
 rep.mj:014734   # &MJ014734;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6728 ; # 木
-        :right    rep.gt:43788   # &GT-43788;
+        :right    rep.adobe-japan1-4:14084   # &AJ1-14084;
     ] .
 rep.mj:014735   # &MJ014735;
     :structure [ a idc:⿰ ;
@@ -2479,6 +2484,16 @@ rep.mj:016890   # &MJ016890;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x72AD ; # 犭
         :right    a.ucs:0x5DF3   # 巳
+    ] .
+rep.mj:016982   # &MJ016982;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x72AD ; # 犭
+        :right    rep.gt:37913   # &GT-37913;
+    ] .
+rep.mj:017106   # &MJ017106;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x72AD ; # 犭
+        :right    rep.ucs_unicode:0x5912   # &UU+5912;
     ] .
 rep.mj:017187   # &MJ017187;
     :structure [ a idc:⿰ ;
