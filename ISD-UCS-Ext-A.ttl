@@ -25359,12 +25359,7 @@ a.ucs:0x46DC   # 䛜
 a.ucs:0x46DD   # 䛝
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x8A00 ; # 言
-        :right    [
-            :structure [ a idc:⿱ ;
-                :above    a.ucs:0x4E11 ; # 丑
-                :below    a.ucs:0x5C71   # 山
-            ]
-        ]
+        :right    a.gt-k:02849   # &A-GT-K02849;
     ] .
 a.ucs:0x46DE   # 䛞
     :structure [ a idc:⿰ ;
@@ -26016,7 +26011,7 @@ a.ucs:0x4753   # 䝓
     ] .
 a.ucs:0x4754   # 䝔
     :structure [ a idc:⿰ ;
-        :left     rep.mj:024907 ; # &MJ024907;
+        :left     a.ucs:0x8C55 ; # 豕
         :right    a.ucs:0x96DA   # 雚
     ] .
 a.ucs:0x4755   # 䝕
