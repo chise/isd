@@ -10992,17 +10992,11 @@ ucs:0x28650   # 𨙐
     ] .
 ucs:0x28651   # 𨙑
     :structure [ a idc:⿺ ;
-        :surround a.ucs:0x2ECE ; # ⻎
+        :surround a.ucs:0x8FB6 ; # 辶
         :filling  [
             :structure [ a idc:⿱ ;
-                :above    [
-                    :structure [ a idc:⿳ ;
-                        :above    a.ucs:0x4E3F ; # 丿
-                        :middle   a.ucs:0x26954 ; # 𦥔
-                        :below    a.ucs:0x4E00   # 一
-                    ]
-                ] ;
-                :below    a.ucs:0x8C9D   # 貝
+                :above    a.ucs:0x4E3F ; # 丿
+                :below    a.ucs:0x27DC8   # 𧷈
             ]
         ]
     ] .
