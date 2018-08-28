@@ -6,7 +6,6 @@
 @prefix o.ucs_unicode: <http://www.chise.org/est/view/character/o.ucs@unicode=> .
 @prefix o.ucs_jis: <http://www.chise.org/est/view/character/o.ucs@jis=> .
 @prefix rep.ucs_iso: <http://www.chise.org/est/view/character/rep.ucs@iso=> .
-@prefix rep.ucs_unicode: <http://www.chise.org/est/view/character/rep.ucs@unicode=> .
 @prefix g.ucs_cns: <http://www.chise.org/est/view/character/g.ucs@cns=> .
 @prefix rep.mj: <http://www.chise.org/est/view/character/rep.mj=> .
 @prefix rep.adobe-japan1-0: <http://www.chise.org/est/view/character/rep.adobe-japan1-0=> .
@@ -100,6 +99,11 @@ rep.mj:030647   # &MJ030647;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x2E85 ; # ⺅
         :right    rep.mj:007645   # &MJ007645;
+    ] .
+rep.mj:030754   # &MJ030754;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x4EBB ; # 亻
+        :right    rep.adobe-japan1-0:02277   # &AJ1-02277;
     ] .
 rep.mj:030789   # &MJ030789;
     :structure [ a idc:⿰ ;
@@ -216,6 +220,11 @@ rep.mj:031817   # &MJ031817;
                 :right    a.ucs:0x7968   # 票
             ]
         ]
+    ] .
+rep.mj:031820   # &MJ031820;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x5315 ; # 匕
+        :right    a.ucs:0x5369   # 卩
     ] .
 rep.mj:031841   # &MJ031841;
     :structure [ a idc:⿵ ;
@@ -588,6 +597,16 @@ rep.mj:036422   # &MJ036422;
         :above    rep.adobe-japan1-5:19162 ; # &AJ1-19162;
         :below    a.ucs:0x5FC3   # 心
     ] .
+rep.mj:036709   # 𢩺
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x624C ; # 扌
+        :right    rep.big5-cdp:0x8646   # &CDP-8646;
+    ] .
+rep.mj:036710   # 𢩻
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x624C ; # 扌
+        :right    a.ucs:0x4E48   # 么
+    ] .
 rep.mj:036741   # 𢪼
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x624C ; # 扌
@@ -597,6 +616,12 @@ rep.mj:036794   # &MJ036794;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x624C ; # 扌
         :right    rep.gt-k:04289   # &GT-K04289;
+    ] .
+rep.mj:036854   # &MJ036854;
+    :structure [ a idc:⿳ ;
+        :above    rep.jis-x0213-2:0x702A ; # &GT-25225;
+        :middle   rep.ucs-itaiji-002:0x5F50 ; # &U-i002+5F50;
+        :below    a.ucs:0x624B   # 手
     ] .
 rep.mj:036906   # 𢰚
     :structure [ a idc:⿰ ;
@@ -716,7 +741,12 @@ rep.mj:038440   # 𣠔
 rep.mj:038449   # &MJ038449;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6728 ; # 木
-        :right    rep.ucs_unicode:0x431B   # &M-35851;
+        :right    rep.mj:003597   # &MJ003597;
+    ] .
+rep.mj:038502   # 𣢇
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x5DF1 ; # 己
+        :right    a.ucs:0x6B20   # 欠
     ] .
 rep.mj:038589   # &MJ038589;
     :structure [ a idc:⿰ ;
@@ -812,6 +842,11 @@ rep.mj:039514   # &MJ039514;
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6C35 ; # 氵
         :right    rep.mj:013997   # &MJ013997;
+    ] .
+rep.mj:039547   # &MJ039547;
+    :structure [ a idc:⿰ ;
+        :left     a.ucs:0x6C35 ; # 氵
+        :right    rep.ucs-var-001:0x4386   # &U-v001+4386;
     ] .
 rep.mj:039582   # &MJ039582;
     :structure [ a idc:⿰ ;
