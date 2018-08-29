@@ -30065,22 +30065,7 @@ ucs:0x231BA   # 𣆺
 ucs:0x231BB   # 𣆻
     :structure [ a idc:⿱ ;
         :above    a.ucs:0x65E5 ; # 日
-        :below    [
-            :structure [ a idc:⿰ ;
-                :left     [
-                    :structure [ a idc:⿻ ;
-                        :underlying a.ucs:0x31C7 ; # ㇇
-                        :overlaying a.ucs:0x5338   # 匸
-                    ]
-                ] ;
-                :right    [
-                    :structure [ a idc:⿻ ;
-                        :underlying rep.big5-cdp:0x86E8 ; # &CDP-86E8;
-                        :overlaying rep.big5-cdp:0x8C78   # &CDP-8C78;
-                    ]
-                ]
-            ]
-        ]
+        :below    a.ucs:0x623C   # 戼
     ] .
 ucs:0x231BC   # 𣆼
     :structure [ a idc:⿱ ;
@@ -53124,13 +53109,7 @@ ucs:0x23F74   # 𣽴
 ucs:0x23F75   # 𣽵
     :structure [ a idc:⿰ ;
         :left     a.ucs:0x6C35 ; # 氵
-        :right    [
-            :structure [ a idc:⿳ ;
-                :above    a.ucs:0x5C71 ; # 山
-                :middle   rep.gt-k:00764 ; # &CDP-v004-8C4F;
-                :below    a.ucs:0x672C   # 本
-            ]
-        ]
+        :right    rep.ucs-var-002:0x21D1D   # &U-v002+21D1D;
     ] .
 ucs:0x23F76   # 𣽶
     :structure [ a idc:⿰ ;
